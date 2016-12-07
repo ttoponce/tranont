@@ -1,0 +1,710 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>Tranont | Events</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+      /**** BEGIN Navbar Stylings ****/
+			.dropdown .dropdown-menu {
+			    -webkit-transition: all;
+			    -moz-transition: all;
+			    -ms-transition: all;
+			    -o-transition: all;
+			    transition: all;
+
+			    max-height: 0;
+			    display: block;
+			    overflow: hidden;
+			    opacity: 0;
+			}
+			.dropdown.open .dropdown-menu {
+			    max-height: 300px;
+			    opacity: 1;
+          width: 190px;
+			}
+      .dropdown-header {
+        padding: 5px 10px 2px 10px;
+        font-weight: bold;
+      }
+			.dropdown-menu > li > a {
+				padding: 3px 11px;
+				color: #555555;
+				font-size: 11px;
+			}
+      .dropdown-menu .divider {
+        margin: 0;
+      }
+      .join-text {
+        margin-left: 138px;
+      }
+			.navbar {
+				cursor: pointer;
+  				margin-bottom: 0;
+			}
+			.navbar-default {
+				background-color: #ffffff;
+			}
+			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+				color: #ffffff;
+				background-color: #05538a;
+				cursor: pointer;
+			}
+			.navbar-brand {
+				padding: 10px 15px;
+			}
+			.navbar-brand img {
+				width: 125px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+      .navbar-form {
+        float: right;
+        padding: 0;
+      }
+			.navbar-nav {
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+      .navbar-nav>li>.dropdown-menu {
+        padding: 0;
+      }
+			#associate-login {
+				color: #777777;
+				transition: color .1s;
+			}
+			#associate-login:hover {
+				color: #05538a;
+			}
+			#join-tranont {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join-tranont:hover {
+				color: #777777;
+			}
+			#join {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join:hover {
+				color: #777777;
+			}
+      @media only screen and (max-width: 1200px) {
+        .join-text {
+          margin-left: 63px;
+        }
+        .nav > li > a {
+  				padding: 15px 5px;
+  			}
+      }
+      @media only screen and (max-width: 1000px) {
+        #join {
+          display: block;
+        }
+  			#join-tranont {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 991px) {
+        .join-text {
+          margin-left: 0;
+        }
+        .navbar-form {
+          width: 129px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-form {
+          width: auto;
+          margin: 0 15px 15px 15px;
+        }
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      .blue-links {
+        font-weight: bold;
+        color: #05538a;
+      }
+      .blue-links:hover {
+        color: #337ab7;
+      }
+      .btn-info {
+        color: #05538a;
+        background-color: #ffffff;
+        border: 2px solid #05538a;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 0;
+        position: absolute;
+        padding: 6.5px 12px;
+        font-weight: bold;
+      }
+      .btn-info:hover {
+        background-color: #05538a;
+        color: #ffffff;
+        border-color: #05538a;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .col-xs-12 iframe {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .div-title {
+        margin: 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        font-size: 16px;
+      }
+      .filler-text {
+        font-size: 12px;
+        color: #444444;
+        margin-left: 12%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .international-event-img {
+        width: 100%;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        margin-left: 150px;
+        border-radius: 0;
+      }
+      .panel-body {
+        border: none;
+        background-color: #eeeeee;
+        color: #05538a;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .panel-body h4 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .panel-body h5 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .panel-body h6 {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .sub-nav .col-xs-3 {
+        border: 2px solid #05538a;
+        background-color: #ffffff;
+        color: #05538a;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-3:hover {
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-3 p {
+        margin: 0;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .sub-nav .col-xs-3 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .sub-nav .col-xs-3 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+        @media only screen and (max-width: 535px) {
+          .sub-nav .col-xs-3 {
+            letter-spacing: 1px;
+            font-size: 10px;
+          }
+          .top-img-header {
+            font-size: 25px;
+            margin-top: 17%;
+          }
+          .top-img-text {
+            font-size: 15px;
+            margin-top: 24%;
+            letter-spacing: 5px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          .sub-nav .col-xs-3 {
+            font-size: 8px;
+          }
+          .top-img-header {
+            font-size: 21px;
+            margin-top: 18%;
+          }
+          .top-img-text {
+            font-size: 12px;
+            margin-top: 25%;
+            letter-spacing: 4px;
+          }
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 25px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 0;
+        }
+        .footer {
+          font-size: 9px;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+  		    </div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPANY</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="#">ASSOCIATES</a></li>
+    		      		<li><a href="#">FOUNDATION</a></li>
+    		      		<li><a href="#">INVESTOR RELATIONS</a></li>
+    		      		<li><a href="#">MEDIA KIT</a></li>
+    		      		<li><a href="#">EXECUTIVES</a></li>
+      		      	<li><a href="#">ABOUT US</a></li>
+      		      	<li><a href="#">SUPPORT</a></li>
+    		      		<li><a href="#">FAQ</a></li>
+    		      		<li><a href="#">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS</a>
+    		      	<ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="#">ONEVIEW</a></li>
+    		      		<li><a href="#">DEFEND</a></li>
+    		      		<li><a href="#">TAXBOT</a></li>
+    		      		<li><a href="#">LEGAL</a></li>
+    		      		<li><a href="#">CREDIT SERVICES</a></li>
+    		      		<li><a href="#">TAX SERVICES</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">BUSINESS TOOLS</li>
+    		      		<li><a href="#">MARKETING PLATFORM</a></li>
+    		      		<li><a href="#">ASSOCIATE CENTER</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPENSATION</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">COMPENSATION PLAN</a></li>
+    		      		<li><a href="#">WHY TRANONT</a></li>
+    		      		<li><a href="#">PROMOTIONS</a></li>
+                  <li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">NATIONAL EVENTS</a></li>
+    		      		<li><a href="#">INTERNATIONAL EVENTS</a></li>
+    		      		<li><a href="#">REGIONAL EVENTS</a></li>
+    		      		<li><a href="#">EVENT CALENDAR</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li>
+    		      	<a class="join-text" href="#"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+    		      </li>
+    		      <li>
+    		      	<a href="#"><span id="associate-login"><strong>LOGIN</strong></span></a>
+    		      </li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn" id="srch-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Events</h2>
+            <h4 class="top-img-text">Celebrating and Motivating</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Events_topmod_01.jpg" alt="Semi-Arial View of a Cruise Ship on the Water by a Port Next to some Mountains"/>
+          </div>
+        </div>
+        <div class="row sub-nav">
+          <a href="#national"><div class="col-xs-3">
+            <p>National<br/>Events</p>
+          </div></a>
+          <a href="#international"><div class="col-xs-3">
+            <p>International<br/>Events</p>
+          </div></a>
+          <a href="#regional"><div class="col-xs-3">
+            <p>Regional<br/>Events</p>
+          </div></a>
+          <a href="#calendar"><div class="col-xs-3">
+            <p>Event<br/>Calendar</p>
+          </div></a>
+        </div>
+        <div class="row" id="national">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">National Events</h3>
+            <hr class="hr-bottom"/>
+            <p class="filler-text"><em>There no National Events currently scheduled.</em></p>
+          </div>
+        </div>
+        <div class="row" id="international">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">International Events</h3>
+            <hr class="hr-bottom"/>
+            <img class="international-event-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Events_intnleventsmod_01.jpg" alt="Tranont 2017 International Convention - Andy Andrews, New York Times Best Selling Author will be the Keynote Speaker - January 6-7, 2017 - Long Beach Convention Center - Long Beach, California - Tranont has Two Preferred Hotels in Long Beach - Renaissance® Long Beach - $169.00 per night - Courtyard® Marriott® - $159.00 per night"/>
+            <a href="#" class="btn btn-info" role="button">Buy Tickets</a>
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <a data-toggle="collapse" href="#collapse"><div class="panel-heading">
+                  <h4 class="div-title">Event Details <i class="glyphicon glyphicon-triangle-right"></i></h4>
+                </div></a>
+                <div id="collapse" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4>$89.00 per Person</h4>
+                    <h6>ALL TICKET SALES ARE FINAL, NON-REFUNDABLE, AND NON-TRANSFERRABLE. ASSOCIATES WHO ARE REGISTERED FOR THIS EVENT BUT ARE NOT ABLE TO ATTEND MAY APPLY THIS PURCHASE TO A FUTURE EVENT IF TRANONT RECEIVES NOTICE PRIOR TO DECEMBER 10, 2016.</h6>
+                    <h4>AIRPORTS SERVICING LONG BEACH:</h4>
+                    <h5>LONG BEACH AIRPORT (LGB)</h5>
+                    <span class="ticket-text">
+                      JETBLUE AIRWAYS<br/>
+                      ALASKA AIRLINES<br/>
+                      DELTA AIRLINES<br/>
+                      US AIRWAYS
+                    </span>
+                    <h5>LOS ANGELES INTERNATIONAL AIRPORT (LAX)</h5>
+                    <span class="ticket-text">ALL MAJOR AIRLINES FLY INTO LAX</span>
+                    <h5>ORANGE COUNTY’S JOHN WAYNE AIRPORT (SNA)</h5>
+                    <span class="ticket-text">ALL MAJOR AIRLINES FLY INTO SNA</span>
+                    <h5>MAKE YOUR RESERVATION NOW! THE SOONER YOU BOOK THE BETTER PRICE YOU WILL GET.</h5>
+                    <h4>AIRPORT SHUTTLE INFORMATION:</h4>
+                    <h5>FROM LONG BEACH</h5>
+                    <span class="ticket-text">TAXI CAB - THE FARE IS BETWEEN $20.00-$25.00</span>
+                    <h5>FROM LAX</h5>
+                    <span class="ticket-text">FLYAWAY - THIS IS THE MOST ECONOMICAL OPTION AT $9 EACH WAY. THE PICK-UP/DROP-OFF LOCATION IS RIGHT BEHIND THE RENAISSANCE HOTEL. PICK UP AND DROP OFF IS ONCE AN HOUR FROM 5:30 AM TO 9:30 PM. THIS IS A SCHEDULED, REGULAR SERVICE. CLICK HERE FOR MORE DETAILS.</span>
+                    <h5>SERVICING ALL THREE AIRPORTS</h5>
+                    <span class="ticket-text">
+                      KARMEL SHUTTLE SERVICE, INC. - UNLIKE OTHER SHUTTLE COMPANIES, THEY ARE A RESERVATION SERVICE ONLY. PROVIDING SHARED VAN AND PRIVATE VAN SERVICE. THEY DO NOT LOOP AND LOOP THE AIRPORTS LOOKING FOR OTHER PEOPLE TO PICK UP. THEY DO NOT MAKE MULTIPLE STOPS ALONG THE WAY TO LONG BEACH.<br/>
+                      THEY ALSO OFFER A READY TO GO LINK. WHEN PLACING A RESERVATION, THE ATTENDEE WILL INCLUDE THEIR CELL NUMBER. KARMEL SHUTTLE SERVICE’S FLIGHT TRACKING SYSTEM WILL MONITOR YOUR FLIGHT. ONCE YOU LAND, YOU WILL RECEIVE A TEXT ALERT FROM KARMEL. ONCE YOU COLLECT YOUR LUGGAGE, YOU SIMPLY PRESS THE READY TO GO LINK. THEIR DISPATCH WILL ALERT YOU BACK WITH A VAN NUMBER AND INSTRUCT YOU AS TO WHERE TO STAND TO MEET YOUR DRIVER.<br/>
+                      HERE IS A CUSTOMIZED WEB LINK SPECIFICALLY FOR TRANONT ATTENDEES. OFFERING $21 PER PERSON FROM LAX AND SNA AIRPORTS. $20 PER PERSON FROM LONG BEACH AIRPORT TO LONG BEACH HOTELS. (RATES ARE ONE-WAY FARE).
+                    </span>
+                    <h5>RENTAL CAR - YOU WILL NOT NEED TO RENT A CAR. ALL PREFERRED HOTELS ARE IN WALKING DISTANCE FROM THE CONVENTION CENTER, DOWNTOWN LONG BEACH AND A PLETHORA OF GREAT RESTAURANTS!</h5>
+                    <h4>PREFERRED HOTEL RESERVATIONS:</h4>
+                    <span class="ticket-text">WE HAVE THREE PREFERRED HOTELS IN LONG BEACH. WE HAVE NEGOTIATED SPECIAL TRANONT PRICES. THERE ARE A LIMITED NUMBER OF ROOMS AT OUR LOWER RATES SO MAKE YOUR RESERVATIONS NOW!</span>
+                    <h5>BEST WESTERN PLUS (INCLUDES BREAKFAST) - $149.00 PER NIGHT</h5>
+                    <span class="ticket-text">
+                      THERE ARE TWO WAYS TO BOOK YOUR RESERVATIONS:
+                      <ol>
+                        <li>CALL THE HOTEL DIRECTLY AT 562-285-0281. REFERENCE OUR GROUP ID “TRANONT 2017 JANUARY NATIONAL CONVENTION” GROUP BLOCK. CREDIT CARD REQUIRED AT TIME OF MAKING RESERVATIONS.</li>
+                        <li>CLICK ON <a href="" class="blue-links">THIS LINK</a>.</li>
+                      </ol>
+                    </span>
+                    <h5>COURTYARD BY MARRIOTT - $159.00 PER NIGHT</h5>
+                    <span class="ticket-text">
+                      THERE ARE TWO WAYS TO BOOK YOUR RESERVATIONS:
+                      <ol>
+                        <li>CALL THE HOTEL DIRECTLY AT 800-228-9290. REFERENCE OUR GROUP ID “TRANONT 2017 JANUARY NATIONAL CONVENTION” GROUP BLOCK. CREDIT CARD REQUIRED AT TIME OF MAKING RESERVATIONS.</li>
+                        <li>CLICK ON <a href="" class="blue-links">THIS LINK</a>.</li>
+                      </ol>
+                    </span>
+                    <h5>RENAISSANCE - $169.00 PER NIGHT</h5>
+                    <span class="ticket-text">
+                      THERE ARE TWO WAYS TO BOOK YOUR RESERVATIONS:
+                      <ol>
+                        <li>CALL THE HOTEL DIRECTLY AT 888-236-2427. REFERENCE OUR GROUP ID “TRANONT 2017 JANUARY NATIONAL CONVENTION” GROUP BLOCK. CREDIT CARD REQUIRED AT TIME OF MAKING RESERVATIONS.</li>
+                        <li>CLICK ON <a href="" class="blue-links">THIS LINK</a>.</li>
+                      </ol>
+                    </span>
+                    <h5 id="text-bottom"><em>SPACE IS VERY LIMITED AT ALL THREE HOTELS, SO MAKE YOUR RESERVATIONS NOW.</em></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="regional">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Regional Events</h3>
+            <hr class="hr-bottom"/>
+            <p class="filler-text"><em>Please see the Event Calendar below for scheduled Regional Events.</em></p>
+          </div>
+        </div>
+        <div class="row" id="calendar">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Event Calendar</h3>
+            <hr class="hr-bottom"/>
+            <iframe src="https://calendar.google.com/calendar/embed?src=tranontevents%40gmail.com&ctz=America/Denver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2">
+            <span class="footer-address">
+              8871 S. Sandy Pkwy<br/>
+              Suite 200<br/>
+              Sandy, UT 84070
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              <strong>Toll-Free:</strong> 800.973.3715<br/>
+              <strong>Fax:</strong> 801.384.7143<br/>
+              <strong>Email:</strong> support@tranont.com
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              Monday-Friday: 8am-6pm<br/>
+              Closed Saturday & Sunday<br/>
+              <em>Times in Mountain Time</em>
+            </span>
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3">
+            <strong>Stay Connected:</strong><br/>
+            <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+
+	    <script>
+        // open navbar dropdown menu on hover instead of on click
+	    	$(function(){
+			    $('.dropdown').hover(function() {
+			        $(this).addClass('open');
+			    },
+			    function() {
+			        $(this).removeClass('open');
+			    });
+		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.collapse').on('show.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-right").removeClass("glyphicon-triangle-right").addClass("glyphicon-triangle-bottom");
+        }).on('hide.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
+        });
+	    </script>
+    </body>
+</html>

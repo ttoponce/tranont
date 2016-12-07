@@ -1,0 +1,1195 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>Tranont | Compensation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+      /**** BEGIN Navbar Stylings ****/
+			.dropdown .dropdown-menu {
+			    -webkit-transition: all;
+			    -moz-transition: all;
+			    -ms-transition: all;
+			    -o-transition: all;
+			    transition: all;
+
+			    max-height: 0;
+			    display: block;
+			    overflow: hidden;
+			    opacity: 0;
+			}
+			.dropdown.open .dropdown-menu {
+			    max-height: 300px;
+			    opacity: 1;
+          width: 190px;
+			}
+      .dropdown-header {
+        padding: 5px 10px 2px 10px;
+        font-weight: bold;
+      }
+			.dropdown-menu > li > a {
+				padding: 3px 11px;
+				color: #555555;
+				font-size: 11px;
+			}
+      .dropdown-menu .divider {
+        margin: 0;
+      }
+      .join-text {
+        margin-left: 138px;
+      }
+			.navbar {
+				cursor: pointer;
+  				margin-bottom: 0;
+			}
+			.navbar-default {
+				background-color: #ffffff;
+			}
+			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+				color: #ffffff;
+				background-color: #05538a;
+				cursor: pointer;
+			}
+			.navbar-brand {
+				padding: 10px 15px;
+			}
+			.navbar-brand img {
+				width: 125px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+      .navbar-form {
+        float: right;
+        padding: 0;
+      }
+			.navbar-nav {
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+      .navbar-nav>li>.dropdown-menu {
+        padding: 0;
+      }
+			#associate-login {
+				color: #777777;
+				transition: color .1s;
+			}
+			#associate-login:hover {
+				color: #05538a;
+			}
+			#join-tranont {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join-tranont:hover {
+				color: #777777;
+			}
+			#join {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join:hover {
+				color: #777777;
+			}
+      @media only screen and (max-width: 1200px) {
+        .join-text {
+          margin-left: 63px;
+        }
+        .nav > li > a {
+  				padding: 15px 5px;
+  			}
+      }
+      @media only screen and (max-width: 1000px) {
+        #join {
+          display: block;
+        }
+  			#join-tranont {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 991px) {
+        .join-text {
+          margin-left: 0;
+        }
+        .navbar-form {
+          width: 129px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-form {
+          width: auto;
+          margin: 0 15px 15px 15px;
+        }
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      .bottom-row {
+        margin: 3% 0 3% 0;
+      }
+      .blue-links {
+        font-weight: bold;
+        color: #05538a;
+      }
+      .blue-links:hover {
+        color: #337ab7;
+      }
+      .btn-info {
+        color: #05538a;
+        background-color: #ffffff;
+        border: 2px solid #05538a;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 0;
+        position: absolute;
+        padding: 6.5px 12px;
+        font-weight: bold;
+      }
+      .btn-info:hover {
+        background-color: #05538a;
+        color: #ffffff;
+        border-color: #05538a;
+      }
+      .car-title {
+        color: #888b8d;
+      }
+      .car-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .center {
+        text-align: center;
+        padding: 0;
+      }
+      .ceo-title {
+        color: #888b8d;
+      }
+      .ceo-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .col-xs-3 .glyphicon {
+        height: 125px;
+        width: 125px;
+        border-radius: 100px;
+        border: 10px solid #05538a;
+        background-color: #ffffff;
+      }
+      .col-xs-3 .glyphicon:hover {
+        border: none;
+        background-color: #05538a;
+      }
+      .col-xs-3 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 5%;
+      }
+      .col-xs-4 .glyphicon {
+        height: 125px;
+        width: 125px;
+        border-radius: 100px;
+        border: 10px solid #05538a;
+        background-color: #ffffff;
+      }
+      .col-xs-4 .glyphicon:hover {
+        border: none;
+        background-color: #05538a;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .col-xs-12 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 iframe {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .commissions-title {
+        color: #888b8d;
+      }
+      .commissions-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .comp-row {
+        margin-top: 4%;
+      }
+      .div-title {
+        margin: 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        font-size: 16px;
+      }
+      .dropdown-text {
+        margin: 0 2% 1% 2%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .dropdown-text-bottom {
+        margin: -2% 2% 3% 2%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .filler-text {
+        font-size: 12px;
+        color: #444444;
+        margin-left: 12%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-calendar {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 3px;
+      }
+      .glyphicon-calendar:hover {
+        color: #ffffff;
+      }
+      .glyphicon-plane {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 0 5px 0 1px;
+      }
+      .glyphicon-plane:hover {
+        color: #ffffff;
+      }
+      .glyphicon-star {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 5px;
+      }
+      .glyphicon-star:hover {
+        color: #ffffff;
+      }
+      .glyphicon-usd {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 5px 5px 0 0;
+      }
+      .glyphicon-usd:hover {
+        color: #ffffff;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .international-event-img {
+        width: 100%;
+      }
+      .life-title {
+        color: #888b8d;
+      }
+      .life-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .november-title {
+        color: #888b8d;
+      }
+      .november-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .panel-body {
+        border: none;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .panel-body h4 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .panel-body h5 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .panel-body h6 {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+      .panel-default {
+        border: none;
+        letter-spacing: 2px;
+      }
+      .panel-default>.panel-heading {
+        background-color: #05538a;
+        color: #ffffff;
+        border: none;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        border-radius: 0;
+        padding: 10px 15px 20px 15px;
+      }
+      .panel-heading h4 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+      .plan-title {
+        color: #888b8d;
+      }
+      .plan-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .pools-title {
+        color: #888b8d;
+      }
+      .pools-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .promotional-title {
+        color: #888b8d;
+      }
+      .promotional-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .residual-title {
+        color: #888b8d;
+      }
+      .residual-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .sub-nav .col-xs-4 {
+        border: 2px solid #05538a;
+        background-color: #ffffff;
+        color: #05538a;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-4:hover {
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-4 p {
+        margin: 0;
+      }
+      .team-title {
+        color: #888b8d;
+      }
+      .team-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      .vacation-title {
+        color: #888b8d;
+      }
+      .vacation-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      #bottom-panel {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 20px 0 40px 0;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      #top-panel {
+        margin-top: 4%;
+      }
+      @media only screen and (max-width: 1000px) {
+        .sub-nav .col-xs-4 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-3 h4 {
+          font-size: 16px;
+        }
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .col-xs-3 h4 {
+          font-size: 14px;
+        }
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-3 h4 {
+          font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+        .col-xs-4 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .glyphicon-usd {
+          font-size: 38px;
+        }
+        .glyphicon-calendar {
+          font-size: 38px;
+        }
+        .glyphicon-plane {
+          font-size: 38px;
+        }
+        .glyphicon-star {
+          font-size: 38px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+          font-size: 10px;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-3 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 75px;
+          width: 75px;
+          border: 5px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-4 .glyphicon {
+          height: 75px;
+          width: 75px;
+          border: 5px solid #05538a;
+        }
+        .col-xs-12 h4 {
+          font-size: 14px;
+        }
+        .col-xs-12 li {
+          font-size: 10px;
+        }
+        .col-xs-12 p {
+          font-size: 12px;
+        }
+        .glyphicon-usd {
+          font-size: 32px;
+        }
+        .glyphicon-calendar {
+          font-size: 32px;
+        }
+        .glyphicon-plane {
+          font-size: 32px;
+        }
+        .glyphicon-star {
+          font-size: 32px;
+        }
+        .sub-nav .col-xs-4 {
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 25px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 0;
+        }
+        .footer {
+          font-size: 9px;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+  		    </div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPANY</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="#">ASSOCIATES</a></li>
+    		      		<li><a href="#">FOUNDATION</a></li>
+    		      		<li><a href="#">INVESTOR RELATIONS</a></li>
+    		      		<li><a href="#">MEDIA KIT</a></li>
+    		      		<li><a href="#">EXECUTIVES</a></li>
+      		      	<li><a href="#">ABOUT US</a></li>
+      		      	<li><a href="#">SUPPORT</a></li>
+    		      		<li><a href="#">FAQ</a></li>
+    		      		<li><a href="#">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS</a>
+    		      	<ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="#">ONEVIEW</a></li>
+    		      		<li><a href="#">DEFEND</a></li>
+    		      		<li><a href="#">TAXBOT</a></li>
+    		      		<li><a href="#">LEGAL</a></li>
+    		      		<li><a href="#">CREDIT SERVICES</a></li>
+    		      		<li><a href="#">TAX SERVICES</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">BUSINESS TOOLS</li>
+    		      		<li><a href="#">MARKETING PLATFORM</a></li>
+    		      		<li><a href="#">ASSOCIATE CENTER</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPENSATION</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">COMPENSATION PLAN</a></li>
+    		      		<li><a href="#">WHY TRANONT</a></li>
+    		      		<li><a href="#">CURRENT PROMOTIONS</a></li>
+                  <li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">NATIONAL EVENTS</a></li>
+    		      		<li><a href="#">INTERNATIONAL EVENTS</a></li>
+    		      		<li><a href="#">REGIONAL EVENTS</a></li>
+    		      		<li><a href="#">EVENT CALENDAR</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li>
+    		      	<a class="join-text" href="#"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+    		      </li>
+    		      <li>
+    		      	<a href="#"><span id="associate-login"><strong>LOGIN</strong></span></a>
+    		      </li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn" id="srch-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Compensation</h2>
+            <h4 class="top-img-text">Residual Rewards</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Compensation_topmod_01.jpg" alt="Some Jeeps Lined Up Side by Side"/>
+          </div>
+        </div>
+        <div class="row sub-nav">
+          <a href="#comp-plan"><div class="col-xs-4">
+            <p>Compensation<br/>Plan</p>
+          </div></a>
+          <a href="#why-tranont"><div class="col-xs-4">
+            <p>Why<br/>Tranont</p>
+          </div></a>
+          <a href="#current-promos"><div class="col-xs-4">
+            <p>Current<br/>Promotions</p>
+          </div></a>
+        </div>
+        <div class="row" id="comp-plan">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Compensation Plan</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row comp-row">
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd residual-button" data-toggle="collapse" data-target="#residual"></button>
+            <h4 class="residual-title">Residual Income</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd team-button" data-toggle="collapse" data-target="#team"></button>
+            <h4 class="team-title">Monthly Team Volume Bonus</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd car-button" data-toggle="collapse" data-target="#car"></button>
+            <h4 class="car-title">Car Bonus</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd pools-button" data-toggle="collapse" data-target="#pools"></button>
+            <h4 class="pools-title">Bonus Pools</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="residual" class="collapse dropdown-text">
+              <h4>Residual Income*</h4>
+              <p>
+                Associates can earn both residual income and Personal Volume by selling the CORE Products
+                and Services to others. These include Tranont OneView, Defend, Tax Bot, and Legal services.
+                Associates are also eligible to refer B2B and B2C services provided by our strategic partners
+                in the following industries: credit card processing, business phone systems, background checks,
+                identity theft protection, credit monitoring, computer technical support, personal and business
+                tax preparation, personal credit repair, and additional referral services planned for
+                announcement in 2016.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="team" class="collapse dropdown-text">
+              <h4>Monthly Team Volume Bonus*</h4>
+              <p>
+                You qualify for the Monthly Team Volume Bonus as soon as you have three personally sponsored
+                active Associates.  As long as you maintain three personally sponsored, active associates, you
+                will receive a $100 monthly bonus.  This bonus will increase as your team volume (GV) and
+                personally sponsored associates increase (Click the button below to view the compensation plan).
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="car" class="collapse dropdown-text">
+              <h4>Car Bonus*</h4>
+              <p>
+                The Car Bonus is paid to Tranont Associates when they attain the rank of Financial Consultant.
+                This is our “Drive to FC” program. Tranont will pay you $250 per month or, if you purchase an
+                approved Jeep™ vehicle, Tranont will increase this bonus to $500 per month (NOTE: Tranont is
+                not responsible for securing the vehicle, securing/paying the lease or securing/paying the loan
+                payment of the vehicle associated with the Car Bonus program).
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="pools" class="collapse dropdown-text">
+              <h4>Bonus Pools*</h4>
+              <p>
+                Each month, qualified Associates are paid a Management Pool bonus when they attain the Senior
+                Financial Consultant rank.  This bonus pays up to 5 shares of a 4% pool based on total company
+                group volume (GV). In addition, those that qualify for the rank of Vice President will
+                participate in the Executive Pool bonus which pays up to 4 shares of a separate 9% pool also
+                based on total monthly GV.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row comp-row">
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd life-button" data-toggle="collapse" data-target="#life"></button>
+            <h4 class="life-title">Life Bonus</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd commissions-button" data-toggle="collapse" data-target="#commissions"></button>
+            <h4 class="commissions-title">Tranont Life Commissions</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd promotional-button" data-toggle="collapse" data-target="#promotional"></button>
+            <h4 class="promotional-title">Promotional Trips and Incentives</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd plan-button" data-toggle="collapse" data-target="#plan"></button>
+            <h4 class="plan-title">Compensation Plan</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="life" class="collapse dropdown-text">
+              <h4>Life Bonus*</h4>
+              <p>
+                The Life Bonus is paid to Tranont Associates when they attain the rank of Senior Financial
+                Consultant.  Once you attain this rank, Tranont will contribute toward your new or existing
+                Tranont Life insurance policy.  As your rank increases, the contribution increases up to the
+                maximum allowed under the program.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="commissions" class="collapse dropdown-text">
+              <h4>Tranont Life Commissions</h4>
+              <p>
+                As a Tranont Life licensed professional, you have access to a powerful suite of products that can
+                help individuals everywhere achieve their insurance and financial related goals. As you promote
+                and sell these products you will be compensated with an extremely competitive compensation and
+                promotion program. In addition, you will be able to grow with Tranont Life through the various
+                promotion levels, all the while earning you an income that will help you achieve your personal
+                financial goals.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="promotional" class="collapse dropdown-text">
+              <h4>Promotional Trips and Incentives*</h4>
+              <p>
+                Tranont regularly conducts promotions and other incentive programs to encourage it’s Associates and
+                Agents to build and improve their financial futures as well as those around them.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="plan" class="collapse dropdown-text">
+              <h4>Tranont Compensation Plan</h4>
+              <p>
+                <a href="http://tranont.com/wp-content/uploads/TranontCompensationPlan_Web.pdf" target="_blank">Click here</a> to view the Tranont Compensation Plan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="why-tranont">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Why Tranont</h3>
+            <hr class="hr-bottom"/>
+            <div id="top-panel" class="panel panel-default">
+              <div class="panel-body">
+                <p>
+                  Let’s face it, today’s economy is a mess. It has put many Americans and others worldwide on
+                  shaky ground. Unfortunately, even as we make every effort to get ahead, today’s complicated
+                  financial landscape only makes it that much harder to catch up. Consumer debt is piling up,
+                  the cost of living is steadily rising, and mortgages are straining our monthly budgets. And
+                  despite the plethora of advice out there, the tried-and-true strategies of the past don’t
+                  necessarily work anymore.
+                </p>
+                <br/>
+                <p>
+                  It’s no secret that Tranont OneView, with its unique personal financial management and wealth
+                  accumulation strategies, can help you navigate to a brighter financial future. But just as
+                  important is the Tranont business opportunity, which allows individuals just like you to navigate
+                  toward a better financial future by creating significant and long-term residual income. Combine
+                  these two and you could be accumulating significant savings faster than you ever dreamed possible.
+                </p>
+              </div>
+            </div>
+            <div id="bottom-panel" class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Tranont’s Business Opportunity Sets It Apart</h4>
+              </div>
+              <div class="panel-body">
+                <p>
+                  Perhaps you’ve seen other companies touting their personal financial management software tools
+                  and are now wondering what makes Tranont different. The truth is that there are a number of
+                  personal financial management software products that can provide some assistance and help.
+                </p>
+                <p>
+                  What distinguishes Tranont from the field, then, is its associate marketing strategy and plan to
+                  help you create significant additional income through sharing Tranont with others.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="current-promos">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Current Promotions</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row bottom-row">
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-calendar november-button" data-toggle="collapse" data-target="#november"></button>
+            <h4 class="november-title">November Promotion</h4>
+          </div>
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-plane vacation-button" data-toggle="collapse" data-target="#vacation"></button>
+            <h4 class="vacation-title">2016-2017 Vacation Promotion</h4>
+          </div>
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-star ceo-button" data-toggle="collapse" data-target="#ceo"></button>
+            <h4 class="ceo-title">2016 CEO Promotion</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="november" class="collapse dropdown-text-bottom">
+              <h4><strong>November Promotion</strong></h4>
+              <h5><strong>Customer Acquisition Promotion</strong></h5>
+              <ul>
+                <li>Enroll two new CORE Package Customers: Earn $250.00 (paid after seasoned for 60 days).</li>
+                <li>Enroll three additional (5 total): Earn additional $250.00 (paid after seasoned for 60 days).</li>
+                <li>Each new Retail Referral Partner account closed: Earn 25.00. If you get 10, earn additional $250.00 ($500.00 total).</li>
+                <li>CORE Package Customers = 3 accounts toward 10/15/30% commission program (this is a permanent change).</li>
+              </ul>
+              <h5><strong>Tranont Qualifications</strong></h5>
+              <p><em>Executive Rank</em></p>
+              <ul>
+                <li>Join Tranont in November and achieve the Executive Rank within 14 days and earn $100.00.</li>
+                <li>Achieve the above and signup two CORE Package customers and earn an additional $60.00.</li>
+                <li>Achieve the above and purchase a ticket for the International Convention and earn an additional $20.00.</li>
+              </ul>
+              <p><em>FINANCIAL CONSULTANT RANK (FC)</em></p>
+              <ul>
+                <li>Join Tranont in November and achieve the FC Rank within 30 days and earn $250.00.</li>
+                <li>Achieve the above and signup two CORE Package customers and earn an additional $60.00.</li>
+                <li>Achieve the above and purchase a ticket for the International Convention and earn an additional $20.00.</li>
+              </ul>
+              <p>
+                EXAMPLE: If you join Tranont in November, reach the FC Rank within 30 days, enroll 5 new customers
+                on the CORE package, and close 10 new retail referral accounts in October, you will earn an additional $1080.*
+              </p>
+              <p><small><em>*Some bonuses require new customer to remain current for 60 days before paid.</em></small></p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="vacation" class="collapse dropdown-text-bottom">
+              <h4><strong>2016-2017 Vacation Promotion</strong></h4>
+              <p>
+                We are now pleased to announce the 2016-2017 Tranont Vacation Promotion. This year’s vacation
+                promotion will be a destination vacation at an all-inclusive resort in Mexico. In fact, the
+                2016-2017 Tranont Vacation Promotion will include all-inclusive resort accommodations and airfare
+                scheduled by Tranont to and from the destination.
+              </p>
+              <p>The following are the qualifications for this promotion:</p>
+              <h5><strong>Tranont Qualifications</strong></h5>
+              <p>From July 1, 2016 to December 21, 2016</p>
+              <ul>
+                <li>Attain the rank of 3 Star SFC</li>
+                <li>Existing 3 Star SFC’s, attain 40,000 OpenLine QGV (50% leg requirement applies)</li>
+              </ul>
+              <h5><strong>TranontLife Qualifications</strong></h5>
+              <p>From July 1, 2016 to December 21, 2016</p>
+              <ul>
+                <li>Write 60,000 paid personal points</li>
+                <li>Write 90,000 paid team points (50% rule applies)</li>
+              </ul>
+              <p>
+                All individuals that qualify for the Tranont Vacation Promotion in 2016 will be joining us for
+                the actual event on April 22- 29, 2017 (Promotional trip may not be redeemed for cash or
+                alternative remuneration).
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="ceo" class="collapse dropdown-text-bottom">
+              <h4><strong>2016 CEO Promotion</strong></h4>
+              <h5><strong>Tahiti Trip in 2017</strong></h5>
+              <p>Qualifications - January 1st to December 31st 2016, attain either:</p>
+              <ul>
+                <li>CEO Rank with Tranont</li>
+                <li>CEO Rank with TranontLife</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2">
+            <span class="footer-address">
+              8871 S. Sandy Pkwy<br/>
+              Suite 200<br/>
+              Sandy, UT 84070
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              <strong>Toll-Free:</strong> 800.973.3715<br/>
+              <strong>Fax:</strong> 801.384.7143<br/>
+              <strong>Email:</strong> support@tranont.com
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              Monday-Friday: 8am-6pm<br/>
+              Closed Saturday & Sunday<br/>
+              <em>Times in Mountain Time</em>
+            </span>
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3">
+            <strong>Stay Connected:</strong><br/>
+            <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+
+	    <script>
+        // open navbar dropdown menu on hover instead of on click
+	    	$(function(){
+			    $('.dropdown').hover(function() {
+			        $(this).addClass('open');
+			    },
+			    function() {
+			        $(this).removeClass('open');
+			    });
+		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.collapse').on('show.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-right").removeClass("glyphicon-triangle-right").addClass("glyphicon-triangle-bottom");
+        }).on('hide.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
+        });
+        // color toggle for compensation plan  and current promotion button titles
+        $(".residual-button").hover(function() {
+          $(".residual-title").toggleClass("residual-title-color");
+        });
+        $(".team-button").hover(function() {
+          $(".team-title").toggleClass("team-title-color");
+        });
+        $(".car-button").hover(function() {
+          $(".car-title").toggleClass("car-title-color");
+        });
+        $(".pools-button").hover(function() {
+          $(".pools-title").toggleClass("pools-title-color");
+        });
+        $(".life-button").hover(function() {
+          $(".life-title").toggleClass("life-title-color");
+        });
+        $(".commissions-button").hover(function() {
+          $(".commissions-title").toggleClass("commissions-title-color");
+        });
+        $(".promotional-button").hover(function() {
+          $(".promotional-title").toggleClass("promotional-title-color");
+        });
+        $(".plan-button").hover(function() {
+          $(".plan-title").toggleClass("plan-title-color");
+        });
+        $(".november-button").hover(function() {
+          $(".november-title").toggleClass("november-title-color");
+        });
+        $(".vacation-button").hover(function() {
+          $(".vacation-title").toggleClass("vacation-title-color");
+        });
+        $(".ceo-button").hover(function() {
+          $(".ceo-title").toggleClass("ceo-title-color");
+        });
+	    </script>
+    </body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>Tranont | Company</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+      /**** BEGIN Navbar Stylings ****/
+			.dropdown .dropdown-menu {
+			    -webkit-transition: all;
+			    -moz-transition: all;
+			    -ms-transition: all;
+			    -o-transition: all;
+			    transition: all;
+
+			    max-height: 0;
+			    display: block;
+			    overflow: hidden;
+			    opacity: 0;
+			}
+			.dropdown.open .dropdown-menu {
+			    max-height: 300px;
+			    opacity: 1;
+          width: 190px;
+			}
+      .dropdown-header {
+        padding: 5px 10px 2px 10px;
+        font-weight: bold;
+      }
+			.dropdown-menu > li > a {
+				padding: 3px 11px;
+				color: #555555;
+				font-size: 11px;
+			}
+      .dropdown-menu .divider {
+        margin: 0;
+      }
+      .join-text {
+        margin-left: 138px;
+      }
+			.navbar {
+				cursor: pointer;
+  				margin-bottom: 0;
+			}
+			.navbar-default {
+				background-color: #ffffff;
+			}
+			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+				color: #ffffff;
+				background-color: #05538a;
+				cursor: pointer;
+			}
+			.navbar-brand {
+				padding: 10px 15px;
+			}
+			.navbar-brand img {
+				width: 125px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+      .navbar-form {
+        float: right;
+        padding: 0;
+      }
+			.navbar-nav {
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+      .navbar-nav>li>.dropdown-menu {
+        padding: 0;
+      }
+			#associate-login {
+				color: #777777;
+				transition: color .1s;
+			}
+			#associate-login:hover {
+				color: #05538a;
+			}
+			#join-tranont {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join-tranont:hover {
+				color: #777777;
+			}
+			#join {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join:hover {
+				color: #777777;
+			}
+      @media only screen and (max-width: 1200px) {
+        .join-text {
+          margin-left: 63px;
+        }
+        .nav > li > a {
+  				padding: 15px 5px;
+  			}
+      }
+      @media only screen and (max-width: 1000px) {
+        #join {
+          display: block;
+        }
+  			#join-tranont {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 991px) {
+        .join-text {
+          margin-left: 0;
+        }
+        .navbar-form {
+          width: 129px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-form {
+          width: auto;
+          margin: 0 15px 15px 15px;
+        }
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      p {
+        text-transform: uppercase;
+      }
+      .col-xs-4 {
+        padding: 0;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .exec-bio {
+        text-transform: uppercase;
+      }
+      .exec-bio h4 {
+        letter-spacing: 3px;
+        font-size: 24px;
+        margin-top: 0;
+      }
+      .exec-bio h6 {
+        letter-spacing: 2px;
+        font-size: 16px;
+      }
+      .exec-bio p {
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+      .exec-img {
+        text-align: center;
+      }
+      .exec-row {
+        margin-top: 3%;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      @media only screen and (max-width: 992px) {
+        .exec-bio h4 {
+          font-size: 21px;
+        }
+        .exec-bio h6 {
+          font-size: 12px;
+          margin-top: -1%;
+        }
+        .exec-bio p {
+          font-size: 12px;
+        }
+        .exec-img img {
+          width: 90%;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          margin-top: 22.5%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .exec-bio {
+          margin: 0 10px;
+        }
+        .exec-bio h4 {
+          margin-top: 3%;
+        }
+        .exec-bio p {
+          width: 95%;
+        }
+        .exec-img img {
+          width: 55%;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-4 h4 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+      @media only screen and (max-width: 399px) {
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 20%;
+          letter-spacing: 5px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 0;
+        }
+        .footer {
+          font-size: 9px;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+  		    </div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPANY</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="#">ASSOCIATES</a></li>
+    		      		<li><a href="#">FOUNDATION</a></li>
+    		      		<li><a href="#">INVESTOR RELATIONS</a></li>
+    		      		<li><a href="#">MEDIA KIT</a></li>
+    		      		<li><a href="#">EXECUTIVES</a></li>
+      		      	<li><a href="#">ABOUT US</a></li>
+      		      	<li><a href="#">SUPPORT</a></li>
+    		      		<li><a href="#">FAQ</a></li>
+    		      		<li><a href="#">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS</a>
+    		      	<ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="#">ONEVIEW</a></li>
+    		      		<li><a href="#">DEFEND</a></li>
+    		      		<li><a href="#">TAXBOT</a></li>
+    		      		<li><a href="#">LEGAL</a></li>
+    		      		<li><a href="#">CREDIT SERVICES</a></li>
+    		      		<li><a href="#">TAX SERVICES</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">BUSINESS TOOLS</li>
+    		      		<li><a href="#">MARKETING PLATFORM</a></li>
+    		      		<li><a href="#">ASSOCIATE CENTER</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPENSATION</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">COMPENSATION PLAN</a></li>
+    		      		<li><a href="#">WHY TRANONT</a></li>
+    		      		<li><a href="#">CURRENT PROMOTIONS</a></li>
+                  <li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">NATIONAL EVENTS</a></li>
+    		      		<li><a href="#">INTERNATIONAL EVENTS</a></li>
+    		      		<li><a href="#">REGIONAL EVENTS</a></li>
+    		      		<li><a href="#">EVENT CALENDAR</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li>
+    		      	<a class="join-text" href="#"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+    		      </li>
+    		      <li>
+    		      	<a href="#"><span id="associate-login"><strong>LOGIN</strong></span></a>
+    		      </li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn" id="srch-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Executives</h2>
+            <h4 class="top-img-text">Top Business Leaders</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_topmod_01.jpg" alt="Jake Spencer, Lorne Berry, Russ Losee, Scott Bland Standing Together in Front of a Cityscape"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_lorne_01.jpg" alt="Lorne Berry"/>
+          </div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Lorne Berry</strong></h4>
+            <h6><em>Founder &amp; Chief Executive Officer</em></h6>
+            <p>
+              Lorne Berry spent 10 years working with large real estate subdivisions in Utah prior to founding
+              Tranont. Most notably, he was a part of the Legacy Mountain cabin development where he helped improve
+              thousands of acres of property into a master planned community. He was an integral part of educating
+              clients in real estate and market investments. Among his significant former positions, he partnered
+              in restaurants and also spent many years working in international business helping organizations
+              expand into Asian markets. While working in the education arena, training and working with
+              individuals from many different walks of life, Mr. Berry saw a need in the marketplace. He found that
+              many individuals he worked with were struggling to get ahead and become financially independent in
+              this complex financial landscape—from this idea was born Tranont, a company that would address the
+              needs of the average middle income family and help them achieve sustainable financial wealth.
+            </p>
+            <p>
+              Mr. Berry lives in the Salt Lake area and has two beautiful children. In his free time, he enjoys
+              several outdoor recreational activities including snowboarding, golf and baseball.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_scott_01.jpg" alt="Scott Bland"/>
+          </div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Scott Bland</strong></h4>
+            <h6><em>President</em></h6>
+            <p>
+              With over 20 years of entrepreneurial education, Scott Bland is well skilled in coaching and training
+              individuals to run their small home businesses. His areas of expertise include, but are not limited
+              to, Marketing, Real Estate and Investment Management. Before helping form Tranont, Mr. Bland partnered
+              with a company that made over a billion dollars in sales. Because Mr. Bland has had personal
+              experience in the network marketing world prior to building Tranont, he knows firsthand the
+              difficulties that can come from being an associate and trying to build a small business. This is why
+              he is so excited about Tranont since it not only offers a way for individuals to build a book of
+              business, but it facilitates their financial growth by providing them with a variety of products that
+              make the process simple. In addition to his entrepreneurial training, Mr. Bland served in the military
+              for 10 years. As a Husband and a father of three beautiful children, he understands how important
+              family is. He also understands that the economic climate can put financial strain on middle class
+              families.
+            </p>
+            <p>
+              He, his wife Susie and their three kids live in the Salt Lake Area. Some of Scott’s interests include
+              sports, exploring the great outdoors and spending time with his family. Besides traveling with his
+              family, one thing that brings him great joy and motivation is meeting up with Tranont Associates and
+              learn about their “why” stories.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_russ_01.jpg" alt="Russ Losee"/>
+          </div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Russ Losee</strong></h4>
+            <h6><em>Co-Founder & Chief Operating Officer</em></h6>
+            <p>
+              Russ Losee spent 18 years working with a variety of high-tech startups that dealt with areas such as
+              business intelligence, content filtering, content acceleration, whistle blower hotlines, genealogy,
+              family and collaboration companies prior to partnering with Mr. Berry. Mr. Losee graduated from
+              Brigham Young University with a Bachelor’s Degree in International Marketing and Finance with an
+              emphasis in Chinese Studies. With his global perspective, the entrepreneurial-minded Mr. Losee is an
+              expert in business processes related to marketing, product management, sales, engineering, finance and
+              general operations. Mr. Losee oversees the general operations of Tranont and helps in the
+              collaboration of the executive vision and direction for the company. When asked what he likes most
+              about Tranont, Mr. Losee stated that he loves providing individuals with financial education to help
+              them realize the many products and services that are available to help them achieve their goals in
+              life.
+            </p>
+            <p>
+              Mr. Losee has been married to his wife Jaime for 19 years and they live in Utah County along with
+              their three beautiful children. For fun, Russ enjoys traveling to baseball games all around the
+              country. He has attended games at all but seven baseball stadiums. He also enjoys water skiing and
+              boating with his family.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_jake_01.jpg" alt="Jake Spencer"/>
+          </div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Jake Spencer</strong></h4>
+            <h6><em>EVP, Sales and Field Operations</em></h6>
+            <p>
+              Jake Spencer is the newest member of the Tranont executive team. As vice president of Tranont, he is
+              backed by 11 years of industry experience and has a proven track record of direct sales success. Mr.
+              Spencer chose to join Tranont because he believed the company would become a critical part of changing
+              and shaping the financial and direct sales industries. Since coming on board, he has inspired
+              associates through empowering training sessions and has assisted in building hundreds of teams. His
+              vision for Tranont continues to grow along with the number of satisfied associates. Ultimately, he
+              would like to see teams of tens of thousands of people formed and make Tranont the measuring stick for
+              other direct sales companies. His unique role within Tranont is his focus on developing current and
+              future markets and recognizing and strengthening the leaders who will build those markets.
+            </p>
+            <p>
+              Mr. Spencer lives in the Salt Lake Area along with his wife Sarah and four beautiful children. He
+              loves golfing and spending time with his family at their cabin.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2">
+            <span class="footer-address">
+              8871 S. Sandy Pkwy<br/>
+              Suite 200<br/>
+              Sandy, UT 84070
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              <strong>Toll-Free:</strong> 800.973.3715<br/>
+              <strong>Fax:</strong> 801.384.7143<br/>
+              <strong>Email:</strong> support@tranont.com
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              Monday-Friday: 8am-6pm<br/>
+              Closed Saturday & Sunday<br/>
+              <em>Times in Mountain Time</em>
+            </span>
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3">
+            <strong>Stay Connected:</strong><br/>
+            <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+
+	    <script>
+        // open navbar dropdown menu on hover instead of on click
+	    	$(function(){
+			    $('.dropdown').hover(function() {
+			        $(this).addClass('open');
+			    },
+			    function() {
+			        $(this).removeClass('open');
+			    });
+		    });
+        // toggle class depending on browser width
+        $(function(){
+          var $window = $(window),
+              $img = $('.exec-img');
+
+          $window.resize(function resize() {
+            if ($window.width() < 535) {
+              $img.removeClass('col-xs-4');
+              return $img.addClass('col-xs-12');
+            }
+            $img.removeClass('col-xs-12');
+            $img.addClass('col-xs-4');
+          }).trigger('resize');
+        });
+
+        $(function(){
+          var $window = $(window),
+              $text = $('.exec-bio');
+
+          $window.resize(function resize() {
+            if ($window.width() < 535) {
+              $text.removeClass('col-xs-8');
+              return $text.addClass('col-xs-12');
+            }
+            $text.removeClass('col-xs-12');
+            $text.addClass('col-xs-8');
+          }).trigger('resize');
+        });
+	    </script>
+    </body>
+</html>
