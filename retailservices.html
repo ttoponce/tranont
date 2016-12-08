@@ -1,0 +1,984 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>Tranont | Compensation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/tranont_favicon.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+      /**** BEGIN Navbar Stylings ****/
+			.dropdown .dropdown-menu {
+			    -webkit-transition: all;
+			    -moz-transition: all;
+			    -ms-transition: all;
+			    -o-transition: all;
+			    transition: all;
+
+			    max-height: 0;
+			    display: block;
+			    overflow: hidden;
+			    opacity: 0;
+			}
+			.dropdown.open .dropdown-menu {
+			    max-height: 300px;
+			    opacity: 1;
+          width: 190px;
+			}
+      .dropdown-header {
+        padding: 5px 10px 2px 10px;
+        font-weight: bold;
+      }
+			.dropdown-menu > li > a {
+				padding: 3px 11px;
+				color: #555555;
+				font-size: 11px;
+			}
+      .dropdown-menu .divider {
+        margin: 0;
+      }
+      .join-text {
+        margin-left: 138px;
+      }
+			.navbar {
+				cursor: pointer;
+  				margin-bottom: 0;
+			}
+			.navbar-default {
+				background-color: #ffffff;
+			}
+			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+				color: #ffffff;
+				background-color: #05538a;
+				cursor: pointer;
+			}
+			.navbar-brand {
+				padding: 10px 15px;
+			}
+			.navbar-brand img {
+				width: 125px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+      .navbar-form {
+        float: right;
+        padding: 0;
+      }
+			.navbar-nav {
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+      .navbar-nav>li>.dropdown-menu {
+        padding: 0;
+      }
+			#associate-login {
+				color: #777777;
+				transition: color .1s;
+			}
+			#associate-login:hover {
+				color: #05538a;
+			}
+			#join-tranont {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join-tranont:hover {
+				color: #777777;
+			}
+			#join {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join:hover {
+				color: #777777;
+			}
+      @media only screen and (max-width: 1200px) {
+        .join-text {
+          margin-left: 63px;
+        }
+        .nav > li > a {
+  				padding: 15px 5px;
+  			}
+      }
+      @media only screen and (max-width: 1000px) {
+        #join {
+          display: block;
+        }
+  			#join-tranont {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 991px) {
+        .join-text {
+          margin-left: 0;
+        }
+        .navbar-form {
+          width: 129px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-form {
+          width: auto;
+          margin: 0 15px 15px 15px;
+        }
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      .bottom-row {
+        margin: 3% 0 3% 0;
+      }
+      .blue-links {
+        font-weight: bold;
+        color: #05538a;
+      }
+      .blue-links:hover {
+        color: #337ab7;
+      }
+      .btn-info {
+        color: #05538a;
+        background-color: #ffffff;
+        border: 2px solid #05538a;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 0;
+        position: absolute;
+        padding: 6.5px 12px;
+        font-weight: bold;
+      }
+      .btn-info:hover {
+        background-color: #05538a;
+        color: #ffffff;
+        border-color: #05538a;
+      }
+      .center {
+        text-align: center;
+        padding: 0;
+      }
+      .col-xs-3 .glyphicon {
+        height: 125px;
+        width: 125px;
+        border-radius: 100px;
+        border: 10px solid #05538a;
+        background-color: #ffffff;
+      }
+      .col-xs-3 .glyphicon:hover {
+        border: none;
+        background-color: #05538a;
+      }
+      .col-xs-3 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 5%;
+      }
+      .col-xs-4 .glyphicon {
+        height: 125px;
+        width: 125px;
+        border-radius: 100px;
+        border: 10px solid #05538a;
+        background-color: #ffffff;
+      }
+      .col-xs-4 .glyphicon:hover {
+        border: none;
+        background-color: #05538a;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .col-xs-12 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 iframe {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .background-title {
+        color: #888b8d;
+      }
+      .background-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .div-title {
+        margin: 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        font-size: 16px;
+      }
+      .dropdown-text {
+        margin: 0 2% 1% 2%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .dropdown-text-bottom {
+        margin: -2% 2% 3% 2%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .filler-text {
+        font-size: 12px;
+        color: #444444;
+        margin-left: 12%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-calendar {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 3px;
+      }
+      .glyphicon-calendar:hover {
+        color: #ffffff;
+      }
+      .glyphicon-plane {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 0 5px 0 1px;
+      }
+      .glyphicon-plane:hover {
+        color: #ffffff;
+      }
+      .glyphicon-star {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 5px;
+      }
+      .glyphicon-star:hover {
+        color: #ffffff;
+      }
+      .glyphicon-usd {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 5px 5px 0 0;
+      }
+      .glyphicon-usd:hover {
+        color: #ffffff;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .international-event-img {
+        width: 100%;
+      }
+      .legal-title {
+        color: #888b8d;
+      }
+      .legal-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .merchant-title {
+        color: #888b8d;
+      }
+      .merchant-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .panel-body {
+        border: none;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .panel-body h4 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .panel-body h5 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .panel-body h6 {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+      .panel-default {
+        border: none;
+        letter-spacing: 2px;
+      }
+      .panel-default>.panel-heading {
+        background-color: #05538a;
+        color: #ffffff;
+        border: none;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        border-radius: 0;
+        padding: 10px 15px 20px 15px;
+      }
+      .panel-heading h4 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+      .plan-title {
+        color: #888b8d;
+      }
+      .plan-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .protection-title {
+        color: #888b8d;
+      }
+      .protection-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .rs-row {
+        margin-top: 4%;
+      }
+      .solar-title {
+        color: #888b8d;
+      }
+      .solar-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .sub-nav .col-xs-4 {
+        border: 2px solid #05538a;
+        background-color: #ffffff;
+        color: #05538a;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-4:hover {
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-4 p {
+        margin: 0;
+      }
+      .telephones-title {
+        color: #888b8d;
+      }
+      .telephones-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      .tv-title {
+        color: #888b8d;
+      }
+      .tv-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
+      #bottom-panel {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 20px 0 40px 0;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      #top-panel {
+        margin-top: 4%;
+      }
+      @media only screen and (max-width: 1000px) {
+        .sub-nav .col-xs-4 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-3 h4 {
+          font-size: 16px;
+        }
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .col-xs-3 h4 {
+          font-size: 14px;
+        }
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-3 h4 {
+          font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+        .col-xs-4 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .glyphicon-usd {
+          font-size: 38px;
+        }
+        .glyphicon-calendar {
+          font-size: 38px;
+        }
+        .glyphicon-plane {
+          font-size: 38px;
+        }
+        .glyphicon-star {
+          font-size: 38px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+          font-size: 10px;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-3 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 75px;
+          width: 75px;
+          border: 5px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-4 .glyphicon {
+          height: 75px;
+          width: 75px;
+          border: 5px solid #05538a;
+        }
+        .col-xs-12 h4 {
+          font-size: 14px;
+        }
+        .col-xs-12 li {
+          font-size: 10px;
+        }
+        .col-xs-12 p {
+          font-size: 12px;
+        }
+        .glyphicon-usd {
+          font-size: 32px;
+        }
+        .glyphicon-calendar {
+          font-size: 32px;
+        }
+        .glyphicon-plane {
+          font-size: 32px;
+        }
+        .glyphicon-star {
+          font-size: 32px;
+        }
+        .sub-nav .col-xs-4 {
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 25px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 0;
+        }
+        .footer {
+          font-size: 9px;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+  		    </div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPANY</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="#">ASSOCIATES</a></li>
+    		      		<li><a href="#">FOUNDATION</a></li>
+    		      		<li><a href="#">INVESTOR RELATIONS</a></li>
+    		      		<li><a href="#">MEDIA KIT</a></li>
+    		      		<li><a href="#">EXECUTIVES</a></li>
+      		      	<li><a href="#">ABOUT US</a></li>
+      		      	<li><a href="#">SUPPORT</a></li>
+    		      		<li><a href="#">FAQ</a></li>
+    		      		<li><a href="#">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS</a>
+    		      	<ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="#">ONEVIEW</a></li>
+    		      		<li><a href="#">DEFEND</a></li>
+    		      		<li><a href="#">TAXBOT</a></li>
+    		      		<li><a href="#">LEGAL</a></li>
+    		      		<li><a href="#">CREDIT SERVICES</a></li>
+    		      		<li><a href="#">TAX SERVICES</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">BUSINESS TOOLS</li>
+    		      		<li><a href="#">MARKETING PLATFORM</a></li>
+    		      		<li><a href="#">ASSOCIATE CENTER</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPENSATION</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">COMPENSATION PLAN</a></li>
+    		      		<li><a href="#">WHY TRANONT</a></li>
+    		      		<li><a href="#">CURRENT PROMOTIONS</a></li>
+                  <li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">NATIONAL EVENTS</a></li>
+    		      		<li><a href="#">INTERNATIONAL EVENTS</a></li>
+    		      		<li><a href="#">REGIONAL EVENTS</a></li>
+    		      		<li><a href="#">EVENT CALENDAR</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li>
+    		      	<a class="join-text" href="#"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+    		      </li>
+    		      <li>
+    		      	<a href="#"><span id="associate-login"><strong>LOGIN</strong></span></a>
+    		      </li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn" id="srch-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Retail Services</h2>
+            <h4 class="top-img-text">Refer Top Products</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Compensation_topmod_01.jpg" alt="Some Jeeps Lined Up Side by Side"/>
+          </div>
+        </div>
+        <div class="row rs-row">
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd merchant-button" data-toggle="collapse" data-target="#merchant"></button>
+            <h4 class="merchant-title">Merchant Processing</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd tv-button" data-toggle="collapse" data-target="#tv"></button>
+            <h4 class="tv-title">Satellite TV</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd protection-button" data-toggle="collapse" data-target="#protection"></button>
+            <h4 class="protection-title">Virus & Identity Protection</h4>
+          </div>
+          <div class="col-xs-3 center">
+            <button class="glyphicon glyphicon-usd telephones-button" data-toggle="collapse" data-target="#telephones"></button>
+            <h4 class="telephones-title">Business Telephones</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="merchant" class="collapse dropdown-text">
+              <h4>Merchant Processing</h4>
+              <p>
+                Any business that accepts credit card payments needs a merchant processing service to process the
+                transaction. Tranont partners with top merchant processing companies to allow you to refer those
+                services and receive a commission from every transaction.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="tv" class="collapse dropdown-text">
+              <h4>Satellite TV</h4>
+              <p>
+                80% of US households and 82% of Canadian households have some form of TV subscription. Tranont
+                gives you the opportunity to refer satellite TV to those households and receive a commission for each
+                subscription.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="protection" class="collapse dropdown-text">
+              <h4>Virus & Identity Protection</h4>
+              <p>
+                In an ever-increasing online world, information is stolen daily and viruses are rampant. Tranont allows
+                you to refer virus and identity protection to others while receiving a commission for each subscription.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="telephones" class="collapse dropdown-text">
+              <h4>Business Telephones</h4>
+              <p>
+                Cell phones work great for individuals, but businesses still need telephone systems to function. Tranont
+                partners with top-rated VoIP business phone providers and compensates you for referrals that become customers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row rs-row">
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-usd legal-button" data-toggle="collapse" data-target="#legal"></button>
+            <h4 class="legal-title">Legal Services</h4>
+          </div>
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-usd background-button" data-toggle="collapse" data-target="#background"></button>
+            <h4 class="background-title">Background Check Services</h4>
+          </div>
+          <div class="col-xs-4 center">
+            <button class="glyphicon glyphicon-usd solar-button" data-toggle="collapse" data-target="#solar"></button>
+            <h4 class="solar-title">Solar</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="legal" class="collapse dropdown-text">
+              <h4>Legal Services</h4>
+              <p>
+                Sometimes people need legal help and it isn’t always expected. Tranont has partnered with law firm
+                across the US and Canada who specialize in a broad range of areas to make referrals easy for you and
+                allow you to receive a commission from purchased products and services.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="background" class="collapse dropdown-text">
+              <h4>Background Check Services</h4>
+              <p>
+                Whether for employment reasons or to rent an apartment, background checks are conducted every day.
+                In both situations, selecting the wrong person can be devastating to the bottom line. Tranont partners
+                with top background check companies to give you the opportunity to refer these services to businesses
+                who may benefit from them and receive a commission based on the size of the account.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div id="solar" class="collapse dropdown-text">
+              <h4>Solar</h4>
+              <p>
+                Solar electric power reduces emissions and saves money overall. Tranont partners with leading solar
+                companies to provide you the opportunity to refer this beneficial services and receive an up-front
+                commission based on the solar system’s installation price.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2">
+            <span class="footer-address">
+              8871 S. Sandy Pkwy<br/>
+              Suite 200<br/>
+              Sandy, UT 84070
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              <strong>Toll-Free:</strong> 800.973.3715<br/>
+              <strong>Fax:</strong> 801.384.7143<br/>
+              <strong>Email:</strong> support@tranont.com
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              Monday-Friday: 8am-6pm<br/>
+              Closed Saturday & Sunday<br/>
+              <em>Times in Mountain Time</em>
+            </span>
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3">
+            <strong>Stay Connected:</strong><br/>
+            <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+
+	    <script>
+        // open navbar dropdown menu on hover instead of on click
+	    	$(function(){
+			    $('.dropdown').hover(function() {
+			        $(this).addClass('open');
+			    },
+			    function() {
+			        $(this).removeClass('open');
+			    });
+		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.collapse').on('show.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-right").removeClass("glyphicon-triangle-right").addClass("glyphicon-triangle-bottom");
+        }).on('hide.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
+        });
+        // color toggle for compensation plan  and current promotion button titles
+        $(".merchant-button").hover(function() {
+          $(".merchant-title").toggleClass("merchant-title-color");
+        });
+        $(".tv-button").hover(function() {
+          $(".tv-title").toggleClass("tv-title-color");
+        });
+        $(".protection-button").hover(function() {
+          $(".protection-title").toggleClass("protection-title-color");
+        });
+        $(".telephones-button").hover(function() {
+          $(".telephones-title").toggleClass("telephones-title-color");
+        });
+        $(".legal-button").hover(function() {
+          $(".legal-title").toggleClass("legal-title-color");
+        });
+        $(".background-button").hover(function() {
+          $(".background-title").toggleClass("background-title-color");
+        });
+        $(".solar-button").hover(function() {
+          $(".solar-title").toggleClass("solar-title-color");
+        });
+	    </script>
+    </body>
+</html>
