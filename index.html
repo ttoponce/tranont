@@ -1,0 +1,1270 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>Tranont | Change Life</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+      /**** BEGIN Navbar Stylings ****/
+			.dropdown .dropdown-menu {
+			    -webkit-transition: all;
+			    -moz-transition: all;
+			    -ms-transition: all;
+			    -o-transition: all;
+			    transition: all;
+
+			    max-height: 0;
+			    display: block;
+			    overflow: hidden;
+			    opacity: 0;
+			}
+			.dropdown.open .dropdown-menu {
+			    max-height: 300px;
+			    opacity: 1;
+          width: 190px;
+			}
+      .dropdown-header {
+        padding: 5px 10px 2px 10px;
+        font-weight: bold;
+      }
+			.dropdown-menu > li > a {
+				padding: 3px 11px;
+				color: #555555;
+				font-size: 11px;
+			}
+      .dropdown-menu .divider {
+        margin: 0;
+      }
+      .join-text {
+        margin-left: 138px;
+      }
+			.navbar {
+				cursor: pointer;
+  				margin-bottom: 0;
+			}
+			.navbar-default {
+				background-color: #ffffff;
+			}
+			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+				color: #ffffff;
+				background-color: #05538a;
+				cursor: pointer;
+			}
+			.navbar-brand {
+				padding: 10px 15px;
+			}
+			.navbar-brand img {
+				width: 125px;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}
+      .navbar-form {
+        float: right;
+        padding: 0;
+      }
+			.navbar-nav {
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+      .navbar-nav>li>.dropdown-menu {
+        padding: 0;
+      }
+			#associate-login {
+				color: #777777;
+				transition: color .1s;
+			}
+			#associate-login:hover {
+				color: #05538a;
+			}
+			#join-tranont {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join-tranont:hover {
+				color: #777777;
+			}
+			#join {
+				color: #05538a;
+				transition: color .1s;
+			}
+			#join:hover {
+				color: #777777;
+			}
+      @media only screen and (max-width: 1200px) {
+        .join-text {
+          margin-left: 63px;
+        }
+        .nav > li > a {
+  				padding: 15px 5px;
+  			}
+      }
+      @media only screen and (max-width: 1000px) {
+        #join {
+          display: block;
+        }
+  			#join-tranont {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 991px) {
+        .join-text {
+          margin-left: 0;
+        }
+        .navbar-form {
+          width: 129px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      @media only screen and (max-width: 767px) {
+        .navbar-form {
+          width: auto;
+          margin: 0 15px 15px 15px;
+        }
+  			#join-tranont {
+  				display: block;
+  			}
+  			#join {
+  				display: none;
+  			}
+      }
+      /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      .bottom-mods {
+        background-color: #05538a;
+        color: #ffffff;
+        text-align: center;
+        padding: 30px 20px 20px 20px;
+        height: 230px;
+        max-height: 230px;
+        overflow: hidden;
+      }
+      .bottom-mods h6 {
+        font-size: 16px;
+      }
+      .bottom-mods p {
+        padding: 10px 0;
+      }
+      .bottom-mods-hr1 {
+        border-color: #ffffff;
+        margin-top: 0;
+      }
+      .btn-events {
+        position: absolute;
+        background-color: transparent !important;
+        color: #ffffff !important;
+        border-color: #ffffff !important;
+        border-radius: 50px;
+        top: 115px;
+        left: 515px;
+      }
+      .btn-events:hover {
+        background-color: #ffffff !important;
+        color: #05538a !important;
+      }
+      .btn-page {
+        border-radius: 50px;
+        margin-top: 10px;
+      }
+      .btn-panel {
+        position: absolute;
+        margin-top: 315px;
+        left: 30px;
+        background-color: transparent !important;
+      }
+      .btn-page:hover {
+        background-color: #000001 !important;
+        color: #ffffff !important;
+      }
+      .clickable {
+        cursor: pointer;
+      }
+      .company {
+        position: absolute;
+        padding: 20px 30px 0 30px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .company-heading:hover {
+        background-color: #05538a !important;
+      }
+      .core {
+        position: absolute;
+        padding: 20px 30px 0 30px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .core-heading:hover {
+        background-color: #05538a !important;
+      }
+      .events-banner {
+        color: #ffffff;
+      }
+      .events-banner img {
+        width: 100%;
+        margin-bottom: 55px;
+      }
+      .events-banner .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+        top: -10px;
+      }
+      .events-banner .heading {
+        font-size: 12px;
+        position: absolute;
+        top: 35px;
+        left: 370px;
+      }
+      .events-banner .heading2 {
+        font-size: 50px;
+        position: absolute;
+        top: 40px;
+        left: 380px;
+        font-weight: bold;
+      }
+      .events-banner .heading2-left {
+        position: absolute;
+        font-size: 12px;
+        top: 128px;
+        left: 328px;
+      }
+      .events-banner .heading2-right {
+        position: absolute;
+        font-size: 12px;
+        top: 115px;
+        left: 700px;
+        text-align: center;
+        line-height: 15px;
+      }
+      .events-banner-text {
+        font-weight: bold;
+        position: absolute;
+        top: 46px;
+        left: 70px;
+        line-height: 31px;
+        font-size: 24px;
+      }
+      .events-banner-text .bottom-line {
+        font-size: 31.5px;
+        margin-left: -3px;
+      }
+      .events-banner-text .header {
+        font-weight: 200;
+        letter-spacing: 10.5px;
+        font-size: 18px;
+      }
+      .events-hr1 {
+        border-color: #ffffff;
+        position: absolute;
+        top: 25px;
+        padding: 0px 122px;
+        left: 200px;
+        margin-left: -130px;
+      }
+      .events-hr2 {
+        border-color: #ffffff;
+        position: absolute;
+        top: 130px;
+        left: 200px;
+        padding: 0 122px;
+        margin-left: -130px;
+      }
+      .family .col-xs-12 {
+        padding: 0;
+        margin-top: -55px;
+      }
+      .family img {
+        width: 100%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0px;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0px;
+      }
+      .jeep {
+        margin-bottom: -50px;
+      }
+      .jeep img {
+        margin-bottom: -15px;
+        width: 195%;
+        z-index: -1;
+      }
+      .jeep-hr-top {
+        border-color: #000001;
+        margin: 50px 0 40px 0;
+      }
+      .jeep-hr-bottom {
+        border-color: #000001;
+        margin: 50px 0;
+      }
+      .jeep-text {
+        margin: 75px 25px 0 0;
+        text-align: center;
+      }
+      .jeep-text h2 {
+        font-weight: bold;
+        font-size: 40px
+      }
+      .jeep-text h6 {
+        font-weight: 200;
+        font-size: 14px;
+      }
+      .main {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+      .main .btn-main {
+        border-radius: 50px;
+      }
+      .main .btn-default {
+        border: 2px solid #000001;
+        background-color: #ffffff;
+        color: #000001;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px 15px;
+        letter-spacing: 3px;
+      }
+      .main .btn-main:hover {
+        border: 2px solid #ffffff;
+        background-color: #000001;
+        color: #ffffff;
+      }
+      .mission-text {
+        margin-top: 40px;
+        padding-bottom: 20px;
+      }
+      .panel-body {
+        padding: 0;
+      }
+      .panel-body img {
+        width: 100%;
+        z-index: -1;
+      }
+      .panel-default {
+        border: none;
+      }
+      .panel-default>.panel-heading {
+        background-color: #888b8d;
+        color: #ffffff;
+        border-radius: 0;
+      }
+      .panel-group {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+        background-color: #05538a;
+        color: #000001;
+      }
+      .panel-title {
+        text-align: center;
+      }
+      .process {
+        position: absolute;
+        padding: 20px 30px 0 30px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .process-heading:hover {
+        background-color: #05538a !important;
+      }
+      .top-row {
+        margin-top: 50px;
+      }
+      .top-section-video {
+        padding: 0;
+        z-index: -1;
+      }
+      .top-section-text {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        text-align: center;
+      }
+      .top-section-text h6 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 200;
+        color: #ffffff;
+      }
+      .top-section-text h2 {
+        color: #ffffff;
+        line-height: 40px;
+        font-size: 28.5px;
+      }
+      .top-section-text .btn-default {
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 30px;
+        padding: 12px 12px 10px 20px;
+      }
+      .top-section-text .btn-default:hover {
+        border: 2px solid #ffffff;
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .top-video {
+        width: 100%;
+      }
+      @media only screen and (max-width: 1200px) {
+        .bottom-mods p {
+          padding: 0;
+        }
+        .btn-events {
+          top: 85px;
+          left: 420px;
+        }
+        .btn-panel {
+          margin-top: 260px;
+        }
+        .company {
+          font-size: 16px;
+        }
+        .core {
+          font-size: 16px;
+        }
+        .events-banner .heading {
+          top: 15px;
+          left: 261px;
+        }
+        .events-banner .heading2 {
+          top: 20px;
+          left: 275px;
+        }
+        .events-banner .heading2-left {
+          top: 128px;
+          left: 260px;
+        }
+        .events-banner .heading2-right {
+          top: 115px;
+          left: 551px;
+        }
+        .events-banner-text {
+          top: 30px;
+          left: 32px;
+          font-size: 20.5px;
+          letter-spacing: 4px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 27px;
+        }
+        .events-banner-text .header {
+          font-size: 16px;
+          letter-spacing: 9px;
+        }
+        .events-hr1 {
+          padding: 0 108px;
+          top: 8px;
+          left: 160px;
+        }
+        .events-hr2 {
+          padding: 0 108px;
+          top: 112px;
+          left: 160px;
+        }
+        .jeep-text {
+          margin: 50px 25px 55px 0;
+        }
+        .mission-text {
+          padding-bottom: 40px;
+        }
+        .process {
+          font-size: 16px;
+        }
+        .top-section-text {
+          top: 165px;
+        }
+        #dissappearing-br {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .bottom-mods h6 {
+          font-size: 12px;
+        }
+        .bottom-mods p {
+          font-size: 10px;
+        }
+        .btn-panel {
+          margin-top: 196px;
+          margin-left: -12px;
+        }
+        .company {
+          font-size: 14px;
+          padding: 10px 15px 0 20px;
+          line-height: 17px;
+          letter-spacing: 3px;
+        }
+        .core {
+          font-size: 14px;
+          padding: 10px 15px 0 20px;
+          line-height: 17px;
+          letter-spacing: 3px;
+        }
+        .jeep img {
+          width: 235%;
+        }
+        .main .btn-default {
+          padding: 5px 10px;
+          font-size: 10px;
+          letter-spacing: 2px;
+        }
+        .mission-text {
+          padding-bottom: 22px;
+        }
+        .process {
+          font-size: 14px;
+          padding: 10px 15px 0 20px;
+          line-height: 17px;
+          letter-spacing: 3px;
+        }
+        .top-section-text {
+          top: 105px;
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        .bottom-mods p {
+          font-size: 12px;
+        }
+        .btn-events {
+          top: 70px;
+          left: 228px;
+        }
+        .events-banner .heading {
+          font-size: 9px;
+          top: 8px;
+          left: 208px;
+          letter-spacing: 2.5px;
+        }
+        .events-banner .heading2 {
+          top: 15px;
+          left: 207px;
+          font-size: 34px;
+        }
+        .events-banner .heading2-left {
+          top: 58px;
+          left: 386px;
+          letter-spacing: 3px;
+          font-size: 10px;
+        }
+        .events-banner .heading2-right {
+          top: 77px;
+          left: 387px;
+          letter-spacing: 2.5px;
+          font-size: 9px;
+          line-height: 12px;
+        }
+        .events-banner-text {
+          top: 25px;
+          left: 22px;
+          font-size: 15px;
+          letter-spacing: 4.25px;
+          line-height: 23px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 20.5px;
+        }
+        .events-banner-text .header {
+          font-size: 13.5px;
+          letter-spacing: 7px;
+        }
+        .events-hr1 {
+          padding: 0 88px;
+          top: 0;
+          left: 150px;
+        }
+        .events-hr2 {
+          padding: 0 88px;
+          top: 83px;
+          left: 150px;
+        }
+      }
+      @media only screen and (max-width: 730px) {
+        .btn-panel {
+          margin-top: 170px;
+        }
+        .btn-events {
+          top: 64px;
+          left: 205px;
+        }
+        .company {
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .core {
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .events-banner .heading {
+          font-size: 8px;
+          left: 180px;
+        }
+        .events-banner .heading2 {
+          left: 192px;
+          font-size: 30px;
+        }
+        .events-banner .heading2-left {
+          top: 55px;
+          left: 361px;
+          font-size: 9px;
+        }
+        .events-banner .heading2-right {
+          top: 70px;
+          left: 358px;
+          line-height: 11px;
+        }
+        .events-banner-text {
+          top: 26px;
+          font-size: 11px;
+          line-height: 17px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 15.75px;
+        }
+        .events-banner-text .header {
+          font-size: 9px;
+        }
+        .events-hr1 {
+          padding: 0 73px;
+        }
+        .events-hr2 {
+          padding: 0 73px;
+          top: 66px;
+        }
+        .jeep-text h2 {
+          font-size: 34px;
+        }
+        .jeep img {
+          width: 235%;
+        }
+        .process {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      @media only screen and (max-width: 660px) {
+        .bottom-mods {
+          padding: 20px 10px 10px 20px;
+        }
+        .btn-panel {
+          margin-top: 84px;
+          margin-left: -21px;
+        }
+        .btn-events {
+          top: 59px;
+          left: 175px;
+          font-size: 8px !important;
+          padding: 4px 7px !important;
+        }
+        .events-banner .heading {
+          display: none;
+        }
+        .events-banner .heading2 {
+          font-size: 20px;
+          top: 10px;
+        }
+        .events-banner .heading2-left {
+          top: 40px;
+          left: 290px;
+        }
+        .events-banner .heading2-right {
+          top: 54px;
+          left: 286px;
+        }
+        .events-banner-text {
+          top: 21px;
+        }
+        .events-hr1 {
+          top: -5px;
+        }
+        .events-hr2 {
+          top: 61px;
+        }
+        .jeep img {
+          width: 265%;
+          margin-left: -25px;
+          margin-top: -10px;
+        }
+        .jeep-hr-bottom {
+          margin: 40px 0;
+        }
+        .jeep-hr-top {
+          margin: 30px 0 10px 0;
+        }
+        .jeep-text {
+          margin: 15px 25px 15px 0;
+        }
+        .jeep-text h2 {
+          font-size: 18px;
+        }
+        .jeep-text h6 {
+          font-size: 10px;
+        }
+        .mission-text {
+          padding-bottom: 36px;
+        }
+        .panel-title {
+          font-size: 12px;
+        }
+        .top-section-text {
+          top: 50px;
+        }
+        .top-section-text h6 {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        .top-section-text h2 {
+          font-size: 25px;
+          line-height: 38px;
+          margin-bottom: 0;
+        }
+        #company-text {
+          display: none;
+        }
+        #core-text {
+          display: none;
+        }
+        #process-text {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 565px) {
+        .bottom-mods p {
+          padding-top: 10px;
+        }
+        .bottom-mods-hr1 {
+          margin-bottom: 0;
+        }
+        .bottom-mods-hr2 {
+          margin: 0;
+        }
+        .btn-events {
+          top: 50px;
+          left: 190px;
+        }
+        .events-banner .heading {
+          font-size: 8px;
+          left: 180px;
+        }
+        .events-banner .heading2 {
+          left: 155px;
+          font-size: 17px;
+          top: 5px;
+        }
+        .events-banner .heading2-left {
+          top: 32px;
+          left: 180px;
+        }
+        .events-banner .heading2-right {
+          display: none;
+        }
+        .events-banner-text {
+          top: 19px;
+          left: 12px;
+          font-size: 9px;
+          line-height: 14px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 13.25px;
+        }
+        .events-banner-text .header {
+          font-size: 8px;
+          letter-spacing: 6px;
+        }
+        .events-hr1 {
+          top: -5px;
+          left: 140px;
+          padding: 0 63px;
+        }
+        .events-hr2 {
+          top: 46px;
+          left: 140px;
+          padding: 0 63px;
+        }
+        .panel-title {
+          font-size: 10px;
+        }
+        .jeep img {
+          margin-top: 10px;
+        }
+        .top-section-text {
+          top: 55px;
+        }
+        .top-section-text h6 {
+          display: none;
+        }
+        #company {
+          display: none;
+        }
+        #core {
+          display: none;
+        }
+        #process {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 473px) {
+        .bottom-mods p {
+          font-size: 11px;
+        }
+        .btn-events {
+          top: 35px;
+          left: 155px;
+        }
+        .events-banner .heading {
+          font-size: 8px;
+          left: 180px;
+        }
+        .events-banner .heading2 {
+          left: 123px;
+          font-size: 15px;
+          top: 2px;
+        }
+        .events-banner .heading2-left {
+          top: 21px;
+          left: 141px;
+        }
+        .events-banner .heading2-right {
+          display: none;
+        }
+        .events-banner-text {
+          top: 14px;
+          font-size: 8px;
+          line-height: 12px;
+          letter-spacing: 3px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 11.50px;
+        }
+        .events-banner-text .header {
+          letter-spacing: 4px;
+        }
+        .events-hr1 {
+          top: -10px;
+          padding: 0 52px;
+        }
+        .events-hr2 {
+          top: 34px;
+          padding: 0 52px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        .bottom-mods p {
+          font-size: 9px;
+        }
+        .btn-events {
+          top: 33px;
+          left: 145px;
+        }
+        .btn-panel {
+          margin-top: 45px;
+          margin-left: -25.5px;
+        }
+        .events-banner .heading2 {
+          font-size: 13px;
+        }
+        .events-banner .heading2-left {
+          top: 19px;
+          left: 131px;
+        }
+        .events-banner-text {
+          top: 12px;
+        }
+        .events-banner-text .bottom-line {
+          font-size: 11.50px;
+        }
+        .events-banner-text .header {
+          letter-spacing: 4px;
+        }
+        .events-hr1 {
+          top: -12px;
+        }
+        .events-hr2 {
+          top: 32px;
+        }
+        .panel-title {
+          font-size: 8px;
+          letter-spacing: 3px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 25px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 0;
+        }
+        .footer {
+          font-size: 9px;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="http://www.tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+  		    </div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPANY</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">ASSOCIATES</a></li>
+    		      		<li><a href="#">FOUNDATION</a></li>
+    		      		<li><a href="#">INVESTOR RELATIONS</a></li>
+    		      		<li><a href="#">MEDIA KIT</a></li>
+    		      		<li><a href="#">EXECUTIVES</a></li>
+      		      	<li><a href="#">ABOUT US</a></li>
+      		      	<li><a href="#">SUPPORT</a></li>
+    		      		<li><a href="#">FAQ</a></li>
+    		      		<li><a href="#">BLOG</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS</a>
+    		      	<ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="#">ONEVIEW</a></li>
+    		      		<li><a href="#">DEFEND</a></li>
+    		      		<li><a href="#">TAXBOT</a></li>
+    		      		<li><a href="#">LEGAL</a></li>
+    		      		<li><a href="#">CREDIT SERVICES</a></li>
+    		      		<li><a href="#">TAX SERVICES</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">BUSINESS TOOLS</li>
+    		      		<li><a href="#">MARKETING PLATFORM</a></li>
+    		      		<li><a href="#">ASSOCIATE CENTER</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPENSATION</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="#">COMPENSATION PLAN</a></li>
+    		      		<li><a href="#">WHY TRANONT</a></li>
+    		      		<li><a href="#">PROMOTIONS</a></li>
+                  <li><a href="#">RETAIL SERVICES</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown">
+    		      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS</a>
+    		      	<ul class="dropdown-menu">
+    		      		<li><a href="#">NATIONAL EVENTS</a></li>
+    		      		<li><a href="#">INTERNATIONAL EVENTS</a></li>
+    		      		<li><a href="#">REGIONAL EVENTS</a></li>
+    		      		<li><a href="#">EVENT CALENDAR</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li>
+    		      	<a class="join-text" href="#"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+    		      </li>
+    		      <li>
+    		      	<a href="#"><span id="associate-login"><strong>LOGIN</strong></span></a>
+    		      </li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                  <div class="input-group-btn" id="srch-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row top-row">
+          <div class="col-xs-12 top-section-text">
+            <h6>Financial Management</h6>
+            <h6>Superior Marketing</h6>
+            <h6>Innovative Core Products</h6>
+            <h2>A Unique Business<br/>Opportunity.</h2><br/>
+            <a href="#" class="btn btn-default btn-main" role="button"><span class="glyphicon glyphicon-play"></span></a>
+          </div>
+          <div class="col-xs-12 top-section-video">
+            <video class="top-video" autoplay loop>
+              <source src="https://s3-us-west-2.amazonaws.com/cont.training/Videos/201611_HomePage_videobanner.mp4" type="video/mp4" alt="Section of the Tranont Sizzle Video"></source>
+              Your browser does not support playing this video.
+            </video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading company-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse1"><span id="company">The </span>Company <span class="glyphicon glyphicon-triangle-right"></span></i></a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p class="company" id="company-text">Find out what makes Tranont unique and discover what we can offer you and your family.</p>
+                  <a href="" class="btn btn-default btn-page btn-panel">Learn More</a>
+                  <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_company_overlay.jpg" alt="Hotel on a Beach"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4 panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading core-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse2"><span id="core">The </span>Core <i class="glyphicon glyphicon-triangle-right"></i></a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p class="core" id="core-text">Explore a variety of tools that can be used to achieve your personal and business goals.</p>
+                  <a href="" class="btn btn-default btn-page btn-panel">Learn More</a>
+                  <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_core_overlay.jpg" alt="Long Beach, CA Convention Center"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4 panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading process-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse3"><span id="process">The </span>Process <i class="glyphicon glyphicon-triangle-right"></i></a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p class="process" id="process-text">Membership gives you access to powerful applications that house tools specific to marketing, managing, and prospecting your business.</p>
+                  <a href="" class="btn btn-default btn-page btn-panel">Learn More</a>
+                  <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_process_overlay.jpg" alt="Silver/Gray Jeep Cherokee with Tranont Vinyl Logo Kit Applied to the Back and Back Side of the Vehicle"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row jeep">
+          <div class="col-xs-12">
+          <div class="col-xs-6">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_Jeep4U.png" alt="White Jeep Cherokee with Tranont Vinyl Logo Kit Applied to the Vehicle"/>
+          </div>
+          <div class="col-xs-6">
+            <div class="jeep-text">
+              <hr class="jeep-hr-top">
+              <h2>Jeep 4U</h2>
+              <h6>Drive to FC Rank</h6>
+              <a href="" class="btn btn-default btn-page">Learn More</a>
+              <a href="" class="btn btn-default btn-page">Jeep Events</a>
+              <hr class="jeep-hr-bottom">
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row events-banner">
+          <div class="col-xs-12">
+            <hr class="events-hr1">
+            <p class="events-banner-text">
+              <span class="header">Tranont 2017</span><br/>
+                                      International<br/>
+              <span class="bottom-line">Convention</span>
+            </p>
+            <hr class="events-hr2">
+            <div class="heading">Featuring New York Times Best Selling Author</div>
+            <div class="heading2">Andy Andrews</div>
+            <div class="heading2-left">January 6-7, 2017</div>
+            <div class="heading2-right">Long Beach<br/>Convention Center<br/>Long Beach, CA</div>
+            <a href="" class="btn btn-default btn-events">Register Now</a>
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/2017_Convention.jpg" alt="Picture of Andy Andrews on an Image of the Long Beach Convention Center"/>
+          </div>
+        </div>
+        <div class="row family">
+          <div class="col-xs-12">
+            <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_family.jpg" alt="Man and Little Girl Holding Hands Walking on the Beach"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 bottom-mods">
+            <hr class="bottom-mods-hr1">
+            <h6>Our Mission</h6>
+            <hr class="bottom-mods-hr2">
+            <p class="mission-text">Change the World's Economy <span id="dissappearing-br"><br/></span>One Household at A Time</p>
+          </div>
+          <div class="col-xs-6 bottom-mods">
+            <hr class="bottom-mods-hr1">
+            <h6>Our Vision</h6>
+            <hr class="bottom-mods-hr2">
+            <p>
+              We Offer World-Class Financial<span id="dissappearing-br"><br/></span>
+              Education and Training, Financial<span id="dissappearing-br"><br/></span>
+              Management Tools, Digital Protection,<span id="dissappearing-br"><br/></span>
+              and Wealth Building Services
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2">
+            <span class="footer-address">
+              8871 S. Sandy Pkwy<br/>
+              Suite 200<br/>
+              Sandy, UT 84070
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              <strong>Toll-Free:</strong> 800.973.3715<br/>
+              <strong>Fax:</strong> 801.384.7143<br/>
+              <strong>Email:</strong> support@tranont.com
+            </span>
+          </div>
+          <div class="col-xs-3">
+            <span class="footer-schedule">
+              Monday-Friday: 8am-6pm<br/>
+              Closed Saturday & Sunday<br/>
+              <em>Times in Mountain Time</em>
+            </span>
+          </div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3">
+            <strong>Stay Connected:</strong><br/>
+            <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+
+	    <script>
+        // open navbar dropdown menu on hover instead of on click
+	    	$(function(){
+			    $('.dropdown').hover(function() {
+			        $(this).addClass('open');
+			    },
+			    function() {
+			        $(this).removeClass('open');
+			    });
+		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.collapse').on('show.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-right").removeClass("glyphicon-triangle-right").addClass("glyphicon-triangle-bottom");
+        }).on('hide.bs.collapse', function() {
+          $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
+        });
+	    </script>
+    </body>
+</html>
