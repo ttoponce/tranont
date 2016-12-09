@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-		<title>Tranont | Compensation</title>
+		<title>Tranont | Retail Services</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/tranont_favicon.gif" type="image/gif" sizes="16x16">
@@ -169,6 +169,16 @@
       .bottom-row {
         margin: 3% 0 3% 0;
       }
+      .blue-background {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 10px 15px;
+        margin-top: 10px;
+      }
+      .blue-background .col-xs-12 p {
+        margin-bottom: 0;
+        line-height: 20px;
+      }
       .blue-links {
         font-weight: bold;
         color: #05538a;
@@ -280,33 +290,6 @@
       .glyphicon-triangle-right {
         font-size: 65%;
         top: 0;
-        color: #ffffff;
-      }
-      .glyphicon-calendar {
-        font-size: 48px;
-        font-weight: bold;
-        color: #05538a;
-        padding: 1px 0 0 3px;
-      }
-      .glyphicon-calendar:hover {
-        color: #ffffff;
-      }
-      .glyphicon-plane {
-        font-size: 48px;
-        font-weight: bold;
-        color: #05538a;
-        padding: 0 5px 0 1px;
-      }
-      .glyphicon-plane:hover {
-        color: #ffffff;
-      }
-      .glyphicon-star {
-        font-size: 48px;
-        font-weight: bold;
-        color: #05538a;
-        padding: 1px 0 0 5px;
-      }
-      .glyphicon-star:hover {
         color: #ffffff;
       }
       .glyphicon-usd {
@@ -548,15 +531,6 @@
         .glyphicon-usd {
           font-size: 38px;
         }
-        .glyphicon-calendar {
-          font-size: 38px;
-        }
-        .glyphicon-plane {
-          font-size: 38px;
-        }
-        .glyphicon-star {
-          font-size: 38px;
-        }
       }
       @media only screen and (max-width: 535px) {
         .sub-nav .col-xs-4 {
@@ -574,6 +548,10 @@
         }
       }
       @media only screen and (max-width: 400px) {
+        .blue-background .col-xs-12 p {
+          line-height: 17px;
+          font-size: 10px;
+        }
         .col-xs-3 h4 {
           font-size: 8px;
           letter-spacing: 1px;
@@ -593,24 +571,15 @@
           border: 5px solid #05538a;
         }
         .col-xs-12 h4 {
-          font-size: 14px;
+          font-size: 12px;
         }
         .col-xs-12 li {
           font-size: 10px;
         }
         .col-xs-12 p {
-          font-size: 12px;
+          font-size: 10px;
         }
         .glyphicon-usd {
-          font-size: 32px;
-        }
-        .glyphicon-calendar {
-          font-size: 32px;
-        }
-        .glyphicon-plane {
-          font-size: 32px;
-        }
-        .glyphicon-star {
           font-size: 32px;
         }
         .sub-nav .col-xs-4 {
@@ -794,6 +763,17 @@
             <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Compensation_topmod_01.jpg" alt="Some Jeeps Lined Up Side by Side"/>
           </div>
         </div>
+        <div class="row blue-background">
+          <div class="col-xs-12">
+            <p>
+              Tranont pays between 10-30% commission on all Retail Service revenue it receives. The actual
+              percentage is based on the type and number of paid retail service accounts that the Associate has each
+              month. Also, all retail services generate Personal Volume at a rate of 30% of the same revenue received.
+              Ex: If $100 is paid to Tranont each month, the active referring Associate receives 30 points of Personal
+              Volume and the appropriate amount of commission.
+            </p>
+          </div>
+        </div>
         <div class="row rs-row">
           <div class="col-xs-3 center">
             <button class="glyphicon glyphicon-usd merchant-button" data-toggle="collapse" data-target="#merchant"></button>
@@ -853,17 +833,19 @@
           </div>
         </div>
         <div class="row rs-row">
-          <div class="col-xs-4 center">
+          <div class="col-xs-3 center">
             <button class="glyphicon glyphicon-usd legal-button" data-toggle="collapse" data-target="#legal"></button>
             <h4 class="legal-title">Legal Services</h4>
           </div>
-          <div class="col-xs-4 center">
+          <div class="col-xs-3 center">
             <button class="glyphicon glyphicon-usd background-button" data-toggle="collapse" data-target="#background"></button>
             <h4 class="background-title">Background Check Services</h4>
           </div>
-          <div class="col-xs-4 center">
+          <div class="col-xs-3 center">
             <button class="glyphicon glyphicon-usd solar-button" data-toggle="collapse" data-target="#solar"></button>
             <h4 class="solar-title">Solar</h4>
+          </div>
+          <div class="col-xs-3 center">
           </div>
         </div>
         <div class="row">
@@ -898,6 +880,8 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="row rs-row">
         </div>
       </div>
       <!-- END Main Content -->
