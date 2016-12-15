@@ -171,13 +171,36 @@
       .bottom-row {
         margin-bottom: 2.5%;
       }
+      .btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      .btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
       .center {
         text-align: center;
+      }
+      .col-xs-2 img {
+        display: block;
+        margin: 10% auto;
       }
       .col-xs-3 h4 {
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-top: 5%;
+      }
+      .col-xs-3 img {
+        width: 100%;
       }
       .col-xs-4 {
         padding: 0;
@@ -187,27 +210,42 @@
         letter-spacing: 2px;
         margin-top: 20px;
       }
-      .col-xs-6 h4 {
+      .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-      .col-xs-6 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 {
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
       }
-      .col-xs-12 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+      .collapsibale-hr {
+        margin: 20px 10px;
+        border-color: #888b8d;
       }
       .dissappearing-br {
         display: none;
+      }
+      .fluid-width-video-wrapper {
+        width: 70%;
+        position: relative;
+        padding: 39.4% 0 0 0;
+        margin: 1% 0 0 15%;
+      }
+      .fluid-width-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
       }
       .hr-top {
         border-color: #888888;
@@ -221,6 +259,9 @@
       .leftright-margins {
         margin-left: 10px;
         margin-right: 10px;
+      }
+      .margin-sides {
+        margin: 0 8%;
       }
       .no-top-border {
         border-width: 0px 2px 2px 2px !important;
@@ -246,6 +287,10 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         font-size: 20px;
+      }
+      .row iframe {
+        max-width: 100%;
+        margin-bottom: 24px;
       }
       .single-line {
         padding: 11px 0;
@@ -330,6 +375,12 @@
         border-radius: 0;
         margin-bottom: 0;
       }
+      #id-theft-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
       #text-bottom {
         margin-bottom: 15px;
       }
@@ -346,9 +397,20 @@
         /* reset styles for accordion */
         margin:0;
         padding:0;
-        font-family: Roboto, sans-serif;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
         font-size: 19px;
         list-style:none;
+      }
+      #nestedAccordion h5 {
+        margin: 0 2% 1% 2%;
+        padding: 0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        list-style: none;
+        font-weight: 400;
+        line-height: 21px;
       }
       .accordion_container {
         display:none;
@@ -711,6 +773,23 @@
             <p>Customer<br/>Reviews</p>
           </div></a>
         </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <br/>
+            <h3 class="center">Defend your financial future.</h3>
+            <h3 class="center">Protect your identity, your privacy, and your money.</h3>
+            <br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="fluid-width-video-wrapper">
+              <iframe src="https://www.youtube.com/embed/h_mTJjqTODg?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allowfullscreen="" id="fitvid527034"></iframe>
+            </div>
+            <br/>
+            <p class="margin-sides"><em>The digital age has opened a pipeline of new threats to your privacy, saftey and financial security. Defending yourself and your family against identity theft and cyber-crime has become an essential part of a secure and successful financial future.</em></p>
+          </div>
+        </div>
         <div class="row" id="products">
           <div class="col-xs-12">
             <hr class="hr-top"/>
@@ -720,8 +799,68 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p class="leftright-margins">Tranont Associates are the most important part of the business. They are the driving force in the continued success and growth of Tranont worldwide. Tranont understands the hard work and challenges many associates face along their journey. The management team at Tranont makes it a priority to support and uplift each associate along their way.</p>
-            <p class="leftright-margins">We enjoy nothing more than spending time with our associates and sharing in each of their individual successes and accomplishments. We hold regular Tranont events each year to create energy, motivation and excitement and each event is educational and inspiring to those who attend.</p>
+            <p class="leftright-margins">The Tranont Defend suite of protection services gives you maximum protection at special discounted rates. Choose the plans that are right for you.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/ident.png" alt="Line Art of a Man with a Magnifying Glass in Front of Him"/>
+          </div>
+          <div class="col-xs-10">
+            <h2>Identity Theft Protection</h2>
+            <p>Complete personal and family identity theft monitoring and recovery services for all types of identity fraud – plus extra protection benifits not availible in other services.</p>
+            <div class="col-xs-2">
+              <button type="button" id="button" class="btn btn-default" data-toggle="collapse" data-target="#id-theft-protection">Learn More <span class="glyphicon glyphicon-triangle-right"></span></button>
+            </div>
+            <div class="col-xs-10">
+              <a href="#" class="btn btn-default" role="button">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="id-theft-protection" class="collapse">
+              <p><em>Don’t let an identity thief ruin your life! Protect your identity, your credit and your money. And protect those you care about most – your family.</em></p>
+              <p>Tranont has partnered with INVISUS to provide you the best identity theft coverage available today – iDefend. iDefend gives you all the essentials of protection you need to defend yourself and your family against the latest threats from identity thieves and cyber-criminals.</p>
+              <p>You get protection against all types of ID theft including Social Security number theft, bank account fraud, tax fraud, medical benefits theft, criminal records fraud, and much more.</p>
+              <p>No other service gives you this level of protection – period! Get the protection you deserve, and SAVE BIG!</p>
+              <hr class="collapsibale-hr">
+              <p>Your iDefend® protection benefits includesS</p>
+              <ul>
+                <li>Personal Online Account, Dashboard</li>
+                <li>Complete Identity Theft Monitoring</li>
+                <li>Instant Alerts and Monthly Report</li>
+                <li>Credit & Privacy Protection Resources</li>
+                <li>Lost Wallet Protection & Online Wallet Vault</li>
+                <li>Full Identity Restoration Service</li>
+                <li>ID theft member support hotline</li>
+              </ul>
+              <p>PLUS – these extra protection benefits!</p>
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/image3.png" alt="SecurePC Makeover Logo"/>
+                </div>
+                <div class="col-xs-9">
+                  <p>Full computer security checkup done twice a year via remote connect with a certified U.S. based tech, virus scan/removal, anti-virus and security settings checkup, plus more. (Windows/Mac)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/INV_MySocialGuardian_Logo_Wide.png" alt="mySocialGuardian Logo"/>
+                </div>
+                <div class="col-xs-9">
+                  <p>24/7 monitoring of Facebook, Instagram, Twitter, and LinkedIn accounts for slander, harassment, bullying, profanity, cyber-stalking, personal info exposure, and other privacy risks.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/image5.png" alt="Cyberhood Watch Logo"/>
+                </div>
+                <div class="col-xs-9">
+                  <p>Real-time cybersecurity, fraud and scam alerts plus online education resource center with access to sex offender and crime maps.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row" id="protection">
@@ -750,56 +889,56 @@
           <div id="nestedAccordion">
       			<h2>Tony L. - Pittsburg, PA</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      When we learned that our children’s identity could be stolen, we couldn’t put off getting the
+      			        <h5>
+                      "When we learned that our children’s identity could be stolen, we couldn’t put off getting the
                       right protection for our ENTIRE family. iDefend has the most complete protection for us at the
-                      best price. We are grateful for iDefend!
-                    </h3>
+                      best price. We are grateful for iDefend!"
+                    </h5>
       			    </div>
       			<h2>A. W. - TX</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      My recovery advocate was incredible! She was knowledgeable and extremely prompt in returning
+      			        <h5>
+                      "My recovery advocate was incredible! She was knowledgeable and extremely prompt in returning
                       calls and email, usually within a couple of hours. I’m very thankful to have my advocate
                       because in trying to file a claim with my bank directly – I could not get anywhere. Thank you
-                      for all the hard work on my case.
-                    </h3>
+                      for all the hard work on my case."
+                    </h5>
       			    </div>
       			<h2>Lisa K. - Atlanta, GA</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      Finding out that someone has access to all of your personal information is overwhelming.
+      			        <h5>
+                      "Finding out that someone has access to all of your personal information is overwhelming.
                       Having to personally deal with all of the damage they have done and could possibly do is
                       enough to send someone over the edge. I would like to personally thank you for taking care of
-                      my every concern and made my entire situation a lot easier to deal with.
-                    </h3>
+                      my every concern and made my entire situation a lot easier to deal with."
+                    </h5>
       			    </div>
       			<h2>Jim W. - Wilson Consulting</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      Totally satisfied! You guys are wonderful. I just sent the summary report to 8 of my friends
-                      recommending you.
-                    </h3>
+      			        <h5>
+                      "Totally satisfied! You guys are wonderful. I just sent the summary report to 8 of my friends
+                      recommending you."
+                    </h5>
       			    </div>
       			<h2>Patricia H. - Malvern, PA</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      All the “Nasties” are gone – and I saved a bundle of money on computer repairs.
-                    </h3>
+      			        <h5>
+                      "All the “Nasties” are gone – and I saved a bundle of money on computer repairs."
+                    </h5>
       			    </div>
       			<h2>Rose S. - a BIG FAN</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      You saved me from a big scam! I almost paid $149 for a security program to fix my computer,
-                      but it was a trick. I would have lost my money and had my identity stolen! Thank you so much
-                    </h3>
+      			        <h5>
+                      "You saved me from a big scam! I almost paid $149 for a security program to fix my computer,
+                      but it was a trick. I would have lost my money and had my identity stolen! Thank you so much"
+                    </h5>
       			    </div>
       			<h2>Sylvia J. - Dayton, OH</h2>
       			    <div class="accordion_container">
-      			        <h3>
-                      I thought I had lost everything. But you guys did a great job retrieving all my files I
-                      thought I lost. So happy!
-                    </h3>
+      			        <h5>
+                      "I thought I had lost everything. But you guys did a great job retrieving all my files I
+                      thought I lost. So happy!"
+                    </h5>
       			    </div>
       			</div><!-- #nestedAccordion -->
         </div>
@@ -855,6 +994,10 @@
 			        $(this).removeClass('open');
 			    });
 		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('#button').click(function(){
+          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
+        });
         // FAQ accordion functionality
         $(document).ready(function() {
             var parentDivs = $('#nestedAccordion div'),
