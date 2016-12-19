@@ -165,30 +165,21 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      p {
+      h3, h4, h5, li {
+        letter-spacing: 2px;
+      }
+      p, h3, h4, h5, li {
         text-transform: uppercase;
       }
       .bottom-row {
         margin-bottom: 2.5%;
       }
-      .btn-default {
-        border-radius: 0;
-        color: #333333;
-        background-color: #ffffff;
-        border: 2px solid #333333;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .btn-default:focus {
-        background-color: #ffffff;
-        border: 2px solid #333333;
-      }
-      .btn-default:hover {
-        background-color: #eeeeee;
-        border: 2px solid #333333;
-      }
       .center {
         text-align: center;
+      }
+      .center-element {
+        display: block;
+        margin: 0 auto;
       }
       .col-xs-2 img {
         display: block;
@@ -210,7 +201,7 @@
         letter-spacing: 2px;
         margin-top: 20px;
       }
-      .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
+      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
         text-transform: uppercase;
         letter-spacing: 2px;
       }
@@ -260,6 +251,9 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+      .leftright-padding {
+        padding: 10px 15px 0 15px;
+      }
       .margin-sides {
         margin: 0 8%;
       }
@@ -291,6 +285,10 @@
       .row iframe {
         max-width: 100%;
         margin-bottom: 24px;
+      }
+      .signup-button {
+        margin: 0 auto 15px auto;
+        width: 20%;
       }
       .single-line {
         padding: 11px 0;
@@ -362,6 +360,12 @@
         margin-top: 21%;
         text-align: center;
       }
+      .top-padding {
+        padding-top: 1%;
+      }
+      .top-padding-more {
+        padding-top: 3.5%
+      }
       .top-rows {
         margin-left: 0;
       }
@@ -375,11 +379,42 @@
         border-radius: 0;
         margin-bottom: 0;
       }
+      #btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      #btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
+      #computer-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
       #id-theft-protection {
         margin-top: 1%;
         border: 2px solid #cccccc;
         padding: 10px 10px 0 10px;
         background-color: #efefef;
+      }
+      #social-media-monitoring {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring img {
+        width: 20%;
       }
       #text-bottom {
         margin-bottom: 15px;
@@ -807,13 +842,13 @@
             <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/ident.png" alt="Line Art of a Man with a Magnifying Glass in Front of Him"/>
           </div>
           <div class="col-xs-10">
-            <h2>Identity Theft Protection</h2>
+            <h3>Identity Theft Protection</h3>
             <p>Complete personal and family identity theft monitoring and recovery services for all types of identity fraud – plus extra protection benifits not availible in other services.</p>
             <div class="col-xs-2">
-              <button type="button" id="button" class="btn btn-default" data-toggle="collapse" data-target="#id-theft-protection">Learn More <span class="glyphicon glyphicon-triangle-right"></span></button>
+              <button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#id-theft-protection">Learn More <span class="glyphicon glyphicon-triangle-right"></span></button>
             </div>
             <div class="col-xs-10">
-              <a href="#" class="btn btn-default" role="button">Sign Up</a>
+              <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Sign Up</a>
             </div>
           </div>
         </div>
@@ -825,7 +860,7 @@
               <p>You get protection against all types of ID theft including Social Security number theft, bank account fraud, tax fraud, medical benefits theft, criminal records fraud, and much more.</p>
               <p>No other service gives you this level of protection – period! Get the protection you deserve, and SAVE BIG!</p>
               <hr class="collapsibale-hr">
-              <p>Your iDefend® protection benefits includesS</p>
+              <p>Your iDefend® protection benefits includes:</p>
               <ul>
                 <li>Personal Online Account, Dashboard</li>
                 <li>Complete Identity Theft Monitoring</li>
@@ -860,9 +895,249 @@
                   <p>Real-time cybersecurity, fraud and scam alerts plus online education resource center with access to sex offender and crime maps.</p>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="leftright-padding">Choose the iDefend plan that’s right for you:</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>iDefend® Essentials</h3>
+                  <p><small>All the essential ID theft protection benefits.</small></p>
+                  <h5>Individual Plan</h5>
+                  <h4>$9.95 /mo.</h4>
+                  <p><small>(Reg. $14.95)</small></p>
+                  <h5>Family Plan*</h5>
+                  <h4>$19.95 /mo.</h4>
+                  <p><small>(Reg. $14.95)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>iDefend® Elite</h3>
+                  <p><small>All the essential ID theft protection benefits – plus credit monitoring</small></p>
+                  <h5>Individual Plan</h5>
+                  <h4>$16.95 /mo.</h4>
+                  <p><small>(Reg. $24.95)</small></p>
+                  <h5>Family Plan*</h5>
+                  <h4>$34.95 /mo.</h4>
+                  <p><small>(Reg. $39.95)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="leftright-padding"><small><em>* Family Plans include full coverage for you, your spouse, and all children in the household under 25 including unmarried college students whose primary address is your home address. Family Plans also include MySocialGuardian for all family members, and 2x a year computer security checkups for up to 3 household computers. Elite Family Plan includes credit monitoring for 2 adults.</em></small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" role="button" id="btn-default" class="btn btn-default center-element signup-button">Get Protected</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3 class="leftright-padding"><em>Try it Risk Free!</em></h3>
+                  <p class="leftright-padding"><em>No minimum contract. If you are not satisfied with your service, you may cancel at any time without any further obligation.</em></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row bottom-row">
+                <div class="col-xs-12">
+                  <h3 class="leftright-padding">Frequently Asked Questions</h3>
+                  <p class="leftright-padding"><strong>What type of identity theft is covered?</strong></p>
+                  <p class="leftright-padding">Every iDefend plan includes the core ID theft monitoring and protection features necessary to safeguard you and your family against virtually ALL forms of ID theft including:</p>
+                  <ul>
+                    <li>True name ID theft (SSN, DOB)</li>
+                    <li>Credit fraud</li>
+                    <li>Social security benefits fraud</li>
+                    <li>Tax return ID theft</li>
+                    <li>Medical ID theft</li>
+                    <li>Criminal records fraud</li>
+                    <li>Utilities, payday loan fraud</li>
+                    <li>More...</li>
+                  </ul>
+                  <h5 class="leftright-padding"><strong>iDefend is an INVISUS program.</strong></h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/help.png" alt="Line Art of a Computer Window with a Wrench and an Arrow Pointing Down on the Window"/>
+          </div>
+          <div class="col-xs-10">
+            <h3>Computer Protection/Tech Support</h3>
+            <p>Unlimited security and tech support services for your PC/Mac computer and mobile devices. Save hundreds on repairs, tune-ups, security checkups and maintenance.</p>
+            <div class="col-xs-2">
+              <button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#computer-protection">Learn More <span class="glyphicon glyphicon-triangle-right"></span></button>
+            </div>
+            <div class="col-xs-10">
+              <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="computer-protection" class="collapse">
+              <p><em>Ever wish you had access to a team of certified computer techs that you could call whenever you had a question or problem with your computer – without having to pay every time you wanted help? How about having experts help keep hackers off your computer, and do a fully security checkup as often as needed?</em></p>
+              <p>Look no further. Tranont has partnered with INVISUS to bring you the industry-best security and tech support services at big discounted rates with the iCare service plan. Don’t let your computer problems or security nightmares give you any more headaches or waste your time!</p>
+              <ul>
+                <li>Eliminate tech frustrations!</li>
+                <li>Keep hackers and predators out!</li>
+                <li>Save time and money!</li>
+                <li>Keep everything running like new!</li>
+              </ul>
+              <hr class="collapsibale-hr">
+              <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/icare_logo.gif" alt="iCare Logo"/>
+              <div class="row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>How it works:</h3>
+                  <p>Getting instant expert help with your computer(s) is easy! Just call the INVISUS Tech Support hotline anytime you need help. Your service is conducted personally by a U.S. based INVISUS iCare certified technician by phone and remote Internet connection to your PC. You can sit back and watch or you can leave while we work on your computer. You’ll get a full report of what we found and the work we’ve done after each closed support ticket.</p>
+                  <h3>Mobile Devices:</h3>
+                  <p>For your smart phones and tablets, we’ll provide you with expert security guidance, suggestions and tools to lock down your smart phones and tablets to keep the bad guys off your devices. (iOS/Android)</p>
+                  <h4 class="center">Say goodbye to tech hassles, wasted time and big repair bills!</h4>
+                  <h4 class="center">Say hello to a simple, secure digital life!</h4>
+                  <hr>
+                  <p>Choose the iCare unlimited service plan that’s right for you:</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>iCare Personal</h3>
+                  <p><small>For one personal computer and your personal mobile devices.</small></p>
+                  <h4>$19.95 /mo.</h4>
+                  <p><small>(Reg. $29.95)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>iCare Home</h3>
+                  <p><small>For ALL your personal household computers and mobile devices.</small></p>
+                  <h4>$29.95 /mo.</h4>
+                  <p><small>(Reg. $39.95)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" role="button" class="btn btn-default center-element signup-button">Get Protected</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>Customer Reviews</h3>
+                </div>
+              </div>
+              <div class="row bottom-row leftright-padding">
+                <div id="nestedAccordion">
+            			<h2>Matthew F. - Norfolk, NY</h2>
+          			    <div class="accordion_container">
+        			        <h5>
+                        <strong>I was a nervous wreck when I thought my PC was wiped out.</strong><br>
+                        My tech was SUPER friendly and helpful. No matter the obstacles, he dealt with each one EXTREMELY professionally and friendly. If I ever have anyone ask about what security company to go with, it WILL be INVISUS. You can count on that!
+                      </h5>
+          			    </div>
+            			<h2>Patricia E. - Phelan, CA</h2>
+          			    <div class="accordion_container">
+        			        <h5>
+                        <strong>I would not have any other protection.</strong><br>
+                        I always have a fantastic experience with my INVISUS techs. I have recommended this to several people. In fact, I have the service for both of my computers that are 100 miles apart.
+                      </h5>
+          			    </div>
+            			<h2>Sylvia J. - Dayton, OH</h2>
+          			    <div class="accordion_container">
+                      <h5>
+                        <strong>I thought I had lost everything.</strong><br>
+                        My computer was infected with a hidden virus I didn’t know about – until it removed icons from my desktop and left a black, blank screen. That took a few years off my life. But you guys did a great job retrieving all my files. So glad to know you folks are there!
+                      </h5>
+          			    </div>
+            			<h2>Niki F. - Livingston, AL</h2>
+          			    <div class="accordion_container">
+                      <h5>
+                        <strong>He put my nightmares to rest!</strong><br>
+                        After being on the phone with a tech from another company, I am so appreciative of the techs at INVISUS who care enough to listen to the problem, quickly diagnose the situation, and take over to fix everything. My INVISUS tech was awesome! It really put my mind at ease when he called back to let me know he had secured everything and I was good to go!
+                      </h5>
+          			    </div>
+            			<h2>Marcus T. - Ponte Vedra, FL</h2>
+          			    <div class="accordion_container">
+                      <h5>
+                        <strong>This is why we stay with iCare. Just for the record...</strong><br>
+                        You did a fantastic job cleaning up the Trojan, etc. off my wife’s laptop when we called. As she is in the real estate business, her laptop is a key to transacting business. We love being able to call whenever we need help.
+                      </h5>
+          			    </div>
+            			<h2>Doug R. - Yuba City, CA</h2>
+          			    <div class="accordion_container">
+                      <h5>
+                        <strong>Trusting the big name anti-virus brands led to disaster.</strong><br>
+                        I am baffled by hearing others talk about their constant computer problems. They can’t imagine such good work from a service company. I was just like them until I tried your service. Now I don’t even think about viruses or lost files. I know I am safe.
+                      </h5>
+          			    </div>
+          			</div><!-- #nestedAccordion -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/social-1.png" alt="Line Art of a Megaphone with Word Balloons coming Out of It"/>
+          </div>
+          <div class="col-xs-10">
+            <h3>Social Media Monitoring</h3>
+            <p>24/7 monitoring of your Facebook, Instagram, Twitter and LinkedIn accounts for slander, bullying, harassment, privacy risks and more.</p>
+            <div class="col-xs-2">
+              <button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#social-media-monitoring">Learn More <span class="glyphicon glyphicon-triangle-right"></span></button>
+            </div>
+            <div class="col-xs-10">
+              <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="social-media-monitoring" class="collapse">
+              <p><em>The world really is watching. With sites like Facebook and Instagram, we can expose too much information or the wrong information if we aren’t careful. Social media sites have also become the playground for predators and thieves. Parents must now be vigilant with their kid’s online activities to protect against cyber-bullying and other threats, and to monitor for references of drugs/alcohol, violence, as well as predators looking for their next victim.</em></p>
+              <p>Tranont has partnered with INVISUS to bring you the MySocialGuardian program to help you monitor Facebook, Twitter, Instagram and LinkedIn for dangerous or suspicious activity that can put you and your family at risk.</p>
+              <hr class="collapsibale-hr">
+              <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/INV_MySocialGuardian_Logo_Wide.png" alt="mySocialGuardian Logo"/>
+              <p>MySocialGuardian provides 24/7 monitoring and alerts of the Facebook, Twitter, Instagram and LinkedIn accounts for you and each family member you set up. You will be able to monitor and protect against:</p>
+              <ul>
+                <li>Slander</li>
+                <li>Harassment and bullying</li>
+                <li>Profanity</li>
+                <li>Cyber-stalking</li>
+                <li>Threats of violence</li>
+                <li>Drug/alcohol references</li>
+                <li>Personal information exposure</li>
+                <li>More...</li>
+              </ul>
+              <p class="leftright-padding">Choose either personal or family MySocialGuardian coverage:</p>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>Personal</h3>
+                  <p><small>Monitoring for one person.</small></p>
+                  <h4>$4.95 /mo.</h4>
+                  <p><small>(Reg. $6.95)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>Family</h3>
+                  <p><small>Monitoring for all family members.</small></p>
+                  <h4>$7.95 /mo.</h4>
+                  <p><small>(Reg. $9.95)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" role="button" class="btn btn-default center-element signup-button">Get Protected</a>
+                </div>
+              </div>
+              <div class="row bottom-row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>Try it Risk Free!</h3>
+                  <p>No minimum contract. If you are not satisfied with your service, you may cancel at any time without any further obligation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
         <div class="row" id="protection">
           <div class="col-xs-12">
             <hr class="hr-top"/>
@@ -872,10 +1147,57 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p class="leftright-margins">The Tranont founding principle and company tag line is, “Change Life.”</p>
-            <p class="leftright-margins">From products and services that help individuals take control of their finances, to a community of like-minded individuals geared towards living life to its fullest, Tranont is passionate about the desire to “Change Life.”</p>
-            <p class="leftright-margins">Tranont employees, associates and partners are encouraged to support projects in their local communities. These individuals are also encouraged to make monetary contributions to causes that Tranont officially promotes at events.</p>
-            <p class="leftright-margins">For questions about the Tranont charitable giving programs or to get involved, please email <a href="mailto:support@tranont.com">support@tranont.com.</a></p>
+            <h3 class="center">Why you should get and stay protected</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>ID theft can wreck your financial plan.</h4>
+            <p>You are working hard to achieve financial security. Hackers and identity thieves are also working hard, only to steal your personal information and get into your bank accounts and your personal credit. They will fill their pockets with your money and leave you with a world of problems. Don’t risk being left in financial ruins! Protecting yourself and your loved ones against identity theft and cybercrime is now an essential part of a successful financial plan.</p>
+          </div>
+          <div class="col-xs-3">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/idtheft.jpeg" alt="Image of an Arm Coming Through a Computer Screen Taking a Wallet from Someone's Back Pocket"/>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-3 top-padding">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Corporate_Logos_Hacked.png" alt="5 Corporate Logos: The Home Depot®, Target®, BlueCross®, ebay™, and citibank"/>
+          </div>
+          <div class="col-xs-9">
+            <h4>Your personal information – exposed!</h4>
+            <p>Stolen personal information is the new currency of thieves. Cyber-attacks at businesses, banks, healthcare organizations, law firms, schools and government agencies are happening daily. Millions of people every month have their personal information exposed through accidental or criminal data breaches. You may have already received one or more of these notification letters. Before your information is exposed in another data breach, be sure you’ve got a team of security and identity theft experts backing you up.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>Target: Your computer and smart phone.</h4>
+            <p>Do you access your bank account or pay bills online? Ever buy anything or make travel plans online? We use the Internet for just about everything today, and so do the bad guys. Computers and mobile devices are the playground of hackers and Internet predators. Anti-virus software is not enough protection against online predators who want to hijack your computers and devices and rip you off. Be sure to get regular security checkups from trusted experts so you can stay safe and secure.</p>
+          </div>
+          <div class="col-xs-3 top-padding-more">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/targetphones.png" alt="Image of a Desktop Computer, Laptop Computer, Tablet, and Smartphone Together"/>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Laptop-Virus-Alert.jpeg" alt="Image of an Example of a Virus Alert on a Computer Screen"/>
+          </div>
+          <div class="col-xs-9">
+            <h4>Everyone needs a tech expert.</h4>
+            <p>The fast changing world of computers, smart phones and technology can leave your head spinning. Keeping everything running secure and problem-free seems to be a never ending challenge. Viruses, malware and everyday computer problems cause major frustrations and can cost you big money in repairs. In today’s digital age, it makes sense to have on-demand access to tech experts you can count on for advice, troubleshooting and fixes.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>Predators and bullies lurking online.</h4>
+            <p>It’s important to be careful what you post online and what you share about yourself and your family. For parents, you must be proactive in protecting your kids and monitoring their online activities. From cyberbullies to sex predators, bad people use the Internet to learn about, track and victimize others. For you personally, and for your loved ones, be sure to stay vigilant and monitor for signs of threats to your privacy and security.</p>
+          </div>
+          <div class="col-xs-3">
+            <img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Cyberbully-Online-Predator.jpeg" alt="Image of a Woman in a Fearful sitting Position Looking at a Laptop Screen"/>
           </div>
         </div>
         <div class="row" id="customer-reviews">
@@ -974,7 +1296,7 @@
           <div class="col-xs-3">
             <strong>Stay Connected:</strong><br/>
             <ul class="socialmedia-icons" id="socialmedia-icons-lg">
-              <li><a href="https://www.facebook.com/russ.tranont/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
               <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
               <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
               <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
@@ -995,7 +1317,7 @@
 			    });
 		    });
         // change the direction of the Font Awesome caret when panel expand and collapse
-        $('#button').click(function(){
+        $('.button').click(function(){
           $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
         });
         // FAQ accordion functionality
