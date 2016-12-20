@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-		<title>Tranont | About Us</title>
+		<title>Tranont | OneView</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/tranont_favicon.jpg">
@@ -168,19 +168,33 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      p {
+      h3, h4, h5, li {
+        letter-spacing: 2px;
+      }
+      p, h3, h4, h5, li {
         text-transform: uppercase;
       }
       .bottom-row {
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
       }
       .center {
         text-align: center;
+      }
+      .center-element {
+        display: block;
+        margin: 0 auto;
+      }
+      .col-xs-2 img {
+        display: block;
+        margin: 10% auto;
       }
       .col-xs-3 h4 {
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-top: 5%;
+      }
+      .col-xs-3 img {
+        width: 100%;
       }
       .col-xs-4 {
         padding: 0;
@@ -190,27 +204,42 @@
         letter-spacing: 2px;
         margin-top: 20px;
       }
-      .col-xs-6 h4 {
+      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-      .col-xs-6 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 {
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
       }
-      .col-xs-12 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+      .collapsibale-hr {
+        margin: 20px 10px;
+        border-color: #888b8d;
       }
       .dissappearing-br {
         display: none;
+      }
+      .fluid-width-video-wrapper {
+        width: 70%;
+        position: relative;
+        padding: 39.4% 0 0 0;
+        margin: 1% 0 0 15%;
+      }
+      .fluid-width-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
       }
       .hr-top {
         border-color: #888888;
@@ -225,8 +254,19 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+      .leftright-padding {
+        padding: 10px 15px 0 15px;
+      }
+      .margin-sides {
+        margin: 0 8%;
+      }
       .no-top-border {
         border-width: 0px 2px 2px 2px !important;
+      }
+      .oneview-diagram {
+        width: 400px;
+        display: block;
+        margin: 1% auto 0 auto;
       }
       .panel-group .panel {
         border-radius: 0;
@@ -250,8 +290,48 @@
         letter-spacing: 4px;
         font-size: 20px;
       }
+      .row iframe {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      .signup-button {
+        margin: 0 auto 15px auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 0;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      .signup-button:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
       .single-line {
         padding: 11px 0;
+      }
+      .tax-bot {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .tax-services {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 35%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
       }
       .top-img {
         width: 100%;
@@ -278,6 +358,12 @@
         margin-top: 21%;
         text-align: center;
       }
+      .top-padding {
+        padding-top: 1%;
+      }
+      .top-padding-more {
+        padding-top: 3.5%
+      }
       .top-rows {
         margin-left: 0;
       }
@@ -291,12 +377,126 @@
         border-radius: 0;
         margin-bottom: 0;
       }
+      #btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      #btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
+      #computer-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #id-theft-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring img {
+        width: 20%;
+      }
       #text-bottom {
         margin-bottom: 15px;
       }
       #top-panel {
         margin-top: 4%;
       }
+
+      /**** Begin - FAQ Accordion Stylings ****/
+      #nestedAccordion{
+        width: 98%;
+      }
+      #nestedAccordion h2, #nestedAccordion h3,
+      .accordion_container, #nestedAccordion div{
+        /* reset styles for accordion */
+        margin:0;
+        padding:0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 19px;
+        list-style:none;
+      }
+      #nestedAccordion h5 {
+        margin: 0 2% 1% 2%;
+        padding: 0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        list-style: none;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
+      #nestedAccordion h2{
+        cursor: pointer;
+        color: #888b8d;
+        font-size: 21px;
+        font-weight: 400;
+        padding: 10px 0 10px 10px;
+        margin: 6px 0 5px 0;
+        background-color: #ffffff;
+        border: 4px solid #888b8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h2:focus {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h2:hover {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h3{
+      	line-height: 21px;
+        cursor:pointer;
+        padding:5px 0 5px 15px;
+        color: #999999;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+        background-color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h3:hover{
+        color:#222222;
+      }
+      #nestedAccordion h3 + div{
+        background-color:#ffffff;
+        padding: 3px 5px 5px 30px;
+      }
+      #nestedAccordion li{
+        font-weight: 100;
+        color: #000000;
+        font-size: 16px;
+      }
+      /**** End - FAQ Accordion Stylings ****/
 
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
@@ -328,6 +528,11 @@
       @media only screen and (max-width: 600px) {
         .col-xs-3 h4 {
           font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
         }
         .col-xs-4 h4 {
           font-size: 12px;
@@ -394,13 +599,19 @@
           font-size: 11px;
           padding-top: 5px;
         }
-        .sub-nav .col-xs-4 {
-          letter-spacing: 1px;
-        }
         .top-img-header {
           font-size: 18px;
           margin-top: 20%;
           letter-spacing: 5px;
+        }
+        #nestedAccordion h2 {
+          border: 2.5px solid #888b8d;
+          font-size: 16px;
+          padding: 8px 0 6px 10px;
+        }
+        #nestedAccordion h3 {
+          font-size: 12px;
+          letter-spacing: 1px;
         }
       }
       /**** END Main Page Stylings ****/
@@ -566,47 +777,58 @@
       <div class="container main">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="top-img-header">About Us</h2>
-            <h4 class="top-img-text">Who We Are</h4>
-            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Company_topmod_01.jpg" alt="Sandy, UT Corporate Office"/>
+            <h2 class="top-img-header">OneView</h2>
+            <h4 class="top-img-text">Budgeting Made Easy</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Oneview_topmod_01.jpg" alt="A Man and a Woman Looking at an Open Book - An Open Laptop in Front of the Woman"/>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">Company Overview</h3>
-            <hr class="hr-bottom"/>
+            <br/>
+            <h3 class="center">Automated Debt Reduction & Wealth Accumulation</h3>
+            <br/>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p class="leftright-margins">We are people just like you, working to make our financial future, and the financial futures of those who join our team, a little more secure.</p>
+            <div class="fluid-width-video-wrapper">
+              <iframe src="https://www.youtube.com/embed/SLWXRTzE-xM?modestbranding=0&amp;;rel=0&amp;;showinfo=0;autohide=1" frameborder="0" allowfullscreen="" id="fitvid490094"></iframe>
+            </div>
+            <br/>
           </div>
         </div>
+        <br>
         <div class="row">
-          <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">History</h3>
-            <hr class="hr-bottom"/>
+          <div class="col-xs-12 leftright-margins">
+            <p>Tranont OneView is an online application that integrates with over 16,000 financial institutions worldwide to give you access to all of your financial information in one single location.</p>
           </div>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-xs-12">
-            <p class="leftright-margins">In 2008, the founders of Tranont created the idea a company based on the values of integrity, trust, sustainability and the desire to provide products that help individuals better manage their finances. They began simply with an innovative technology product that was geared toward helping people manage their finances in a single location known as OneView.</p>
-            <p class="leftright-margins">In 2010, they began testing a variety of marketing initiatives that would allow them to maintain the core values they set out to achieve. Among them, they tested the direct sales model with a unique compensation plan allowing individuals to achieve financial success for their business building efforts. They discovered that it was the perfect fit.</p>
-            <p class="leftright-margins">In 2013, Tranont was registered and in January of 2014, it was officially launched. Since its beginning, Tranont has grown to include more than 30 internal employees and thousands of associates.</p>
+          <div class="col-xs-6">
+            <p>Tranont OneView includes:</p>
+            <ul>
+              <li>Instant overview of all of your financial information</li>
+              <li>Ability to create spending plans and budgets</li>
+              <li>Real time transaction updates</li>
+              <li>Financial alerts and updates</li>
+              <li>Ability to set, track, and achieve financial goals</li>
+              <li>Email notifications on the go</li>
+              <li>Access using your tablet or smart device</li>
+              <li>Personalized offers specifically tailored to you</li>
+            </ul>
+            <p><strong>A Secure Connection</strong></p>
+          </div>
+          <div class="col-xs-6">
+            <img class="oneview-diagram" src="http://tranont.com/wp-content/uploads/Oneview.png" alt="Oneview Diagram"/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">Future of Tranont</h3>
-            <hr class="hr-bottom"/>
-          </div>
-        </div>
+        <hr>
         <div class="row bottom-row">
-          <div class="col-xs-12 bottom-row">
-            <p class="leftright-margins">Tranont is committed to continuing development and innovation. We create, maintain and partner with world-class products and services in the financial services arena. We are always evaluating ways that we can further improve the suite of services offered to assist associates in financial wellness and growing their businesses.</p>
+          <div class="col-xs-12 leftright-margins">
+            <p>Tranont OneView is backed by some of the industry’s top monitoring systems including VeriSign, McAfee and TRUSTe. Our site goes through rigorous testing every day to provide the highest level of security and ensure the maximum level of protection against identity theft, viruses, spyware and other online threats. In addition, Tranont OneView never stores any sensitive information about you or your accounts on our system, and we can never make payments, modify or make changes to your account balances.</p>
+            <p>Sign up as an Associate or as a Customer:</p>
+            <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" type="button" class="btn btn-default signup-button">Sign Up</a>
           </div>
         </div>
       </div>
@@ -661,6 +883,10 @@
 			        $(this).removeClass('open');
 			    });
 		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.button').click(function(){
+          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
+        });
         // FAQ accordion functionality
         $(document).ready(function() {
             var parentDivs = $('#nestedAccordion div'),

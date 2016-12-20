@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-		<title>Tranont | About Us</title>
+		<title>Tranont | Tax Services</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/tranont_favicon.jpg">
@@ -168,19 +168,33 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      p {
+      h3, h4, h5, li {
+        letter-spacing: 2px;
+      }
+      p, h3, h4, h5, li {
         text-transform: uppercase;
       }
       .bottom-row {
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
       }
       .center {
         text-align: center;
+      }
+      .center-element {
+        display: block;
+        margin: 0 auto;
+      }
+      .col-xs-2 img {
+        display: block;
+        margin: 10% auto;
       }
       .col-xs-3 h4 {
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-top: 5%;
+      }
+      .col-xs-3 img {
+        width: 100%;
       }
       .col-xs-4 {
         padding: 0;
@@ -190,24 +204,16 @@
         letter-spacing: 2px;
         margin-top: 20px;
       }
-      .col-xs-6 h4 {
+      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-      .col-xs-6 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 {
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
       }
-      .col-xs-12 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+      .collapsibale-hr {
+        margin: 20px 10px;
+        border-color: #888b8d;
       }
       .dissappearing-br {
         display: none;
@@ -224,6 +230,12 @@
       .leftright-margins {
         margin-left: 10px;
         margin-right: 10px;
+      }
+      .leftright-padding {
+        padding: 10px 15px 0 15px;
+      }
+      .margin-sides {
+        margin: 0 8%;
       }
       .no-top-border {
         border-width: 0px 2px 2px 2px !important;
@@ -250,8 +262,28 @@
         letter-spacing: 4px;
         font-size: 20px;
       }
+      .row iframe {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      .signup-button {
+        margin: 0 auto 15px auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 0;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      .signup-button:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
       .single-line {
         padding: 11px 0;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
       }
       .top-img {
         width: 100%;
@@ -278,6 +310,12 @@
         margin-top: 21%;
         text-align: center;
       }
+      .top-padding {
+        padding-top: 1%;
+      }
+      .top-padding-more {
+        padding-top: 3.5%
+      }
       .top-rows {
         margin-left: 0;
       }
@@ -290,6 +328,22 @@
         padding: 20px 0 40px 0;
         border-radius: 0;
         margin-bottom: 0;
+      }
+      #btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      #btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
       }
       #text-bottom {
         margin-bottom: 15px;
@@ -328,6 +382,11 @@
       @media only screen and (max-width: 600px) {
         .col-xs-3 h4 {
           font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
         }
         .col-xs-4 h4 {
           font-size: 12px;
@@ -393,9 +452,6 @@
         .col-xs-12 h4 {
           font-size: 11px;
           padding-top: 5px;
-        }
-        .sub-nav .col-xs-4 {
-          letter-spacing: 1px;
         }
         .top-img-header {
           font-size: 18px;
@@ -566,47 +622,40 @@
       <div class="container main">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="top-img-header">About Us</h2>
-            <h4 class="top-img-text">Who We Are</h4>
-            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Company_topmod_01.jpg" alt="Sandy, UT Corporate Office"/>
+            <h2 class="top-img-header">Tax Services</h2>
+            <h4 class="top-img-text">Your Tax Professionals</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_TaxServices_topmod_01.jpg" alt="Pen, Tax Papers, and Small Calculator"/>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">Company Overview</h3>
-            <hr class="hr-bottom"/>
+            <br/>
+            <p class="leftright-margins"><strong>Tranont Tax Services help you to navigate through the difficulty of taxes with our partner, Corporate Service Professionals’ Certified Public Accountants who understands tax laws and can help you to receive the greatest return each year.</strong> All Tranont associates who are eligible* may receive:</p>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p class="leftright-margins">We are people just like you, working to make our financial future, and the financial futures of those who join our team, a little more secure.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">History</h3>
-            <hr class="hr-bottom"/>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p class="leftright-margins">In 2008, the founders of Tranont created the idea a company based on the values of integrity, trust, sustainability and the desire to provide products that help individuals better manage their finances. They began simply with an innovative technology product that was geared toward helping people manage their finances in a single location known as OneView.</p>
-            <p class="leftright-margins">In 2010, they began testing a variety of marketing initiatives that would allow them to maintain the core values they set out to achieve. Among them, they tested the direct sales model with a unique compensation plan allowing individuals to achieve financial success for their business building efforts. They discovered that it was the perfect fit.</p>
-            <p class="leftright-margins">In 2013, Tranont was registered and in January of 2014, it was officially launched. Since its beginning, Tranont has grown to include more than 30 internal employees and thousands of associates.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">Future of Tranont</h3>
-            <hr class="hr-bottom"/>
+            <ul>
+              <li>Tax consultation and advice</li>
+              <li>Basic personal tax returns – includes your basic return plus your Tranont business.</li>
+              <li>Business tax return if the legal entity was created by Tranont Legal.</li>
+            </ul>
+            <p class="leftright-margins">For an additional fee, associates may also receive:</p>
+            <ul>
+              <li>Complex business and personal tax returns</li>
+              <li>Prior year tax returns (2015 and earlier)</li>
+              <li>Amended tax returns</li>
+              <li>IRS assistance at an hourly rate</li>
+              <li>Basic bookkeeping at an hourly rate</li>
+            </ul>
+            <p class="leftright-margins">Tax law is complicated and doing your own tax returns can turn into a time-consuming hassle. We want each of our associates to understand how to navigate this yearly necessity with the best possible financial advantages.</p>
+            <p class="leftright-margins">Sign up as an Associate or as a Customer:</p>
+            <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" type="button" class="btn btn-default signup-button leftright-margins">Sign Up</a>
           </div>
         </div>
         <div class="row bottom-row">
-          <div class="col-xs-12 bottom-row">
-            <p class="leftright-margins">Tranont is committed to continuing development and innovation. We create, maintain and partner with world-class products and services in the financial services arena. We are always evaluating ways that we can further improve the suite of services offered to assist associates in financial wellness and growing their businesses.</p>
+          <div class="col-xs-12">
+            <p class="leftright-margins"><em>*To be eligible for this service, associates must be an active member of Tranont for 6 months of the tax year, be in good status and active at the time of the tax filing.</em></p>
           </div>
         </div>
       </div>
@@ -661,6 +710,10 @@
 			        $(this).removeClass('open');
 			    });
 		    });
+        // change the direction of the Font Awesome caret when panel expand and collapse
+        $('.button').click(function(){
+          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
+        });
         // FAQ accordion functionality
         $(document).ready(function() {
             var parentDivs = $('#nestedAccordion div'),
