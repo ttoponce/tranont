@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-		<title>Tranont | Tax Services</title>
+		<title>Tranont | Jeep 4 U</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
@@ -218,6 +218,29 @@
       .dissappearing-br {
         display: none;
       }
+      .fluid-width-video-wrapper {
+        width: 70%;
+        position: relative;
+        padding: 39.4% 0 0 0;
+        margin: 1% 0 0 15%;
+      }
+      .fluid-width-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
       .hr-top {
         border-color: #888888;
         margin-top: 5%;
@@ -239,6 +262,11 @@
       }
       .no-top-border {
         border-width: 0px 2px 2px 2px !important;
+      }
+      .oneview-diagram {
+        width: 400px;
+        display: block;
+        margin: 1% auto 0 auto;
       }
       .panel-group .panel {
         border-radius: 0;
@@ -280,6 +308,26 @@
       }
       .single-line {
         padding: 11px 0;
+      }
+      .tax-bot {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .tax-services {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 35%;
+        letter-spacing: 10px !important;
+        left: 1%;
       }
       .ticket-text {
         font-size: 12px;
@@ -345,12 +393,110 @@
         background-color: #eeeeee;
         border: 2px solid #333333;
       }
+      #computer-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #id-theft-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring img {
+        width: 20%;
+      }
       #text-bottom {
         margin-bottom: 15px;
       }
       #top-panel {
         margin-top: 4%;
       }
+
+      /**** Begin - FAQ Accordion Stylings ****/
+      #nestedAccordion{
+        width: 98%;
+      }
+      #nestedAccordion h2, #nestedAccordion h3,
+      .accordion_container, #nestedAccordion div{
+        /* reset styles for accordion */
+        margin:0;
+        padding:0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 19px;
+        list-style:none;
+      }
+      #nestedAccordion h5 {
+        margin: 0 2% 1% 2%;
+        padding: 0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        list-style: none;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
+      #nestedAccordion h2{
+        cursor: pointer;
+        color: #888b8d;
+        font-size: 21px;
+        font-weight: 400;
+        padding: 10px 0 10px 10px;
+        margin: 6px 0 5px 0;
+        background-color: #ffffff;
+        border: 4px solid #888b8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h2:focus {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h2:hover {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h3{
+      	line-height: 21px;
+        cursor:pointer;
+        padding:5px 0 5px 15px;
+        color: #999999;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+        background-color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h3:hover{
+        color:#222222;
+      }
+      #nestedAccordion h3 + div{
+        background-color:#ffffff;
+        padding: 3px 5px 5px 30px;
+      }
+      #nestedAccordion li{
+        font-weight: 100;
+        color: #000000;
+        font-size: 16px;
+      }
+      /**** End - FAQ Accordion Stylings ****/
 
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
@@ -457,6 +603,15 @@
           font-size: 18px;
           margin-top: 20%;
           letter-spacing: 5px;
+        }
+        #nestedAccordion h2 {
+          border: 2.5px solid #888b8d;
+          font-size: 16px;
+          padding: 8px 0 6px 10px;
+        }
+        #nestedAccordion h3 {
+          font-size: 12px;
+          letter-spacing: 1px;
         }
       }
       /**** END Main Page Stylings ****/
@@ -622,40 +777,39 @@
       <div class="container main">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="top-img-header">Tax Services</h2>
-            <h4 class="top-img-text">Your Tax Professionals</h4>
-            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_TaxServices_topmod_01.jpg" alt="Pen, Tax Papers, and Small Calculator"/>
+            <h2 class="top-img-header">Jeep 4 U</h2>
+            <h4 class="top-img-text">Drive Happy</h4>
+            <img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Compensation_topmod_01.jpg" alt="Jeeps, Some with Tranont Vinyl Logos on Them, Lined Up Next to Each Other"/>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Jeep 4 U Program</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="fluid-width-video-wrapper">
+              <iframe src="https://www.youtube.com/embed/SRLAtvA2PtM?modestbranding=0&amp;;rel=0&amp;;showinfo=0;autohide=1" frameborder="0" allowfullscreen=""></iframe>
+            </div>
             <br/>
-            <p class="leftright-margins"><strong>Tranont Tax Services help you to navigate through the difficulty of taxes with our partner, Corporate Service Professionals’ Certified Public Accountants who understands tax laws and can help you to receive the greatest return each year.</strong> All Tranont associates who are eligible* may receive:</p>
           </div>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-xs-12">
-            <ul>
-              <li>Tax consultation and advice</li>
-              <li>Basic personal tax returns – includes your basic return plus your Tranont business.</li>
-              <li>Business tax return if the legal entity was created by Tranont Legal.</li>
-            </ul>
-            <p class="leftright-margins">For an additional fee, associates may also receive:</p>
-            <ul>
-              <li>Complex business and personal tax returns</li>
-              <li>Prior year tax returns (2015 and earlier)</li>
-              <li>Amended tax returns</li>
-              <li>IRS assistance at an hourly rate</li>
-              <li>Basic bookkeeping at an hourly rate</li>
-            </ul>
-            <p class="leftright-margins">Tax law is complicated and doing your own tax returns can turn into a time-consuming hassle. We want each of our associates to understand how to navigate this yearly necessity with the best possible financial advantages.</p>
-            <p class="leftright-margins">Sign up as an Associate or as a Customer:</p>
-            <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" type="button" class="btn btn-default signup-button leftright-margins">Sign Up</a>
+          <div class="col-xs-12 leftright-margins">
+            <p class="center"><strong>You must be a Tranont Associate to participate in the program</strong></p>
+            <br/>
+            <p>Do you sometimes feel overwhelmed by car payments, mortgages, and bills? Tranont provides a car bonus when you hit the third rank in the compensation plan to help you eliminate the stress from your monthly car payment. When you reach the Financial Consultant rank, you have the option to receive $250 each month, or buy a qualifying Jeep™ and receive $500 each month towards your car payment.  Now you can focus on saving more money, preparing for retirement, or taking a fun trip.</p>
           </div>
         </div>
+        <hr>
         <div class="row bottom-row">
-          <div class="col-xs-12">
-            <p class="leftright-margins"><em>*To be eligible for this service, associates must be an active member of Tranont for 6 months of the tax year, be in good status and active at the time of the tax filing.</em></p>
+          <div class="col-xs-12 leftright-margins">
+            <p>If you are a Tranont Associate, click below to find out more and/or enroll in the Jeep 4 U program.</p>
+            <a href="https://members.tranont.com/members/jeep4u" type="button" class="btn btn-default signup-button">Jeep 4 U</a>
           </div>
         </div>
       </div>
