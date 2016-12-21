@@ -1084,7 +1084,7 @@
     		      </li>
     		    </ul>
             <div class="dropdown pull-right">
-              <form class="navbar-form" role="search">
+              <form id="search-form" class="navbar-form" role="search">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
                   <div class="input-group-btn" id="srch-btn">
@@ -1285,6 +1285,19 @@
         }).on('hide.bs.collapse', function() {
           $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
         });
+        // script to load video onclick
+        $('#video-button').click(function(){
+          $('.top-row').fadeOut('slow');
+          $('.top-row-video').css('display', 'block');
+        });
+        $('#video-button').click(function() {
+          $('.top-section-video-play').after('<video class="top-video" autoplay controls><source src="https://s3-us-west-2.amazonaws.com/cont.training/Videos/TRA_0089_TranontIntroVideo.mp4" type="video/mp4"></source> Your browser does not support playing this video.</video>')
+        });
+        // search functionality
+        document.getElementById('search-form').onsubmit = function() {
+          window.location = 'http://www.google.com/search?q=site:tranont.com' + document.getElementById('srch-term').value;
+          return false;
+        }
 	    </script>
     </body>
 </html>
