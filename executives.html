@@ -20,140 +20,143 @@
     </script>
 
 		<style>
-      /**** BEGIN Navbar Stylings ****/
-			.dropdown .dropdown-menu {
-			    -webkit-transition: all;
-			    -moz-transition: all;
-			    -ms-transition: all;
-			    -o-transition: all;
-			    transition: all;
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
 
-			    max-height: 0;
-			    display: block;
-			    overflow: hidden;
-			    opacity: 0;
-			}
-			.dropdown.open .dropdown-menu {
-			    max-height: 300px;
-			    opacity: 1;
-          width: 190px;
-			}
-      .dropdown-header {
-        padding: 5px 10px 2px 10px;
-        font-weight: bold;
-      }
-			.dropdown-menu > li > a {
-				padding: 3px 11px;
-				color: #555555;
-				font-size: 11px;
-			}
-      .dropdown-menu .divider {
-        margin: 0;
-      }
-      .form-control {
-        border-radius: 0;
-      }
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 190px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 80px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 10px 15px;
+    }
+    .navbar-brand img {
+      width: 125px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    @media only screen and (max-width: 1200px) {
       .join-text {
-        margin-left: 138px;
+        margin-left: 28px;
       }
-			.navbar {
-				cursor: pointer;
-  				margin-bottom: 0;
-			}
-			.navbar-default {
-				background-color: #ffffff;
-			}
-			.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-				color: #ffffff;
-				background-color: #05538a;
-				cursor: pointer;
-			}
-			.navbar-brand {
-				padding: 10px 15px;
-			}
-			.navbar-brand img {
-				width: 125px;
-				border: none;
-				margin: 0;
-				padding: 0;
-			}
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .join-text {
+        margin-left: 0;
+      }
       .navbar-form {
-        float: right;
-        padding: 0;
+        width: 90px;
       }
-			.navbar-nav {
-				font-size: 11px;
-				letter-spacing: 2px;
-			}
-      .navbar-nav>li>.dropdown-menu {
-        padding: 0;
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
       }
-			#associate-login {
-				color: #777777;
-				transition: color .1s;
-			}
-			#associate-login:hover {
-				color: #05538a;
-			}
-			#join-tranont {
-				color: #05538a;
-				transition: color .1s;
-			}
-			#join-tranont:hover {
-				color: #777777;
-			}
-			#join {
-				color: #05538a;
-				transition: color .1s;
-			}
-			#join:hover {
-				color: #777777;
-			}
-      @media only screen and (max-width: 1200px) {
-        .join-text {
-          margin-left: 63px;
-        }
-        .nav > li > a {
-  				padding: 15px 5px;
-  			}
+      #join {
+        display: none;
       }
-      @media only screen and (max-width: 1000px) {
-        #join {
-          display: block;
-        }
-  			#join-tranont {
-  				display: none;
-  			}
+    }
+    @media only screen and (max-width: 767px) {
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
       }
-      @media only screen and (max-width: 991px) {
-        .join-text {
-          margin-left: 0;
-        }
-        .navbar-form {
-          width: 129px;
-        }
+      #join-tranont {
+        display: block;
       }
-      @media only screen and (min-width: 992px) {
-  			#join-tranont {
-  				display: block;
-  			}
-  			#join {
-  				display: none;
-  			}
+      #join {
+        display: none;
       }
-      @media only screen and (max-width: 767px) {
-        .navbar-form {
-          width: auto;
-          margin: 0 15px 15px 15px;
-        }
-  			#join-tranont {
-  				display: block;
-  			}
-  			#join {
-  				display: none;
-  			}
-      }
-      /**** END Navbar Stylings ****/
+    }
+    /**** END Navbar Stylings ****/
 
       /**** BEGIN Main Page Stylings ****/
       a {
@@ -465,6 +468,12 @@
     		      		<li><a href="http://beta.tranont.com/events.html#calendar">EVENT CALENDAR</a></li>
     		      	</ul>
     		      </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="United States Flag"/></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://beta.tranont.ca/events.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (EN)</a></li>
+                </ul>
+              </li>
     		      <li>
     		      	<a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
     		      </li>
