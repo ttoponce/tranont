@@ -21,6 +21,9 @@
 
 		<style>
       /**** BEGIN Navbar Stylings ****/
+      ul li img {
+        width: 30px;
+      }
 			.dropdown .dropdown-menu {
 			    -webkit-transition: all;
 			    -moz-transition: all;
@@ -54,7 +57,7 @@
         border-radius: 0;
       }
       .join-text {
-        margin-left: 138px;
+        margin-left: 80px;
       }
 			.navbar {
 				cursor: pointer;
@@ -88,6 +91,9 @@
       .navbar-nav>li>.dropdown-menu {
         padding: 0;
       }
+      .pull-right {
+        width: 210px;
+      }
 			#associate-login {
 				color: #777777;
 				transition: color .1s;
@@ -111,11 +117,14 @@
 			}
       @media only screen and (max-width: 1200px) {
         .join-text {
-          margin-left: 63px;
+          margin-left: 28px;
         }
         .nav > li > a {
   				padding: 15px 5px;
   			}
+        .pull-right {
+          width: 200px;
+        }
       }
       @media only screen and (max-width: 1000px) {
         #join {
@@ -130,7 +139,10 @@
           margin-left: 0;
         }
         .navbar-form {
-          width: 129px;
+          width: 90px;
+        }
+        .pull-right {
+          width: 85px;
         }
       }
       @media only screen and (min-width: 992px) {
@@ -145,6 +157,9 @@
         .navbar-form {
           width: auto;
           margin: 0 15px 15px 15px;
+        }
+        .pull-right {
+          width: auto;
         }
   			#join-tranont {
   				display: block;
