@@ -885,32 +885,6 @@
 			        $(this).removeClass('open');
 			    });
 		    });
-        // change the direction of the Font Awesome caret when panel expand and collapse
-        $('.button').click(function(){
-          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
-        });
-        // FAQ accordion functionality
-        $(document).ready(function() {
-            var parentDivs = $('#nestedAccordion div'),
-            childDivs = $('#nestedAccordion h3').siblings('div');
-
-            $('#nestedAccordion h2').click(function(){
-                parentDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-            $('#nestedAccordion h3').click(function(){
-                childDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-        });
 	    </script>
     </body>
 </html>

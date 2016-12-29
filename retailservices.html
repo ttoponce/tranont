@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
@@ -1044,13 +1043,7 @@
 			        $(this).removeClass('open');
 			    });
 		    });
-        // change the direction of the Font Awesome caret when panel expand and collapse
-        $('.collapse').on('show.bs.collapse', function() {
-          $(this).parent().find(".glyphicon-triangle-right").removeClass("glyphicon-triangle-right").addClass("glyphicon-triangle-bottom");
-        }).on('hide.bs.collapse', function() {
-          $(this).parent().find(".glyphicon-triangle-bottom").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-right");
-        });
-        // color toggle for compensation plan  and current promotion button titles
+        // color toggle for page buttons
         $(".merchant-button").hover(function() {
           $(".merchant-title").toggleClass("merchant-title-color");
         });
