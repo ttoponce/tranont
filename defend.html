@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,11 +187,16 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      h3, h4, h5, li {
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
         letter-spacing: 2px;
       }
-      p, h3, h4, h5, li {
-        text-transform: uppercase;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .bottom-row {
         margin-bottom: 2.5%;
@@ -204,8 +213,6 @@
         margin: 10% auto;
       }
       .col-xs-3 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 5%;
       }
       .col-xs-3 img {
@@ -215,13 +222,7 @@
         padding: 0;
       }
       .col-xs-4 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 20px;
-      }
-      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
@@ -328,6 +329,7 @@
       }
       .sub-nav .col-xs-4 p {
         margin: 0;
+        letter-spacing: 2px;
       }
       .tax-bot {
         font-size: 36px;
@@ -442,6 +444,14 @@
       }
 
       /**** Begin - FAQ Accordion Stylings ****/
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
       #nestedAccordion{
         width: 98%;
       }
@@ -453,25 +463,6 @@
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
         font-size: 19px;
         list-style:none;
-      }
-      #nestedAccordion h5 {
-        margin: 0 2% 1% 2%;
-        padding: 0;
-        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        list-style: none;
-        font-weight: 400;
-        line-height: 21px;
-      }
-      .accordion_container {
-        display:none;
-        color: #888b8d;
-        overflow:hidden;
-      }
-      .accordion_container a {
-      	text-decoration: none;
       }
       #nestedAccordion h2{
         cursor: pointer;
@@ -510,6 +501,17 @@
       #nestedAccordion h3 + div{
         background-color:#ffffff;
         padding: 3px 5px 5px 30px;
+      }
+      #nestedAccordion h5 {
+        margin: 0 2% 1% 2%;
+        padding: 0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 16px;
+        text-transform: none;
+        letter-spacing: 2px;
+        list-style: none;
+        font-weight: 400;
+        line-height: 21px;
       }
       #nestedAccordion li{
         font-weight: 100;
@@ -937,7 +939,7 @@
                 </div>
                 <div class="col-xs-6 center">
                   <h3>iDefend® Elite</h3>
-                  <p><small>All the essential ID theft protection benefits – plus credit monitoring</small></p>
+                  <p><small>All the essential ID theft protection benefits – plus credit monitoring.</small></p>
                   <h5>Individual Plan</h5>
                   <h4>$16.95 /mo.</h4>
                   <p><small>(Reg. $24.95)</small></p>
@@ -958,8 +960,8 @@
               </div>
               <div class="row">
                 <div class="col-xs-12">
-                  <h3 class="leftright-padding"><em>Try it Risk Free!</em></h3>
-                  <p class="leftright-padding"><em>No minimum contract. If you are not satisfied with your service, you may cancel at any time without any further obligation.</em></p>
+                  <h3 class="leftright-padding">Try it Risk Free!</h3>
+                  <p class="leftright-padding">No minimum contract. If you are not satisfied with your service, you may cancel at any time without any further obligation.</p>
                 </div>
               </div>
               <hr>
@@ -1329,43 +1331,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // change the direction of the Font Awesome caret when panel expand and collapse
-        $('.button').click(function(){
-          $(this).find('span').toggleClass('glyphicon-triangle-right').toggleClass('glyphicon-triangle-bottom');
-        });
-        // FAQ accordion functionality
-        $(document).ready(function() {
-            var parentDivs = $('#nestedAccordion div'),
-            childDivs = $('#nestedAccordion h3').siblings('div');
-
-            $('#nestedAccordion h2').click(function(){
-                parentDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-            $('#nestedAccordion h3').click(function(){
-                childDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

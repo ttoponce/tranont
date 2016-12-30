@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,9 +187,6 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      p {
-        text-transform: uppercase;
-      }
       .bottom-row {
         margin-bottom: 2.5%;
       }
@@ -210,8 +211,8 @@
         letter-spacing: 2px;
       }
       .col-xs-6 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .col-xs-12 {
         padding: 0;
@@ -221,8 +222,8 @@
         letter-spacing: 2px;
       }
       .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .dissappearing-br {
         display: none;
@@ -364,6 +365,21 @@
       }
 
       /**** Begin - FAQ Accordion Stylings ****/
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
+      .accordion_container p {
+      	padding: 2px 5px 5px 0px;
+      	font-size: 16px;
+        margin: 0;
+        color: #000001;
+        letter-spacing: 1px;
+      }
       #nestedAccordion{
         width: 98%;
       }
@@ -375,22 +391,6 @@
         font-family: Roboto, sans-serif;
         font-size: 19px;
         list-style:none;
-      }
-      .accordion_container {
-        display:none;
-        color: #888b8d;
-        overflow:hidden;
-      }
-      .accordion_container a {
-      	text-decoration: none;
-      }
-      .accordion_container p {
-      	padding: 2px 5px 5px 0px;
-      	font-size: 14px;
-        margin: 0;
-        color: #000001;
-        text-transform: uppercase;
-        letter-spacing: 1px;
       }
       #nestedAccordion h2{
         cursor: pointer;
@@ -808,7 +808,7 @@
             <p class="leftright-margins">The Tranont founding principle and company tag line is, “Change Life.”</p>
             <p class="leftright-margins">From products and services that help individuals take control of their finances, to a community of like-minded individuals geared towards living life to its fullest, Tranont is passionate about the desire to “Change Life.”</p>
             <p class="leftright-margins">Tranont employees, associates and partners are encouraged to support projects in their local communities. These individuals are also encouraged to make monetary contributions to causes that Tranont officially promotes at events.</p>
-            <p class="leftright-margins">For questions about the Tranont charitable giving programs or to get involved, please email <a target="_top" href="mailto:support@tranont.com">support@tranont.com.</a></p>
+            <p class="leftright-margins">For questions about the Tranont charitable giving programs or to get involved, please email <a href="mailto:support@tranont.com">support@tranont.com.</a></p>
           </div>
         </div>
         <div class="row" id="investor-relations">
@@ -821,7 +821,7 @@
         <div class="row">
           <div class="col-xs-12">
             <p class="leftright-margins">Tranont is a privately held company located in Sandy, Utah. We welcome the opportunity to talk to you about Tranont and the various business opportunities available.</p>
-            <p class="leftright-margins">For investor relations inquiries, please contact Russ Losee at <a target="_top" href="mailto:investorrelations@tranont.com">investorrelations@tranont.com.</a></p>
+            <p class="leftright-margins">For investor relations inquiries, please contact Russ Losee at <a href="mailto:investorrelations@tranont.com">investorrelations@tranont.com.</a></p>
           </div>
         </div>
         <div class="row" id="media-kit">
@@ -838,7 +838,7 @@
           </div>
           <div class="col-xs-6 center">
             <h4><a href="https://s3-us-west-2.amazonaws.com/cont.training/Docs/Tranont_StyleGuide_MediaKit.pdf">Tranont Style Guide</a></h4>
-            <p>These styles must be followed when creating pamphlets, fliers, or other print or electronic media of any kind to promote Tranont and/or Tranont's products and services or when selling Tranont's products and/or services.</p>
+            <p>These styles must be followed when creating pamphlets, fliers, or other print or electronic media of any kind to promote Tranont and/or Tranont's products and/or services or when selling Tranont's products and/or services.</p>
           </div>
         </div>
         <div class="row" id="supportfaq">
@@ -870,7 +870,7 @@
             <p>
               <strong>Toll Free:</strong> (800) 973-3715<br/>
               <strong>Fax:</strong> (801) 384-7143<br/>
-              <strong>Email:</strong> <a target="_top" href="mailto:support@tranont.com">support<br class="dissappearing-br"/>@tranont.com</a>
+              <strong>Email:</strong> <a href="mailto:support@tranont.com">support<br class="dissappearing-br"/>@tranont.com</a>
             </p>
           </div>
         </div>
@@ -884,7 +884,7 @@
       			        </div>
       			        <h3>I just joined Tranont, where do we send my W-9?</h3>
       			        <div class="accordion_container">
-      			            <p>Fax your W-9 to 801-384-7143 or you can scan and email a copy of your W-9 to <a target="_top" href="mailto:support@tranont.com">support@tranont.com</a>.</p>
+      			            <p>Fax your W-9 to 801-384-7143 or you can scan and email a copy of your W-9 to <a href="mailto:support@tranont.com">support@tranont.com</a>.</p>
       			        </div>
       			        <h3>Is there an age limit for enrollment?</h3>
       			        <div class="accordion_container">
@@ -916,7 +916,7 @@
       			        </div>
       			        <h3>Will Tranont make any exceptions to the placement rules?</h3>
       			        <div class="accordion_container">
-      			            <p>Placement considerations must be submitted in writing to the Compliance Department at (<a target="_top" href="mailto:support@tranont.com">support@tranont.com</a>). Approval of all associates affected by the change must be included with the request.</p>
+      			            <p>Placement considerations must be submitted in writing to the Compliance Department at (<a href="mailto:support@tranont.com">support@tranont.com</a>). Approval of all associates affected by the change must be included with the request.</p>
       			        </div>
       			        <h3>Can I change my sponsor after joining Tranont?</h3>
       			        <div class="accordion_container">
@@ -1013,7 +1013,7 @@
       			        </div>
       			        <h3>If both my spouse and I are Tranont members, can we both earn a Jeep™ bonus?</h3>
       			        <div class="accordion_container">
-      			            <p>Yes. However, there are two additional qualification methods to earn a second Jeep™ in the same household. See the <a href="https://tranont.com/opportunity/compensation-plan/">comp plan</a> for more details.</p>
+      			            <p>Yes. However, there are two additional qualification methods to earn a second Jeep™ in the same household. See the <a href="https://beta.tranont.com/compensation.html#comp-plan">comp plan</a> for more details.</p>
       			        </div>
       			        <h3>Do I have to put Tranont logo decals on my Jeep™?</h3>
       			        <div class="accordion_container">
@@ -1036,11 +1036,11 @@
       			        </div>
       			        <h3>Do I get to count all the Group Volume (GV) that is earned within my group?</h3>
       			        <div class="accordion_container">
-      			            <p>There are circumstances when not all Group Volume is counted toward rank qualification. Group Volume calculations are subject Max Leg % requirements. See details <a href="https://tranont.com/opportunity/compensation-plan/" target="_blank">here</a>.</p>
+      			            <p>There are circumstances when not all Group Volume is counted toward rank qualification. Group Volume calculations are subject Max Leg % requirements. See details <a href="https://beta.tranont.com/compensation.html#comp-plan" target="_blank">here</a>.</p>
       			        </div>
       			        <h3>Can I get my commission directly deposited into my bank account?</h3>
       			        <div class="accordion_container">
-      			            <p>We can only make direct deposits into ProPay accounts (<a href="http://www.propay.com" target="_blank">www.propay.com</a>). If you did not elect to open one of these accounts and receive a Tranont debit card during your signup with Tranont, they are $15 for the first year and $10 each year after that. Associates that wish to have one of these accounts may email <a target="_top" href="mailto:support@tranont.com">support@tranont.com</a> or call Associate Services at 800-973-3715.</p>
+      			            <p>We can only make direct deposits into ProPay accounts (<a href="http://www.propay.com" target="_blank">www.propay.com</a>). If you did not elect to open one of these accounts and receive a Tranont debit card during your signup with Tranont, they are $15 for the first year and $10 each year after that. Associates that wish to have one of these accounts may email <a href="mailto:support@tranont.com">support@tranont.com</a> or call Associate Services at 800-973-3715.</p>
       			        </div>
       			        <h3>When do I receive residual commissions and/or promotional bonuses?</h3>
       			        <div class="accordion_container">
@@ -1133,39 +1133,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // FAQ accordion functionality
-        $(document).ready(function() {
-            var parentDivs = $('#nestedAccordion div'),
-            childDivs = $('#nestedAccordion h3').siblings('div');
-
-            $('#nestedAccordion h2').click(function(){
-                parentDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-            $('#nestedAccordion h3').click(function(){
-                childDivs.slideUp();
-                if($(this).next().is(':hidden')){
-                    $(this).next().slideDown();
-                }else{
-                    $(this).next().slideUp();
-                }
-            });
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -267,8 +271,8 @@
         letter-spacing: 2px;
       }
       .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .col-xs-12 iframe {
         width: 100%;
@@ -293,13 +297,12 @@
       }
       .dropdown-text {
         margin: 0 2% 1% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .dropdown-text-bottom {
         margin: -2% 2% 3% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 16px;
       }
       .filler-text {
         font-size: 12px;
@@ -380,7 +383,6 @@
       }
       .panel-body {
         border: none;
-        text-transform: uppercase;
         padding-top: 0;
         padding-bottom: 0;
       }
@@ -1188,51 +1190,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // color toggle for compensation plan  and current promotion button titles
-        $(".residual-button").hover(function() {
-          $(".residual-title").toggleClass("residual-title-color");
-        });
-        $(".team-button").hover(function() {
-          $(".team-title").toggleClass("team-title-color");
-        });
-        $(".car-button").hover(function() {
-          $(".car-title").toggleClass("car-title-color");
-        });
-        $(".pools-button").hover(function() {
-          $(".pools-title").toggleClass("pools-title-color");
-        });
-        $(".life-button").hover(function() {
-          $(".life-title").toggleClass("life-title-color");
-        });
-        $(".commissions-button").hover(function() {
-          $(".commissions-title").toggleClass("commissions-title-color");
-        });
-        $(".promotional-button").hover(function() {
-          $(".promotional-title").toggleClass("promotional-title-color");
-        });
-        $(".plan-button").hover(function() {
-          $(".plan-title").toggleClass("plan-title-color");
-        });
-        $(".monthly-button").hover(function() {
-          $(".monthly-title").toggleClass("monthly-title-color");
-        });
-        $(".vacation-button").hover(function() {
-          $(".vacation-title").toggleClass("vacation-title-color");
-        });
-        $(".ceo-button").hover(function() {
-          $(".ceo-title").toggleClass("ceo-title-color");
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

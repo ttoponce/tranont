@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,18 +187,16 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      h3, h4, h5, li {
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
         letter-spacing: 2px;
       }
-      hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 0;
-        border-top: 1px solid #eee;
-        width: 95%;
-      }
-      p, h3, h4, h5, li {
-        text-transform: uppercase;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .bottom-row {
         margin: 2% 0 2.5% 0;
@@ -214,8 +216,6 @@
         margin: 10% auto;
       }
       .col-xs-3 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 5%;
       }
       .col-xs-3 img {
@@ -225,13 +225,7 @@
         padding: 0;
       }
       .col-xs-4 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 20px;
-      }
-      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
@@ -384,7 +378,7 @@
         border: 2px solid #333333;
       }
       #taxbot-mobile-image {
-        width: 100%;
+        width: 200px;
       }
       #text-bottom {
         margin-bottom: 15px;
@@ -392,17 +386,7 @@
       #top-panel {
         margin-top: 4%;
       }
-      @media only screen and (max-width: 991px) {
-        .bottom-row .col-xs-9 {
-          padding-top: 0;
-        }
-      }
-      @media only screen and (max-width: 767px) {
-        .leftright-margins {
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-      }
+
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
           font-size: 16px;
@@ -412,6 +396,9 @@
         }
       }
       @media only screen and (max-width: 670px) {
+        .top-img-text {
+          margin-top: 22.5%;
+        }
         .col-xs-3 h4 {
           font-size: 14px;
         }
@@ -424,7 +411,7 @@
         }
         .top-img-text {
           font-size: 18px;
-          margin-top: 22.5%;
+          margin-top: 23%;
         }
       }
       @media only screen and (max-width: 600px) {
@@ -452,11 +439,6 @@
           font-size: 15px;
           margin-top: 24%;
           letter-spacing: 5px;
-        }
-      }
-      @media only screen and (max-width: 425px) {
-        .top-img-text {
-          letter-spacing: 3px !important;
         }
       }
       @media only screen and (max-width: 400px) {
@@ -689,7 +671,7 @@
         <div class="row">
           <div class="col-xs-12">
             <br/>
-            <p class="leftright-margins"><strong>Tranont Taxbot is an application that allows you to track and organize all your expenses to help you get the most out of your yearly tax refund.</strong> It makes it easy to keep track of business expenses, receipts and mileage from anywhere in the world using your smart phone or tablet. This business expense tracker is also very motivating to use because it keeps a running tally of the potential savings you are racking up by documenting your deductible expenses.</p>
+            <p class="leftright-margins"><strong>TRANONT TAXBOT IS AN APPLICATION THAT ALLOWS YOU TO TRACK AND ORGANIZE ALL YOUR EXPENSES TO HELP YOU GET THE MOST OUT OF YOUR YEARLY TAX REFUND.</strong> It makes it easy to keep track of business expenses, receipts and mileage from anywhere in the world using your smart phone or tablet. This business expense tracker is also very motivating to use because it keeps a running tally of the potential savings you are racking up by documenting your deductible expenses.</p>
           </div>
         </div>
         <div class="row">
@@ -754,17 +736,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

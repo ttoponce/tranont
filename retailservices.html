@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,6 +187,13 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
+      .background-title {
+        color: #888b8d;
+      }
+      .background-title-color {
+        color: #000001;
+        font-weight: bold;
+      }
       .bottom-row {
         margin: 3% 0 3% 0;
       }
@@ -263,19 +274,11 @@
         letter-spacing: 2px;
       }
       .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .col-xs-12 iframe {
         width: 100%;
         margin: 0 auto;
-      }
-      .background-title {
-        color: #888b8d;
-      }
-      .background-title-color {
-        color: #000001;
-        font-weight: bold;
       }
       .div-title {
         margin: 0;
@@ -286,13 +289,9 @@
       }
       .dropdown-text {
         margin: 0 2% 1% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .dropdown-text-bottom {
         margin: -2% 2% 3% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .filler-text {
         font-size: 12px;
@@ -1032,39 +1031,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // color toggle for page buttons
-        $(".merchant-button").hover(function() {
-          $(".merchant-title").toggleClass("merchant-title-color");
-        });
-        $(".tv-button").hover(function() {
-          $(".tv-title").toggleClass("tv-title-color");
-        });
-        $(".protection-button").hover(function() {
-          $(".protection-title").toggleClass("protection-title-color");
-        });
-        $(".telephones-button").hover(function() {
-          $(".telephones-title").toggleClass("telephones-title-color");
-        });
-        $(".legal-button").hover(function() {
-          $(".legal-title").toggleClass("legal-title-color");
-        });
-        $(".background-button").hover(function() {
-          $(".background-title").toggleClass("background-title-color");
-        });
-        $(".solar-button").hover(function() {
-          $(".solar-title").toggleClass("solar-title-color");
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

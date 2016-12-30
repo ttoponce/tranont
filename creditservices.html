@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,11 +187,16 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      h3, h4, h5, li {
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
         letter-spacing: 2px;
       }
-      p, h3, h4, h5, li {
-        text-transform: uppercase;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .bottom-row {
         margin-bottom: 2.5%;
@@ -204,8 +213,6 @@
         margin: 10% auto;
       }
       .col-xs-3 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 5%;
       }
       .col-xs-3 img {
@@ -215,20 +222,10 @@
         padding: 0;
       }
       .col-xs-4 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 20px;
-      }
-      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
-      }
-      .collapsibale-hr {
-        margin: 20px 10px;
-        border-color: #888b8d;
       }
       .dissappearing-br {
         display: none;
@@ -651,7 +648,7 @@
         <div class="row bottom-row">
           <div class="col-xs-12">
             <br/>
-            <p class="leftright-margins"><strong>Tranont credit services allow you to gain an education in the complicated landscape of credit, improve scores and repair bad credit.</strong> In a partnership with the dedicated team at ReCredit who have decades of experience in the credit arena. They can help you with:</p>
+            <p class="leftright-margins"><strong>TRANONT CREDIT SERVICES ALLOW YOU TO GAIN AN EDUCATION IN THE COMPLICATED LANDSCAPE OF CREDIT, IMPROVE SCORES AND REPAIR BAD CREDIT.</strong> In a partnership with the dedicated team at ReCredit who have decades of experience in the credit arena. They can help you with:</p>
             <ul>
               <li>Comprehensive credit education</li>
               <li>Establishing credit for the first time</li>
@@ -715,17 +712,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

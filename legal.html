@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,11 +187,16 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      h3, h4, h5, li {
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
         letter-spacing: 2px;
       }
-      p, h3, h4, h5, li {
-        text-transform: uppercase;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .bottom-row {
         margin-bottom: 2.5%;
@@ -204,8 +213,6 @@
         margin: 10% auto;
       }
       .col-xs-3 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 5%;
       }
       .col-xs-3 img {
@@ -215,13 +222,7 @@
         padding: 0;
       }
       .col-xs-4 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 20px;
-      }
-      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
@@ -651,7 +652,7 @@
         <div class="row bottom-row">
           <div class="col-xs-12">
             <br/>
-            <p class="leftright-margins"><strong>Tranont Legal is a service for associates and their families. As legal needs arise, our partnership with Corporate Service Professionals makes it easy for you to get quick and effective legal advice that is just a phone call away.</strong> At an additional cost, you can have business entities created and representation for your business. Your legal services include:</p>
+            <p class="leftright-margins"><strong>TRANONT LEGAL IS A SERVICE FOR ASSOCIATES AND THEIR FAMILIES. AS LEGAL NEEDS ARISE, OUR PARTNERSHIP WITH CORPORATE SERVICE PROFESSIONALS MAKES IT EASY FOR YOU TO GET QUICK AND EFFECTIVE LEGAL ADVICE THAT IS JUST A PHONE CALL AWAY.</strong> At an additional cost, you can have business entities created and representation for your business. Your legal services include:</p>
             <ul>
               <li>Legal advice</li>
               <li>Letters and phone calls on your behalf</li>
@@ -704,17 +705,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

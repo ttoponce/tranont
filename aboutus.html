@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,9 +187,6 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      p {
-        text-transform: uppercase;
-      }
       .bottom-row {
         margin-bottom: 5%;
       }
@@ -210,8 +211,8 @@
         letter-spacing: 2px;
       }
       .col-xs-6 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .col-xs-12 {
         padding: 0;
@@ -221,8 +222,8 @@
         letter-spacing: 2px;
       }
       .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .dissappearing-br {
         display: none;
@@ -671,17 +672,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

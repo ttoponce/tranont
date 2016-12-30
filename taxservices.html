@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -183,11 +187,16 @@
       body {
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
-      h3, h4, h5, li {
+      li {
+        letter-spacing: 1px;
+      }
+      h3, h4, h5 {
+        text-transform: uppercase;
         letter-spacing: 2px;
       }
-      p, h3, h4, h5, li {
-        text-transform: uppercase;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .bottom-row {
         margin-bottom: 2.5%;
@@ -204,8 +213,6 @@
         margin: 10% auto;
       }
       .col-xs-3 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 5%;
       }
       .col-xs-3 img {
@@ -215,13 +222,7 @@
         padding: 0;
       }
       .col-xs-4 h4 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
         margin-top: 20px;
-      }
-      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
       }
       .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
         padding: 0;
@@ -651,7 +652,7 @@
         <div class="row">
           <div class="col-xs-12">
             <br/>
-            <p class="leftright-margins"><strong>Tranont Tax Services help you to navigate through the difficulty of taxes with our partner, Corporate Service Professionals’ Certified Public Accountants who understands tax laws and can help you to receive the greatest return each year.</strong> All Tranont associates who are eligible* may receive:</p>
+            <p class="leftright-margins"><strong>TRANONT TAX SERVICES HELP YOU TO NAVIGATE THROUGH THE DIFFICULTY OF TAXES WITH OUR PARTNER, CORPORATE SERVICE PROFESSIONALS’ CERTIFIED PUBLIC ACCOUNTANTS WHO UNDERSTANDS TAX LAWS AND CAN HELP YOU TO RECEIVE THE GREATEST RETURN EACH YEAR.</strong> All Tranont associates who are eligible* may receive:</p>
           </div>
         </div>
         <div class="row">
@@ -720,17 +721,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

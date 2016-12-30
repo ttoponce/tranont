@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -184,7 +188,8 @@
         font-family: "Helvetica Neue", "Gill Sans", sans-serif;
       }
       p {
-        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
       }
       .bottom-row {
         margin-bottom: 2.5%;
@@ -200,16 +205,15 @@
       .col-xs-12 {
         padding: 0;
       }
-      .exec-bio {
-        text-transform: uppercase;
-      }
       .exec-bio h4 {
         letter-spacing: 3px;
+        text-transform: uppercase;
         font-size: 24px;
         margin-top: 0;
       }
       .exec-bio h6 {
         letter-spacing: 2px;
+        text-transform: uppercase;
         font-size: 16px;
       }
       .exec-bio p {
@@ -684,45 +688,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-        // toggle class depending on browser width
-        $(function(){
-          var $window = $(window),
-              $img = $('.exec-img');
-
-          $window.resize(function resize() {
-            if ($window.width() < 535) {
-              $img.removeClass('col-xs-4');
-              return $img.addClass('col-xs-12');
-            }
-            $img.removeClass('col-xs-12');
-            $img.addClass('col-xs-4');
-          }).trigger('resize');
-        });
-
-        $(function(){
-          var $window = $(window),
-              $text = $('.exec-bio');
-
-          $window.resize(function resize() {
-            if ($window.width() < 535) {
-              $text.removeClass('col-xs-8');
-              return $text.addClass('col-xs-12');
-            }
-            $text.removeClass('col-xs-12');
-            $text.addClass('col-xs-8');
-          }).trigger('resize');
-        });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>

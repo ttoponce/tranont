@@ -24,6 +24,9 @@
     ul li img {
       width: 30px;
     }
+    .dropdown {
+      letter-spacing: 2px;
+    }
     .dropdown .dropdown-menu {
         -webkit-transition: all;
         -moz-transition: all;
@@ -49,6 +52,7 @@
       padding: 3px 11px;
       color: #555555;
       font-size: 11px;
+      letter-spacing: 2px;
     }
     .dropdown-menu .divider {
       margin: 0;
@@ -230,11 +234,10 @@
         font-size: 16px;
       }
       .filler-text {
-        font-size: 12px;
+        font-size: 14px;
         color: #444444;
         margin-left: 12%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .glyphicon-triangle-bottom {
         font-size: 65%;
@@ -275,7 +278,6 @@
         border: none;
         background-color: #eeeeee;
         color: #05538a;
-        text-transform: uppercase;
         padding-top: 0;
         padding-bottom: 0;
       }
@@ -612,6 +614,11 @@
                   <div class="panel-body">
                     <h4>$89.00 per Person</h4>
                     <h6>ALL TICKET SALES ARE FINAL, NON-REFUNDABLE, AND NON-TRANSFERRABLE. ASSOCIATES WHO ARE REGISTERED FOR THIS EVENT BUT ARE NOT ABLE TO ATTEND MAY APPLY THIS PURCHASE TO A FUTURE EVENT IF TRANONT RECEIVES NOTICE PRIOR TO DECEMBER 10, 2016.</h6>
+                    <h4>CONVENTION SCHEDULE TIMES:</h4>
+                    <span class="ticket-text">
+                      JANUARY 6-7, 2017<br/>
+                      9AM-6PM EACH DAY WITH A BREAK FROM 12PM-2PM
+                    </span>
                     <h4>AIRPORTS SERVICING LONG BEACH:</h4>
                     <h5>LONG BEACH AIRPORT (LGB)</h5>
                     <span class="ticket-text">
@@ -727,17 +734,6 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
-
-	    <script>
-        // open navbar dropdown menu on hover instead of on click
-	    	$(function(){
-			    $('.dropdown').hover(function() {
-			        $(this).addClass('open');
-			    },
-			    function() {
-			        $(this).removeClass('open');
-			    });
-		    });
-	    </script>
+	    <script src="main.js"></script>
     </body>
 </html>
