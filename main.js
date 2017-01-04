@@ -127,5 +127,5 @@ $('#video-button').click(function(){
   $('.top-row-video').css('display', 'block');
 });
 $('#video-button').click(function() {
-  $('.top-section-video-play').after('<video class="top-video" autoplay controls><source src="https://s3-us-west-2.amazonaws.com/cont.training/Videos/TRA_0089_TranontIntroVideo.mp4" type="video/mp4"></source> Your browser does not support playing this video.</video>')
+  $('.top-section-video-play').after('<video class="top-video" autoplay controls><source src="https://s3-us-west-2.amazonaws.com/tranontmedia/Tranont_Intro_small.webm" type="video/webm"><source src="https://s3-us-west-2.amazonaws.com/tranontmedia/Tranont_Intro_small.mp4" type="video/mp4"> Your browser does not support playing this video.</video>')
 });
