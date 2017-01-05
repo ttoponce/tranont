@@ -12,6 +12,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
+      // Script to Ensure the Homepage Redirects when Needed
+      function breakOut() { if (window != top) top.location.href = location.href; }
       // Script for Google Analytics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -451,84 +453,11 @@
       #top-panel {
         margin-top: 4%;
       }
-
-      /**** Begin - FAQ Accordion Stylings ****/
-      #nestedAccordion{
-        width: 98%;
+      @media only screen and (max-width: 725px) {
+        .top-img-header {
+          font-size: 36px;
+        }
       }
-      #nestedAccordion h2, #nestedAccordion h3,
-      .accordion_container, #nestedAccordion div{
-        /* reset styles for accordion */
-        margin:0;
-        padding:0;
-        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
-        font-size: 19px;
-        list-style:none;
-      }
-      #nestedAccordion h5 {
-        margin: 0 2% 1% 2%;
-        padding: 0;
-        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        list-style: none;
-        font-weight: 400;
-        line-height: 21px;
-      }
-      .accordion_container {
-        display:none;
-        color: #888b8d;
-        overflow:hidden;
-      }
-      .accordion_container a {
-      	text-decoration: none;
-      }
-      #nestedAccordion h2{
-        cursor: pointer;
-        color: #888b8d;
-        font-size: 21px;
-        font-weight: 400;
-        padding: 10px 0 10px 10px;
-        margin: 6px 0 5px 0;
-        background-color: #ffffff;
-        border: 4px solid #888b8d;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      #nestedAccordion h2:focus {
-        border-color: #05538a;
-        color: #05538a;
-      }
-      #nestedAccordion h2:hover {
-        border-color: #05538a;
-        color: #05538a;
-      }
-      #nestedAccordion h3{
-      	line-height: 21px;
-        cursor:pointer;
-        padding:5px 0 5px 15px;
-        color: #999999;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-        background-color: #ffffff;
-        text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 2px;
-      }
-      #nestedAccordion h3:hover{
-        color:#222222;
-      }
-      #nestedAccordion h3 + div{
-        background-color:#ffffff;
-        padding: 3px 5px 5px 30px;
-      }
-      #nestedAccordion li{
-        font-weight: 100;
-        color: #000000;
-        font-size: 16px;
-      }
-      /**** End - FAQ Accordion Stylings ****/
-
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
           font-size: 16px;
@@ -551,7 +480,7 @@
           letter-spacing: 2px;
         }
         .top-img-header {
-          font-size: 36px;
+          font-size: 28px;
           margin-top: 15%;
         }
         .top-img-text {
@@ -581,8 +510,9 @@
           font-size: 12px;
         }
         .top-img-header {
-          font-size: 25px;
+          font-size: 21px;
           margin-top: 17%;
+          letter-spacing: 8px;
         }
         .top-img-text {
           font-size: 15px;
@@ -625,9 +555,7 @@
           font-size: 8px;
         }
         .top-img-header {
-          font-size: 21px;
           margin-top: 18%;
-          letter-spacing: 8px;
         }
         .top-img-text {
           font-size: 12px;
@@ -647,6 +575,9 @@
           font-size: 18px;
           margin-top: 20%;
           letter-spacing: 5px;
+        }
+        .top-img-text {
+          letter-spacing: 5px !important;
         }
         #nestedAccordion h2 {
           border: 2.5px solid #888b8d;
@@ -730,7 +661,7 @@
 		</style>
 
     </head>
-    <body>
+    <body onload="breakOut();">
       <!-- BEGIN Navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
   		  <div class="container">
@@ -769,6 +700,7 @@
     		      		<li><a href="http://tranont.com/legal.html">LEGAL</a></li>
     		      		<li><a href="http://tranont.com/creditservices.html">CREDIT SERVICES</a></li>
     		      		<li><a href="http://tranont.com/taxservices.html">TAX SERVICES</a></li>
+    		      		<li><a href="http://tranont.com/mobilehealthcare.html">MOBILE HEALTHCARE</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">BUSINESS TOOLS</li>
     		      		<li><a href="http://tranont.com/marketingplatform.html">MARKETING PLATFORM</a></li>
@@ -808,7 +740,7 @@
     		      	<a href="http://members.tranont.com/login"><span id="associate-login"><strong>LOGIN</strong></span></a>
     		      </li>
     		    </ul>
-            <div class="dropdown pull-right">
+            <!--<div class="dropdown pull-right">
               <form class="navbar-form" role="search">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
@@ -817,7 +749,7 @@
                   </div>
                 </div>
               </form>
-            </div>
+            </div>-->
           </div>
   		  </div>
   		</nav>
