@@ -1,55 +1,426 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Tipue Search Static Mode Demo</title>
-
+<title>Tranont | Search Results</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Merriweather:300,300italic" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<link rel="stylesheet" href="../../inc/normalize.css">
-<link rel="stylesheet" href="../../inc/standard.css">
-
-<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
-<script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
-<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
-<script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
-
-</head><body>
-
-
-<!-- head -->
-
-
-<div id="head"><div class="head_icon"><a href="http://www.tipue.com"><img src="../../img/head.png" alt="Tipue"></a></div></div>
-
-
-<!-- body -->
-
-
-<div class="center" style="padding-top: 90px;"><a href="http://www.tipue.com/search"><img src="../../img/radio3.png" alt="Tipue Search"></a></div>
-<div class="center"><div class="inner" style="padding-top: 27px;"><h2>Tipue Search Static Mode Demo</h2></div></div>
-
-<div class="block" style="padding-top: 39px;">
-
-<form action="search.html">
-<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-</form>
-<div id="tipue_search_content"></div>
-
-
-
-<div class="center ital" style="padding: 39px 0 30px 0;">&copy; 2015, <a href="http://www.tipue.com">Tipue</a>. Made in London.</div>
-
+<link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="tipuesearch.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="tipuesearch_content.js"></script>
+<script src="tipuesearch_set.js"></script>
+<script src="tipuesearch.min.js"></script>
 <script>
-$(document).ready(function() {
-     $('#tipue_search_input').tipuesearch();
-});
+  // Script for Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84500736-1', 'auto');
+  ga('send', 'pageview');
+  // Script to Activate Search
+  $(document).ready(function() {
+    $('#tipue_search_input').tipuesearch();
+  });
 </script>
+
+<style>
+/**** BEGIN Navbar Stylings ****/
+ul li img {
+  width: 30px;
+}
+.dropdown {
+  letter-spacing: 2px;
+}
+.dropdown .dropdown-menu {
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition: all;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    width: 190px;
+}
+.dropdown-header {
+  padding: 5px 10px 2px 10px;
+  font-weight: bold;
+}
+.dropdown-menu > li > a {
+  padding: 3px 11px;
+  color: #555555;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.dropdown-menu .divider {
+  margin: 0;
+}
+.form-control {
+  border-radius: 0;
+}
+.join-text {
+  margin-left: 80px;
+}
+.navbar {
+  cursor: pointer;
+    margin-bottom: 0;
+}
+.navbar-default {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #ffffff;
+  background-color: #05538a;
+  cursor: pointer;
+}
+.navbar-brand {
+  padding: 10px 15px;
+}
+.navbar-brand img {
+  width: 125px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-form {
+  float: right;
+  padding: 0;
+}
+.navbar-nav {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.navbar-nav>li>.dropdown-menu {
+  padding: 0;
+}
+.pull-right {
+  width: 210px;
+}
+#associate-login {
+  color: #777777;
+  transition: color .1s;
+}
+#associate-login:hover {
+  color: #05538a;
+}
+#join-tranont {
+  color: #05538a;
+  transition: color .1s;
+}
+#join-tranont:hover {
+  color: #777777;
+}
+#join {
+  color: #05538a;
+  transition: color .1s;
+}
+#join:hover {
+  color: #777777;
+}
+#tipue_search_content {
+  padding-top: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .join-text {
+    margin-left: 28px;
+  }
+  .nav > li > a {
+    padding: 15px 5px;
+  }
+  .pull-right {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #join {
+    display: block;
+  }
+  #join-tranont {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .join-text {
+    margin-left: 0;
+  }
+  .navbar-form {
+    width: 90px;
+  }
+  .pull-right {
+    width: 85px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #join-tranont {
+    display: block;
+  }
+  #join {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-form {
+    width: auto;
+    margin: 0 15px 15px 15px;
+  }
+  .pull-right {
+    width: auto;
+  }
+  #join-tranont {
+    display: block;
+  }
+  #join {
+    display: none;
+  }
+}
+/**** END Navbar Stylings ****/
+
+body {
+  font-family: "Helvetica Neue", "Gill Sans", sans-serif !important;
+}
+.block {
+  padding: 7% 3% 3.5% 3.5%;
+}
+@media only screen and (max-width: 875px) {
+  .block {
+    padding-top: 9%;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .block {
+    padding-top: 11%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .block {
+    padding-top: 14%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .block {
+    padding-top: 17%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .block {
+    padding-top: 17%;
+  }
+}
+
+/**** BEGIN Footer Stylings ****/
+ul li a i {
+  background: #888888;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 19px !important;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 23%;
+  padding-right: 1px;
+  transition: background-color .5s;
+}
+ul li a i:hover {
+  background-color: #05538a;
+}
+.footer {
+  background-color: #ffffff;
+  color: #aaaaaa;
+  border: 1px solid #cccccc;
+  padding-top: 7px;
+  padding-bottom: 1%;
+}
+.socialmedia-icons {
+  overflow: auto;
+  padding-left: 0;
+}
+.socialmedia-icons li {
+  list-style-type: none;
+  float: left;
+}
+@media only screen and (max-width: 992px) {
+  ul li a i {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 19px !important;
+    margin-right: 7px;
+    margin-top: 7px;
+  }
+  .footer {
+    padding-bottom: 7px;
+  }
+}
+@media only screen and (max-width: 713px) {
+  ul li a i {
+    margin-top: 7px;
+    padding-left: 1px;
+  }
+  .footer {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 417px) {
+  ul li a i {
+    margin-top: 4px;
+    margin-right: 4px;
+    font-size: 18px !important;
+    padding-top: 9px;
+    padding-left: 3px;
+  }
+  .footer {
+    font-size: 9px;
+  }
+}
+/**** END Footer Stylings ****/
+</style>
+
+</head>
+
+<body>
+  <!-- BEGIN Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://tranont.com/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/company.html">COMPANY</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://tranont.com/company.html#associates">ASSOCIATES</a></li>
+              <li><a href="http://tranont.com/company.html#foundation">FOUNDATION</a></li>
+              <li><a href="http://tranont.com/company.html#investor-relations">INVESTOR RELATIONS</a></li>
+              <li><a href="http://tranont.com/company.html#media-kit">MEDIA KIT</a></li>
+              <li><a href="http://tranont.com/executives.html">EXECUTIVES</a></li>
+              <li><a href="http://tranont.com/aboutus.html">ABOUT US</a></li>
+              <li><a href="http://tranont.com/company.html#supportfaq">SUPPORT</a></li>
+              <li><a href="http://tranont.com/company.html#supportfaq">FAQ</a></li>
+              <li><a href="http://tranont.com/company.html#blog">BLOG</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/products.html">PRODUCTS</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">CORE</li>
+              <li><a href="http://tranont.com/oneview.html">ONEVIEW</a></li>
+              <li><a href="http://tranont.com/defend.html">DEFEND</a></li>
+              <li><a href="http://tranont.com/taxbot.html">TAXBOT</a></li>
+              <li><a href="http://tranont.com/legal.html">LEGAL</a></li>
+              <li><a href="http://tranont.com/creditservices.html">CREDIT SERVICES</a></li>
+              <li><a href="http://tranont.com/taxservices.html">TAX SERVICES</a></li>
+              <li><a href="http://tranont.com/mobilehealthcare.html">MOBILE HEALTHCARE</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">BUSINESS TOOLS</li>
+              <li><a href="http://tranont.com/marketingplatform.html">MARKETING PLATFORM</a></li>
+              <li><a href="http://tranont.com/associatecenter.html">ASSOCIATE CENTER</a></li>
+              <li class="divider"></li>
+              <li><a href="http://tranont.com/retailservices.html">RETAIL SERVICES</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/compensation.html">COMPENSATION</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://tranont.com/compensation.html#comp-plan">COMPENSATION PLAN</a></li>
+              <li><a href="http://tranont.com/compensation.html#why-tranont">WHY TRANONT</a></li>
+              <li><a href="http://tranont.com/compensation.html#current-promos">CURRENT PROMOTIONS</a></li>
+              <li><a href="http://tranont.com/retailservices.html">RETAIL SERVICES</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://tranont.com/events.html">EVENTS</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://tranont.com/events.html#national">NATIONAL EVENTS</a></li>
+              <li><a href="http://tranont.com/events.html#international">INTERNATIONAL EVENTS</a></li>
+              <li><a href="http://tranont.com/events.html#regional">REGIONAL EVENTS</a></li>
+              <li><a href="http://tranont.com/events.html#calendar">EVENT CALENDAR</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="United States Flag"/></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://tranontinternational.ca"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (EN)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>JOIN TRANONT</strong></span><span id="join"><strong>JOIN</strong></span></a>
+          </li>
+          <li>
+            <a href="http://members.tranont.com/login"><span id="associate-login"><strong>LOGIN</strong></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END Navbar -->
+
+<!-- BEGIN Main Content -->
+<div class="block">
+  <form action="search.html">
+    <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+  </form>
+  <div id="tipue_search_content"></div>
+</div>
+<!-- BEGIN Main Content -->
+
+<!-- BEGIN Footer -->
+<div class="container">
+  <div class="row footer">
+    <div class="col-xs-2">
+      <span class="footer-address">
+        8871 S. Sandy Pkwy<br/>
+        Suite 200<br/>
+        Sandy, UT 84070
+      </span>
+    </div>
+    <div class="col-xs-3">
+      <span class="footer-schedule">
+        <strong>Toll-Free:</strong> 800.973.3715<br/>
+        <strong>Fax:</strong> 801.384.7143<br/>
+        <strong>Email:</strong> support@tranont.com
+      </span>
+    </div>
+    <div class="col-xs-3">
+      <span class="footer-schedule">
+        Monday-Friday: 8am-6pm<br/>
+        Closed Saturday & Sunday<br/>
+        <em>Times in Mountain Time</em>
+      </span>
+    </div>
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-3">
+      <strong>Stay Connected:</strong><br/>
+      <ul class="socialmedia-icons" id="socialmedia-icons-lg">
+        <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+        <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END Footer -->
+<script src="main.js"></script>
 
 </body>
 </html>
