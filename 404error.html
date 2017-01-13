@@ -21,10 +21,6 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-84500736-1', 'auto');
       ga('send', 'pageview');
-      // Script to Activate Search
-      $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch();
-      });
     </script>
 
 		<style>
@@ -291,10 +287,32 @@
           margin-right: 4px;
           font-size: 18px !important;
           padding-top: 9px;
-          padding-left: 3px;
+          padding-left: 1px;
         }
         .footer {
-          font-size: 9px;
+          font-size: 8px;
+        }
+        #social-media {
+          float: right;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-3 {
+          padding: 0;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        ul li a i {
+          padding-left: 1px;
+        }
+        .col-xs-3 {
+          padding: 0;
+        }
+        .footer {
+          font-size: 8px;
+        }
+        #social-media {
+          float: right;
         }
       }
       /**** END Footer Stylings ****/
@@ -432,7 +450,7 @@
           </div>
           <div class="col-xs-1">
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-3" id="social-media">
             <strong>Stay Connected:</strong><br/>
             <ul class="socialmedia-icons" id="socialmedia-icons-lg">
               <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
