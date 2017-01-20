@@ -48,6 +48,9 @@ $(".legal-button").hover(function() {
 $(".background-button").hover(function() {
   $(".background-title").toggleClass("background-title-color");
 });
+$(".security-button").hover(function() {
+  $(".security-title").toggleClass("security-title-color");
+});
 $(".solar-button").hover(function() {
   $(".solar-title").toggleClass("solar-title-color");
 });
