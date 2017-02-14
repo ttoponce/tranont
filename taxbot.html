@@ -387,13 +387,20 @@
       #taxbot-mobile-image {
         width: 200px;
       }
+      #taxbot-mobile-text-12 {
+        display: none;
+      }
       #text-bottom {
         margin-bottom: 15px;
       }
       #top-panel {
         margin-top: 4%;
       }
-
+      @media only screen and (max-width: 991px) {
+        #taxbot-mobile-text-9 {
+          padding-left: 100px;
+        }
+      }
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
           font-size: 16px;
@@ -433,6 +440,9 @@
         .col-xs-4 h4 {
           font-size: 12px;
         }
+        #taxbot-mobile-text-9 {
+          padding-top: 0;
+        }
       }
       @media only screen and (max-width: 535px) {
         .single-line {
@@ -446,6 +456,15 @@
           font-size: 15px;
           margin-top: 24%;
           letter-spacing: 5px;
+        }
+        #taxbot-mobile-image-container {
+          display: none;
+        }
+        #taxbot-mobile-text-9 {
+          display: none;
+        }
+        #taxbot-mobile-text-12 {
+          display: block;
         }
       }
       @media only screen and (max-width: 400px) {
@@ -714,16 +733,22 @@
         </div>
         <hr>
         <div class="row bottom-row">
-          <div class="col-xs-3">
+          <div class="col-xs-3" id="taxbot-mobile-image-container">
             <img id="taxbot-mobile-image" class="center-element" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/taxbot-mobile.jpg" alt="Mobile App Screenshot for Taxbot"/>
           </div>
-          <div class="col-xs-9">
+          <div class="col-xs-9" id="taxbot-mobile-text-9">
             <p>The mobile app integrates with your phone’s GPS to determine where you are and where you are traveling to. Your route will be logged automatically and you have the ability to categorize each trip between personal and business travel.</p>
             <p>Tranont Taxbot allows you to maximize your business expenses and be meticulously prepared at tax time.</p>
             <p>Sign up as an Associate or as a Customer:</p>
             <div class="col-xs-12">
-              <a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" type="button" class="btn btn-default signup-button">Sign Up</a>
+              <a href="https://member.tranont.com/signup" type="button" class="btn btn-default signup-button">Sign Up</a>
             </div>
+          </div>
+          <div class="col-xs-12" id="taxbot-mobile-text-12">
+            <p>The mobile app integrates with your phone’s GPS to determine where you are and where you are traveling to. Your route will be logged automatically and you have the ability to categorize each trip between personal and business travel.</p>
+            <p>Tranont Taxbot allows you to maximize your business expenses and be meticulously prepared at tax time.</p>
+            <p>Sign up as an Associate or as a Customer:</p>
+            <a href="https://member.tranont.com/signup" type="button" class="btn btn-default signup-button">Sign Up</a>
           </div>
         </div>
       </div>
