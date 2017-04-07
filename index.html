@@ -347,10 +347,24 @@
       }
       .family .col-xs-12 {
         padding: 0;
-        margin-top: -55px;
+        margin-top: -70px;
+      }
+      .family h4 {
+        font-size: 28px;
+        color: #ffffff;
+      }
+      .family h6 {
+        font-size: 21px;
+        color: #05538a;
+      }
+      .family h4, .family h6 {
+        position: relative;
+        top: 72px;
+        margin-left: 30px;
       }
       .family img {
         width: 100%;
+        margin-top: -135px;
       }
       .glyphicon-triangle-bottom {
         font-size: 65%;
@@ -359,6 +373,37 @@
       .glyphicon-triangle-right {
         font-size: 65%;
         top: 0px;
+      }
+      .event {
+        margin-bottom: -50px;
+      }
+      .event img {
+        margin-bottom: -15px;
+        width: 100%;
+        z-index: -1;
+        position: relative;
+        top: 25px;
+        left: 7px;
+      }
+      .event-hr-top {
+        border-color: #000001;
+        margin: 50px 0 40px 0;
+      }
+      .event-hr-bottom {
+        border-color: #000001;
+        margin: 50px 0;
+      }
+      .event-text {
+        margin: 55px 25px 0 0;
+        text-align: center;
+      }
+      .event-text h2 {
+        font-weight: bold;
+        font-size: 40px
+      }
+      .event-text h6 {
+        font-weight: 200;
+        font-size: 14px;
       }
       .jeep {
         margin-bottom: -50px;
@@ -503,6 +548,38 @@
         width: 80%;
         display: block;
         margin: 0 auto;
+      }
+      #buttonEventMovie {
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        color: #ffffff;
+        padding: 1px 15px;
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        position: relative;
+        top: -120px;
+        left: 5px;
+        background: transparent;
+        width: 52%;
+      }
+      #buttonEventMovie:hover {
+        color: #ffffff;
+        background: rgba(192, 192, 192, 0.3);
+        border-color: #ffffff;
+        text-decoration: none;
+      }
+      #buttonEventMovie h5 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        position: relative;
+        top: 1px;
+      }
+      #eventMovie {
+        position: relative;
+        top: 20px;
+        left: -30px;
       }
       @media only screen and (max-width: 1200px) {
         .bottom-mods p {
@@ -1398,8 +1475,8 @@
               </div>
               <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <p class="core" id="core-text">Explore a variety of tools that can be used to achieve your personal and business goals.</p>
-                  <a href="http://tranont.com/products.html" class="btn btn-default btn-page btn-panel">Learn More</a>
+                  <p class="core" id="core-text">Tranont offers a suite of products and services used to help you achieve your personal and financial goals.</p>
+                  <a href="http://tranont.com/products.html#tranont-core" class="btn btn-default btn-page btn-panel">Learn More</a>
                   <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_core_overlay.jpg" alt="Long Beach, CA Convention Center"/>
                 </div>
               </div>
@@ -1441,10 +1518,14 @@
         </div>
         <div class="row family">
           <div class="col-xs-12">
+            <h6>Financial Management</h6>
+            <h6>Superior Marketing</h6>
+            <h6>Innovative CORE Products</h6>
+            <h4>A Unique Opportunity</h4>
             <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2016+Home+Page/201610_HomePage_family.jpg" alt="Man and Little Girl Holding Hands Walking on the Beach"/>
           </div>
         </div>
-        <div class="row bottom-row">
+        <div class="row">
           <div class="col-xs-6 bottom-mods">
             <hr class="bottom-mods-hr1">
             <h6>Our Mission</h6>
@@ -1461,6 +1542,26 @@
               Management Tools, Digital Protection,<span id="dissappearing-br"><br/></span>
               and Wealth Building Services
             </p>
+          </div>
+        </div>
+        <div class="row bottom-row event">
+          <div class="col-xs-12">
+            <div class="col-xs-6">
+              <div class="event-text">
+                <hr class="event-hr-top">
+                <h2>June Event</h2>
+                <h6>Salt Palace Convention Center</h6>
+                <h6>June 23-24, 2017</h6>
+                <a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>
+                <hr class="event-hr-bottom">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
+              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
+              <!-- <div class="col-xs-12" id="movieEventWrapper">
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -1504,6 +1605,16 @@
 	    	</div>
 	    </div>
       <!-- END Footer -->
+      <script>
+        // $(function() {
+        //   $("#buttonEventMovie").click(function(){
+        //     var movieDiv = '<iframe width="560" height="315" id="eventMovie" src="https://www.youtube.com/v/g2TEg2-u6PQ?rel=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>\r\n';
+        //     $("#movieEventWrapper").append(movieDiv);
+        //     $("#buttonEventMovie").hide();
+        //     $("#imageEventMovie").hide();
+        //   });
+        // });
+      </script>
 	    <script src="main.js"></script>
     </body>
 </html>
