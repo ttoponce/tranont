@@ -385,6 +385,12 @@
         top: 25px;
         left: 7px;
       }
+      .event-6 {
+        display: block;
+      }
+      .event-12 {
+        display: none;
+      }
       .event-hr-top {
         border-color: #000001;
         margin: 50px 0 40px 0;
@@ -599,7 +605,7 @@
           font-size: 16px;
         }
         .event img {
-          top: 48px;
+          top: 55px;
         }
         .family .col-xs-12 {
           padding: 0;
@@ -642,7 +648,7 @@
           top: 70px;
         }
         #buttonEventMovie {
-          top: -75px;
+          top: -65px;
           width: 64%;
         }
         #dissappearing-br {
@@ -671,6 +677,9 @@
           padding: 10px 15px 0 20px;
           line-height: 17px;
           letter-spacing: 3px;
+        }
+        .event img {
+          top: 49px;
         }
         .family h4 {
           font-size: 24px;
@@ -710,6 +719,9 @@
         }
         .top-section-text {
           top: 70px;
+        }
+        #buttonEventMovie {
+          top: -70px;
         }
         #video-button {
           font-size: 30px;
@@ -806,11 +818,11 @@
         }
         .family h4, .family h6 {
           position: relative;
-          top: 25px;
+          top: 17px;
           margin-left: 30px;
         }
         .family img {
-          margin-top: -110px;
+          margin-top: -122px;
           width: 100%;
         }
         .jeep img {
@@ -837,7 +849,7 @@
           width: 235px;
         }
         #buttonEventMovie {
-          top: -38px;
+          top: -43px;
           width: 81%;
         }
         #buttonEventMovie h5 {
@@ -913,7 +925,7 @@
         }
         #buttonEventMovie {
           top: -38px;
-          width: 81%;
+          width: 91%;
         }
         #buttonEventMovie h5 {
           letter-spacing: 1px;
@@ -936,6 +948,19 @@
           left: 175px;
           font-size: 8px !important;
           padding: 4px 7px !important;
+        }
+        .event img {
+          top: -20px;
+          left: 0px;
+        }
+        .event-6 {
+          display: none;
+        }
+        .event-12 {
+          display: block;
+        }
+        .event-text {
+          margin: 0;
         }
         .events-banner .heading {
           display: none;
@@ -960,6 +985,10 @@
         }
         .events-hr2 {
           top: 61px;
+        }
+        .fa-caret-square-o-right {
+          position: realtive;
+          top: -1px;
         }
         .jeep img {
           width: 265%;
@@ -1001,6 +1030,10 @@
         }
         .top-section-text img {
           width: 150px;
+        }
+        #buttonEventMovie {
+          top: -165px;
+          width: 49%;
         }
         #company-text {
           display: none;
@@ -1081,6 +1114,10 @@
           width: 175px;
           margin-bottom: 20px;
         }
+        #buttonEventMovie {
+          top: -137px;
+          width: 59%;
+        }
         #company {
           display: none;
         }
@@ -1149,6 +1186,10 @@
         .top-section-text img {
           width: 150px;
         }
+        #buttonEventMovie {
+          top: -125px;
+          width: 68%;
+        }
       }
       @media only screen and (max-width: 414px) {
         .bottom-mods {
@@ -1190,6 +1231,11 @@
         }
         .top-section-text {
           top: 65px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        #buttonEventMovie {
+          width: 71%;
         }
       }
       @media only screen and (max-width: 375px) {
@@ -1239,6 +1285,10 @@
         .top-section-text h2 {
           font-size: 15px;
           line-height: 21px;
+        }
+        #buttonEventMovie {
+          top: -118px;
+          width: 73%;
         }
         #video-button {
           font-size: 14px;
@@ -1324,12 +1374,20 @@
         }
       }
       @media only screen and (max-width: 320px) {
+        .fa-caret-square-o-right {
+          position: relative;
+          top: -1px;
+        }
         .top-section-text {
           top: 65px;
         }
         .top-section-text img {
           width: 120px;
           margin-bottom: 12px;
+        }
+        #buttonEventMovie {
+          top: -106px;
+          width: 88%;
         }
       }
       /**** END Main Page Stylings ****/
@@ -1637,7 +1695,7 @@
         </div>
         <div class="row bottom-row event">
           <div class="col-xs-12">
-            <div class="col-xs-6">
+            <div class="col-xs-6 event-6">
               <div class="event-text">
                 <hr class="event-hr-top">
                 <h2>June Event</h2>
@@ -1647,12 +1705,24 @@
                 <hr class="event-hr-bottom">
               </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-6 event-6">
               <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
               <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
               <!-- <div class="col-xs-12" id="movieEventWrapper">
               </div> -->
             </div>
+          </div>
+          <div class="col-xs-12 event-12">
+            <div class="event-text">
+              <hr class="event-hr-top">
+              <h2>June Event</h2>
+              <h6>Salt Palace Convention Center</h6>
+              <h6>June 23-24, 2017</h6>
+              <a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>
+              <hr class="event-hr-bottom">
+            </div>
+              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
+              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
           </div>
         </div>
       </div>
