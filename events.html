@@ -334,7 +334,7 @@
         color: #ffffff;
         background-color: #05538a;
       }
-      .sub-nav .col-xs-3 {
+      .sub-nav .col-xs-4 {
         border: 2px solid #05538a;
         background-color: #ffffff;
         color: #05538a;
@@ -345,11 +345,11 @@
         font-weight: bold;
         font-size: 16px;
       }
-      .sub-nav .col-xs-3:hover {
+      .sub-nav .col-xs-4:hover {
         background-color: #05538a;
         color: #ffffff;
       }
-      .sub-nav .col-xs-3 p {
+      .sub-nav .col-xs-4 p {
         margin: 0;
       }
       .ticket-text {
@@ -385,12 +385,12 @@
         margin-bottom: 15px;
       }
       @media only screen and (max-width: 1000px) {
-        .sub-nav .col-xs-3 {
+        .sub-nav .col-xs-4 {
           font-size: 12px;
         }
       }
       @media only screen and (max-width: 670px) {
-        .sub-nav .col-xs-3 {
+        .sub-nav .col-xs-4 {
           letter-spacing: 2px;
         }
         .top-img-header {
@@ -401,37 +401,37 @@
           font-size: 18px;
           margin-top: 23%;
         }
-        @media only screen and (max-width: 535px) {
-          .sub-nav .col-xs-3 {
-            letter-spacing: 1px;
-            font-size: 10px;
-          }
-          .top-img-header {
-            font-size: 25px;
-            margin-top: 17%;
-          }
-          .top-img-text {
-            font-size: 15px;
-            margin-top: 24%;
-            letter-spacing: 5px;
-          }
+      @media only screen and (max-width: 535px) {
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+          font-size: 10px;
         }
-        @media only screen and (max-width: 400px) {
-          .sub-nav .col-xs-3 {
-            font-size: 8px;
-          }
-          .top-img-header {
-            font-size: 21px;
-            margin-top: 18%;
-          }
-          .top-img-text {
-            font-size: 12px;
-            margin-top: 25%;
-            letter-spacing: 4px;
-          }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
         }
       }
-      /**** END Main Page Stylings ****/
+      @media only screen and (max-width: 400px) {
+        .sub-nav .col-xs-3 {
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+    }
+    /**** END Main Page Stylings ****/
 
       /**** BEGIN Footer Stylings ****/
       ul li a i {
@@ -630,17 +630,14 @@
           </div>
         </div>
         <div class="row sub-nav">
-          <a href="#national"><div class="col-xs-3">
+          <a href="#national"><div class="col-xs-4">
             <p>National<br/>Events</p>
           </div></a>
-          <a href="#international"><div class="col-xs-3">
+          <a href="#international"><div class="col-xs-4">
             <p>International<br/>Events</p>
           </div></a>
-          <a href="#regional"><div class="col-xs-3">
+          <a href="#regional"><div class="col-xs-4">
             <p>Regional<br/>Events</p>
-          </div></a>
-          <a href="#calendar"><div class="col-xs-3">
-            <p>Event<br/>Calendar</p>
           </div></a>
         </div>
         <div class="row" id="national">
@@ -669,20 +666,12 @@
             </h4>
           </div>
         </div>
-        <div class="row" id="regional">
+        <div class="row bottom-row" id="regional">
           <div class="col-xs-12">
             <hr class="hr-top"/>
               <h3 class="page-headers">Regional Events</h3>
             <hr class="hr-bottom"/>
             <p class="filler-text"><em>Please see the Event Calendar below for scheduled Regional Events.</em></p>
-          </div>
-        </div>
-        <div class="row bottom-row" id="calendar">
-          <div class="col-xs-12">
-            <hr class="hr-top"/>
-              <h3 class="page-headers">Event Calendar</h3>
-            <hr class="hr-bottom"/>
-            <iframe src="https://calendar.google.com/calendar/embed?src=tranontevents%40gmail.com&ctz=America/Denver" style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
       </div>
