@@ -228,14 +228,14 @@
       #cost {
         position: absolute;
         z-index: 1;
-        top: 450px;
+        top: 425px;
         left: 42px;
         width: 220px;
       }
       #dates {
         position: absolute;
         z-index: 1;
-        top: 325px;
+        top: 310px;
         left: 67px;
         width: 155px;
       }
@@ -245,6 +245,14 @@
         top: 70px;
         left: 38%;
         width: 675px;
+      }
+      #lateCost {
+        position: absolute;
+        z-index: 1;
+        top: 511px;
+        left: 20px;
+        color: #ffffff;
+        font-size: 12px;
       }
       #logo {
         position: absolute;
@@ -572,7 +580,7 @@
 
       @media only screen and (max-width: 1000px) {
         #address {
-          top: 300px;
+          top: 278px;
           left: 321px;
         }
         #chadPNG {
@@ -581,12 +589,12 @@
           left: -72px;
         }
         #cost {
-          top: 218px;
+          top: 207px;
           left: 470px;
           width: 202px;
         }
         #dates {
-          top: 205px;
+          top: 197px;
           left: 290px;
           width: 130px;
         }
@@ -597,12 +605,17 @@
           left: 242px;
           width: 491px;
         }
+        #lateCost {
+          top: 514px;
+          left: 378px;
+          font-size: 10px;
+        }
         #logo {
           width: 200px;
         }
         #registerBtn {
-          top: 500px;
-          left: 373px;
+          top: 465px;
+          left: 386px;
         }
         #travelModal .modal-content {
           height: 91%;
@@ -646,9 +659,13 @@
           top: 184px;
           left: 260px;
         }
+        #lateCost {
+          top: 512px;
+          left: 345px;
+        }
         #registerBtn {
-          top: 485px;
-          left: 325px;
+          top: 465px;
+          left: 356px;
         }
         #travelBtn {
           padding: 3px 7px;
@@ -708,12 +725,16 @@
           width: 328px;
           top: 71px;
         }
+        #lateCost {
+          top: 447px;
+          left: 228px;
+        }
         #logo {
           width: 100px;
         }
         #registerBtn {
-          top: 400px;
-          left: 210px;
+          top: 382px;
+          left: 241px;
           width: 32%;
         }
         #travelModal .modal-content {
@@ -759,7 +780,7 @@
       @media only screen and (max-width: 500px) {
         #address {
           top: 265px;
-          left: 146px;
+          left: 132px;
           width: 260px;
         }
         #chadPNG {
@@ -767,18 +788,21 @@
         }
         #cost {
           top: 83px;
-          left: 235px;
+          left: 223px;
           width: 154px;
         }
         #dates {
           top: 75px;
-          left: 115px;
+          left: 110px;
           width: 100px;
         }
         #header {
           left: 20px;
-          width: 375px;
+          width: 356px;
           top: 151px;
+        }
+        #lateCost {
+          left: 204px;
         }
         #logo {
           width: 75px;
@@ -786,7 +810,7 @@
         #registerBtn {
           width: 165px;
           top: 410px;
-          left: 185px;
+          left: 167px;
           padding: 5px 10px;
         }
         #travelModal .modal-content {
@@ -872,7 +896,30 @@
           height: 472%;
         }
       }
-
+      @media only screen and (max-width: 375px) {
+        #cost {
+          left: 250px;
+        }
+        #dates {
+          left: 135px;
+        }
+        #header {
+          width: 368px;
+          top: 146px;
+        }
+        #lateCost {
+          left: 193px;
+        }
+        .footer {
+          width: 110%;
+        }
+        .main > div > .col-xs-12 {
+          width: 110%;
+        }
+        .navbar-default {
+          width: 87%;
+        }
+      }
       @media only screen and (max-width: 320px) {
         #cost {
           left: 220px;
@@ -1096,6 +1143,7 @@
             <img id="logo" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEventLogo_01.png" alt="June International Event"/>
             <img id="cost" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEventCost_01.png" alt="$99 U.S. / $129 CA"/>
             <img id="dates" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEventDate_01.png" alt="June 23 & 24, 2017 9AM - 6PM" />
+            <p id="lateCost"><em>Late registration price increase<br/>after June 18<sup>th</sup> to $129 U.S./$169 CA</em></p>
             <img id="chadPNG" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/chad.png" alt="Chad Hymas"/>
             <img id="header" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEvent_header_01.png" alt="Featuring Keynote Speaker Chad Hymas - www.chadhymas.com"/>
             <img id="address" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEvent_saltpalace_address_01.png" alt="Salt Palace Convention Center 100 S W Temple, Salt Lake City, UT 84101"/>
