@@ -338,6 +338,13 @@
         border-radius: 0;
         letter-spacing: 1px;
       }
+      .hotelBtn {
+        background-color: #ffffff;
+        margin-top: -10px;
+        border: 2px solid #777777;
+        border-radius: 0;
+        letter-spacing: 1px;
+      }
       .travelBtn {
         background-color: #ffffff;
         margin-top: 5px;
@@ -345,7 +352,7 @@
         border-radius: 0;
         letter-spacing: 1px;
       }
-      .diningBtn:hover, .travelBtn:hover {
+      .diningBtn:hover, .travelBtn:hover, .hotelBtn:hover {
         background-color: #dddddd;
         border-color: #777777;
       }
@@ -649,6 +656,9 @@
         #travelModal .modal-content {
           height: 93%;
         }
+        .diningBtn, .hotelBtn {
+          padding: 3px 7px;
+        }
         .foreground h3 {
           font-size: 20px;
         }
@@ -660,6 +670,9 @@
         }
         .foreground hr {
           margin: 10px 20px;
+        }
+        .hotelBtn {
+          margin-top: 0;
         }
         .main img {
           width: 160%;
@@ -724,12 +737,15 @@
         .countdown span {
           font-size: 32px;
         }
-        .diningBtn, .travelBtn {
+        .diningBtn, .travelBtn, .hotelBtn {
           padding: 3px 5px;
           font-size: 10px;
         }
         .foreground-text h4, .foreground-text h5 {
           font-size: 12px;
+        }
+        .hotelBtn {
+          margin-top: -7px;
         }
         .main img {
           width: 215%;
@@ -837,7 +853,7 @@
         .btn-info {
           font-size: 10px;
         }
-        .diningBtn, .travelBtn {
+        .diningBtn, .travelBtn, .hotelBtn {
           font-size: 8px;
         }
         .countdown p {
@@ -1110,7 +1126,7 @@
                   <h4>Salt Lake City<br/>Marriott City Center</h4>
                   <h5>220 South State Street<br/>Salt Lake City, UT 84111</h5>
                   <h5><strong>$179/night</strong></h5>
-                  <h5><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Tranont%5Eslccc%60tratraa%60179.00%60USD%60false%605%606/22/17%606/23/17%605/25/17&app=resvlink&stop_mobi=yes" target="_blank">Book Now</a></h5>
+                  <h5><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Tranont%5Eslccc%60tratraa%60179.00%60USD%60false%605%606/22/17%606/23/17%605/25/17&app=resvlink&stop_mobi=yes" class="btn btn-default hotelBtn" target="_blank">Book Now</a></h5>
               </div>
             </div>
             <div class="col-xs-3">
