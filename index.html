@@ -190,6 +190,24 @@
         display: none;
       }
     }
+    @media only screen and (max-width: 414px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 21%;
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 19%;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      .navbar-toggle {
+        float: none;
+        margin-left: 6%;
+      }
+    }
     /**** END Navbar Stylings ****/
 
       /**** BEGIN Main Page Stylings ****/
@@ -556,31 +574,27 @@
         margin: 0 auto;
       }
       #buttonEventMovie {
-        border: 2px solid #ffffff;
-        border-radius: 25px;
+        border: none;
         color: #ffffff;
         padding: 1px 15px;
         display: block;
         margin: 0 auto;
         letter-spacing: 1px;
         position: relative;
-        top: -120px;
+        top: -170px;
         left: 5px;
-        background: transparent;
-        width: 52%;
+        background-color: rgba(5,83,138,0.5);
       }
       #buttonEventMovie:hover {
-        color: #ffffff;
-        background: rgba(192, 192, 192, 0.3);
-        border-color: #ffffff;
         text-decoration: none;
       }
       #buttonEventMovie h5 {
-        font-size: 12px;
+        font-size: 40px;
         letter-spacing: 2px;
         font-weight: bold;
         position: relative;
-        top: 1px;
+        top: -4px;
+        left: 1px;
       }
       #eventMovie {
         position: relative;
@@ -648,8 +662,8 @@
           top: 70px;
         }
         #buttonEventMovie {
-          top: -65px;
-          width: 64%;
+          top: -108px;
+          left: 7px;
         }
         #dissappearing-br {
           display: none;
@@ -719,9 +733,6 @@
         }
         .top-section-text {
           top: 70px;
-        }
-        #buttonEventMovie {
-          top: -70px;
         }
         #video-button {
           font-size: 30px;
@@ -849,11 +860,11 @@
           width: 235px;
         }
         #buttonEventMovie {
-          top: -43px;
-          width: 81%;
+          top: -71px;
         }
         #buttonEventMovie h5 {
-          letter-spacing: 1px;
+          font-size: 33px;
+          left: -4px;
         }
       }
       @media only screen and (max-width: 730px) {
@@ -924,11 +935,11 @@
           top: 65px;
         }
         #buttonEventMovie {
-          top: -38px;
-          width: 91%;
+          top: -59px;
         }
         #buttonEventMovie h5 {
-          letter-spacing: 1px;
+          letter-spacing: 0;
+          left: -9px;
         }
         #video-button {
           font-size: 20px;
@@ -1032,8 +1043,12 @@
           width: 150px;
         }
         #buttonEventMovie {
-          top: -165px;
-          width: 49%;
+          top: -173px;
+          left: 0px;
+        }
+        #buttonEventMovie h5 {
+          font-size: 32px;
+          top: -1px;
         }
         #company-text {
           display: none;
@@ -1115,8 +1130,10 @@
           margin-bottom: 20px;
         }
         #buttonEventMovie {
-          top: -137px;
-          width: 59%;
+          top: -146px;
+        }
+        #buttonEventMovie h5 {
+          font-size: 26px;
         }
         #company {
           display: none;
@@ -1188,7 +1205,11 @@
         }
         #buttonEventMovie {
           top: -125px;
-          width: 68%;
+        }
+        #buttonEventMovie h5 {
+          font-size: 20px;
+          letter-spacing: 1px;
+          left: -3px;
         }
       }
       @media only screen and (max-width: 414px) {
@@ -1232,10 +1253,11 @@
         .top-section-text {
           top: 65px;
         }
-      }
-      @media only screen and (max-width: 400px) {
         #buttonEventMovie {
-          width: 71%;
+          top: -125px;
+        }
+        #buttonEventMovie h5 {
+          left: -10px;
         }
       }
       @media only screen and (max-width: 375px) {
@@ -1288,7 +1310,6 @@
         }
         #buttonEventMovie {
           top: -118px;
-          width: 73%;
         }
         #video-button {
           font-size: 14px;
@@ -1706,7 +1727,7 @@
             </div>
             <div class="col-xs-6 event-6">
               <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
-              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
+              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT<br/>HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
               <!-- <div class="col-xs-12" id="movieEventWrapper">
               </div> -->
             </div>
