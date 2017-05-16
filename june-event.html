@@ -359,26 +359,33 @@
       }
       .diningBtn {
         background-color: #ffffff;
-        margin-top: 37px;
+        margin-top: 94px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
       .hotelBtn {
         background-color: #ffffff;
-        margin-top: -10px;
+        margin-top: -5px;
+        border: 2px solid #777777;
+        border-radius: 0;
+        letter-spacing: 1px;
+      }
+      .sessionBtn {
+        background-color: #ffffff;
+        margin-top: 28px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
       .travelBtn {
         background-color: #ffffff;
-        margin-top: 5px;
+        margin-top: 21px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
-      .diningBtn:hover, .travelBtn:hover, .hotelBtn:hover {
+      .diningBtn:hover, .travelBtn:hover, .hotelBtn:hover, .sessionBtn:hover {
         background-color: #dddddd;
         border-color: #777777;
       }
@@ -507,9 +514,26 @@
           background-color: rgb(0,0,0); /* Fallback color */
           background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       }
+      .modal3 {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
 
       /* Modal Content */
       #restaurantModal {
+        position: relative;
+        z-index: 1;
+      }
+      #scheduleModal {
         position: relative;
         z-index: 1;
       }
@@ -565,6 +589,20 @@
 
       .close2:hover,
       .close2:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      .close3 {
+          color: #555555;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          margin-top: -10px;
+      }
+
+      .close3:hover,
+      .close3:focus {
           color: #000;
           text-decoration: none;
           cursor: pointer;
@@ -691,7 +729,7 @@
         #travelModal .modal-content {
           height: 93%;
         }
-        .diningBtn, .hotelBtn {
+        .diningBtn, .hotelBtn, .sessionBtn {
           padding: 3px 7px;
         }
         .foreground h3 {
@@ -714,6 +752,18 @@
         }
         .modal-content {
           height: 432%;
+        }
+        .diningBtn {
+          margin-top: 65px;
+        }
+        .hotelBtn {
+          margin-top: 6px;
+        }
+        .sessionBtn {
+          margin-top: 27px;
+        }
+        .travelBtn {
+          margin-top: 16px;
         }
       }
 
@@ -776,7 +826,7 @@
         .countdown span {
           font-size: 32px;
         }
-        .diningBtn, .travelBtn, .hotelBtn {
+        .diningBtn, .travelBtn, .hotelBtn, .sessionBtn {
           padding: 3px 5px;
           font-size: 10px;
         }
@@ -792,6 +842,18 @@
         .modal-content {
           height: 533%;
           margin: 0 auto 150px auto;
+        }
+        .diningBtn {
+          margin-top: 65px;
+        }
+        .hotelBtn {
+          margin-top: 11px;
+        }
+        .sessionBtn {
+          margin-top: 38px;
+        }
+        .travelBtn {
+          margin-top: 19px;
         }
       }
 
@@ -861,6 +923,18 @@
           font-size: 12px;
           padding: 0 5px;
         }
+        .diningBtn {
+          margin-top: 105px;
+        }
+        .hotelBtn {
+          margin-top: 23px;
+        }
+        .sessionBtn {
+          margin-top: 37px;
+        }
+        .travelBtn {
+          margin-top: 32px;
+        }
       }
 
       @media only screen and (max-width: 400px) {
@@ -895,7 +969,7 @@
         .btn-info {
           font-size: 10px;
         }
-        .diningBtn, .travelBtn, .hotelBtn {
+        .diningBtn, .travelBtn, .hotelBtn, .sessionBtn {
           font-size: 8px;
         }
         .countdown p {
@@ -912,6 +986,18 @@
         }
         .modal-content {
           height: 472%;
+        }
+        .diningBtn {
+          margin-top: 96px;
+        }
+        .hotelBtn {
+          margin-top: 33px;
+        }
+        .sessionBtn {
+          margin-top: 40px;
+        }
+        .travelBtn {
+          margin-top: 32px;
         }
       }
       @media only screen and (max-width: 375px) {
@@ -1176,10 +1262,39 @@
               <h3 class="center">Schedule</h3>
               <hr/>
               <div class="schedule center foreground-text">
-                <h4><strong>Morning Convention</strong><br/>9 a.m. - 12 p.m.</h4>
+                <h4><strong>Morning Session</strong><br/>9 a.m. - 12 p.m.</h4>
                 <h4><strong>Lunch</strong><br/>12 p.m. - 2 p.m.</h4>
-                <h4><strong>Afternoon Convention</strong><br/>2 p.m. - 6 p.m.</h4>
-                <h6>(Daily)</h6>
+                <h4><strong>Afternoon Session</strong><br/>2 p.m. - 6 p.m.</h4>
+              </div>
+              <div class="center foreground-text">
+                  <button id="scheduleBtn" class="btn btn-default sessionBtn" href="#" target="_blank">Schedule</button>
+              </div>
+            </div>
+            <div id="scheduleModal" class="modal3">
+              <div class="modal-content">
+                <span class="close3">&times;</span>
+                <div class="col-xs-12">
+                  <h3>Transportation to Downtown SLC</h3>
+                  <h4>TRAX Light Rail:</h4>
+                  <p>
+                    The green line leaves the airport every 15 minutes on weekdays and every 20 minutes on weekends. The stop is located on the south side of Terminal One.<br/><br/>
+                    Get off at the Temple Square stop for the Salt Palace.<br/><br/>
+                    Price: $2.50<br/><br/>
+                    Hours of Operation:<br/><br/>
+                    Weekdays: 5:42 a.m. - 11:27 p.m.<br/>
+                    Weekends: 6:31 a.m. to 11:11 p.m.
+                  </p>
+                  <h4>Taxi or other transportation network companies:</h4>
+                  <p>
+                    Maximum rate of $30 (Not including Uber and Lyft)<br/><br/>
+                    The fare should be negotiated before departing the airport.<br/><br/>
+                  </p>
+                  <a href="http://www.expressshuttleutah.com/index.php/how-express-shuttle-works/" target="_blank">Express Shuttle Utah*</a>
+                  <p>
+                    Door-to-door shuttle service<br/>
+                    *Reservation required
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-xs-3">
@@ -1192,6 +1307,8 @@
                   <h4>Salt Lake City<br/>Marriott City Center</h4>
                   <h5>220 South State Street<br/>Salt Lake City, UT 84111</h5>
                   <h5><strong>$179/night</strong></h5>
+              </div>
+              <div class="center foreground-text">
                   <h5><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Tranont%5Eslccc%60tratraa%60179.00%60USD%60false%605%606/22/17%606/23/17%605/25/17&app=resvlink&stop_mobi=yes" class="btn btn-default hotelBtn" target="_blank">Book Now</a></h5>
               </div>
             </div>
@@ -1202,8 +1319,10 @@
               <h3 class="center">Dining</h3>
               <hr/>
               <div class="center foreground-text">
-                  <h4>Find local restaurants in Downtown Salt Lake City.</h4>
-                  <button id="restaurantsBtn" class="btn btn-default diningBtn" href="#" target="_blank">Find Eateries</button>
+                <h4>Find local restaurants in Downtown Salt Lake City.</h4>
+              </div>
+              <div class="center foreground-text">
+                <button id="restaurantsBtn" class="btn btn-default diningBtn" href="#" target="_blank">Find Eateries</button>
               </div>
               <div id="restaurantsModal" class="modal">
                 <div class="modal-content">
@@ -1507,6 +1626,8 @@
                   <h4>Salt Lake City<br/>International Airport</h4>
                   <h5>Salt Lake City<br/>776 N Terminal Dr<br/>
                       Salt Lake City, UT 84122</h5>
+              </div>
+              <div class="center foreground-text">
                   <button id="travelBtn" class="btn btn-default travelBtn" href="#" target="_blank">Find <br class="dissappearing-br"/>Transportation</button>
               </div>
             </div>
@@ -1705,14 +1826,17 @@
       // Get the modal
       var modal = document.getElementById('restaurantsModal');
       var modal2 = document.getElementById('travelModal');
+      var modal3 = document.getElementById('scheduleModal');
 
       // Get the button that opens the modal
       var btn = document.getElementById('restaurantsBtn');
       var btn2 = document.getElementById('travelBtn');
+      var btn3 = document.getElementById('scheduleBtn');
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
       var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
 
       // When the user clicks the button, open the modal
       btn.onclick = function() {
@@ -1720,6 +1844,9 @@
       }
       btn2.onclick = function() {
           modal2.style.display = "block";
+      }
+      btn3.onclick = function() {
+          modal3.style.display = "block";
       }
 
       // When the user clicks on <span> (x), close the modal
@@ -1729,6 +1856,9 @@
       span2.onclick = function() {
           modal2.style.display = "none";
       }
+      span3.onclick = function() {
+          modal3.style.display = "none";
+      }
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
@@ -1737,6 +1867,9 @@
           }
           if (event.target == modal2) {
               modal2.style.display = "none";
+          }
+          if (event.target == modal3) {
+              modal3.style.display = "none";
           }
       }
       </script>
