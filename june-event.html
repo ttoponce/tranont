@@ -529,20 +529,17 @@
       }
 
       /* Modal Content */
-      #restaurantModal {
-        position: relative;
-        z-index: 1;
-      }
-      #scheduleModal {
-        position: fixed;
-        z-index: 1;
+      #restaurantsModal .modal-content {
+        height: 386%;
       }
       #scheduleModal .modal-content {
-        height: 79%;
+        height: 51%;
       }
-      #travelModal {
-        position: fixed;
-        z-index: 1;
+      #scheduleModal .close3 {
+        color: #cccccc;
+      }
+      #scheduleModal .close3:hover {
+        color: #777777;
       }
       #travelModal h3, #travelModal h4 {
         font-weight: 800;
@@ -553,7 +550,13 @@
         text-decoration: underline;
       }
       #travelModal .modal-content {
-        height: 79%;
+        height: 98%;
+      }
+      #travelModal .close2 {
+        color: #cccccc;
+      }
+      #travelModal .close2:hover {
+        color: #777777;
       }
       .column2 {
           margin-top: -17px;
@@ -564,7 +567,6 @@
           padding: 20px;
           border: 1px solid #888;
           width: 60%;
-          height: 292%;
       }
 
       /* The Close Button */
@@ -629,12 +631,6 @@
           top: 470px;
           left: 589px;
         }
-        #travelModal .modal-content {
-          height: 77%;
-        }
-        .modal-content {
-          height: 306%;
-        }
       }
 
       @media only screen and (max-width: 1000px) {
@@ -676,8 +672,11 @@
           top: 465px;
           left: 386px;
         }
+        #restaurantsModal .modal-content {
+          height: 400%;
+        }
         #travelModal .modal-content {
-          height: 91%;
+          height: 101%;
         }
         .bottom-row {
           top: 955px;
@@ -693,9 +692,6 @@
         }
         .main img {
           width: 140%;
-        }
-        .modal-content {
-          height: 350%;
         }
         .socialmedia-icons {
           height: 80px !important;
@@ -729,8 +725,11 @@
         #travelBtn {
           padding: 3px 7px;
         }
+        #restaurantsModal .modal-content {
+          height: 461%;
+        }
         #travelModal .modal-content {
-          height: 93%;
+          height: 112%;
         }
         .diningBtn, .hotelBtn, .sessionBtn {
           padding: 3px 7px;
@@ -752,9 +751,6 @@
         }
         .main img {
           width: 160%;
-        }
-        .modal-content {
-          height: 432%;
         }
         .diningBtn {
           margin-top: 65px;
@@ -808,8 +804,11 @@
           left: 241px;
           width: 32%;
         }
+        #restaurantsModal .modal-content {
+          height: 554%;
+        }
         #travelModal .modal-content {
-          height: 108%;
+          height: 119%;
         }
         .bottom-row a {
           letter-spacing: 1px;
@@ -843,7 +842,6 @@
           width: 215%;
         }
         .modal-content {
-          height: 533%;
           margin: 0 auto 150px auto;
         }
         .diningBtn {
@@ -896,8 +894,14 @@
           left: 167px;
           padding: 5px 10px;
         }
+        #restaurantsModal .modal-content {
+          height: 384%;
+        }
+        #scheduleModal .modal-content {
+          height: 43%;
+        }
         #travelModal .modal-content {
-          height: 98%;
+          height: 92%;
         }
         .bottom-row a {
           margin-top: 15px;
@@ -922,9 +926,9 @@
           width: 270%;
         }
         .modal-content {
-          height: 472%;
           font-size: 12px;
-          padding: 0 5px;
+          padding: 11px 5px;
+          width: 85%;
         }
         .diningBtn {
           margin-top: 105px;
@@ -939,7 +943,6 @@
           margin-top: 32px;
         }
       }
-
       @media only screen and (max-width: 400px) {
         #address {
           top: 255px;
@@ -966,8 +969,14 @@
           top: 390px;
           left: 140px;
         }
+        #restaurantsModal .modal-content {
+          height: 497%;
+        }
+        #scheduleModal .modal-content {
+          height: 46%;
+        }
         #travelModal .modal-content {
-          height: 94%;
+          height: 106%;
         }
         .btn-info {
           font-size: 10px;
@@ -986,9 +995,6 @@
         }
         .main img {
           width: 270%;
-        }
-        .modal-content {
-          height: 472%;
         }
         .diningBtn {
           margin-top: 96px;
